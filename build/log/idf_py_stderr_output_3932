@@ -1,0 +1,28 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM6 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM6 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x4000a39e: [0;33ms_test_psram[0m[0m at [0;32mE:/Espressif/.espressif/v5.4.4/esp-idf/components/esp_psram/esp_psram.c[0m[0m:[1;31m571[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4003a3a0: [0;33mlv_font_get_line_height[0m[0m at [0;32mE:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/font/lv_font.c[0m[0m:[1;31m140[0m
+[0m--- 0x4004e284: [0;33mlv_label_event[0m[0m at [0;32mE:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/widgets/label/lv_label.c[0m[0m:[1;31m742[0m
+[0m--- 0x4ff00003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4ff04ba0: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mE:/Espressif/.espressif/v5.4.4/esp-idf/components/hal/esp32p4/include/hal/cpu_utility_ll.h[0m[0m:[1;31m23[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mE:/Espressif/.espressif/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x4ff04cfc: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mE:/Espressif/.espressif/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m57[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4003a3a0: [0;33mlv_font_get_line_height[0m[0m at [0;32mE:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/font/lv_font.c[0m[0m:[1;31m140[0m
+[0m--- 0x4004e284: [0;33mlv_label_event[0m[0m at [0;32mE:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/widgets/label/lv_label.c[0m[0m:[1;31m742[0m
+[0m--- 0x4ff00003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4ff04ba0: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mE:/Espressif/.espressif/v5.4.4/esp-idf/components/hal/esp32p4/include/hal/cpu_utility_ll.h[0m[0m:[1;31m23[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mE:/Espressif/.espressif/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x4ff04cfc: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mE:/Espressif/.espressif/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m57[0m
+[0m

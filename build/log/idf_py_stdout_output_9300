@@ -1,0 +1,1600 @@
+[0;32mI (201) esp_image: segment 4: paddr=000eef30 vaddr=4ff0d678 sizeESP-ROM:esp32p4-eco2-20240710[0m
+Build:Jul 10 2024
+rst:0x17 (CHIP_USB_UART_RESET),boot:0x30c (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4000a39e
+Core1 Saved PC:0x4fc012cc
+SPI mode:DIO, clock div:2
+load:0x4ff33ce0,len:0x16f0
+load:0x4ff2abd0,len:0xe3c
+load:0x4ff2cbd0,len:0x3358
+entry 0x4ff2abda
+[0;32mI (14) boot: ESP-IDF v5.4.4 2nd stage bootloader[0m
+[0;32mI (14) boot: compile time Jul 18 2026 00:41:37[0m
+[0;32mI (14) boot: Multicore bootloader[0m
+[0;32mI (15) boot: chip revision: v1.3[0m
+[0;32mI (15) boot: efuse block revision: v0.3[0m
+[0;32mI (16) boot.esp32p4: SPI Speed      : 40MHz[0m
+[0;32mI (16) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (16) boot.esp32p4: SPI Flash Size : 32MB[0m
+[0;32mI (17) boot: Enabling RNG early entropy source...[0m
+[0;32mI (17) boot: Partition Table:[0m
+[0;32mI (17) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (18) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (18) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (19) boot:  2 factory          factory app      00 00 00010000 00ef0000[0m
+[0;32mI (20) boot:  3 canokey_lfs      Unknown data     01 40 00f00000 00100000[0m
+[0;32mI (20) boot:  4 usbstore         Unknown data     01 81 01000000 01000000[0m
+[0;32mI (21) boot: End of partition table[0m
+[0;32mI (22) esp_image: segment 0: paddr=00010020 vaddr=400a0020 size=32908h (207112) map[0m
+[0;32mI (63) esp_image: segment 1: paddr=00042930 vaddr=30100000 size=00068h (   104) load[0m
+[0;32mI (64) esp_image: segment 2: paddr=000429a0 vaddr=4ff00000 size=0d678h ( 54904) load[0m
+[0;32mI (78) esp_image: segment 3: paddr=00050020 vaddr=40000020 size=9ef08h (651016) map[0m
+[0;32mI (204) esp_image: segment 4: paddr=000eef30 vaddr=4ff0d678 size=072a4h ( 29348) load[0m
+[0;32mI (212) esp_image: segment 5: paddr=000f61dc vaddr=4ff14980 size=05678h ( 22136) load[0m
+[0;32mI (218) esp_image: segment 6: paddr=000fb85c vaddr=50108080 size=0001ch (    28) load[0m
+[0;32mI (224) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (224) boot: Disabling RNG early entropy source...[0m
+[0;32mI (229) hex_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (230) hex_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (230) hex_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (230) hex_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (231) hex_psram: density      : 0x07 (256 Mbit)[0m
+[0;32mI (231) hex_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (231) hex_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (232) hex_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (232) hex_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (232) hex_psram: BitMode      : 0x01 (X16 Mode)[0m
+[0;32mI (233) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (233) hex_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (234) MSPI DQS: tuning success, best phase id is 0[0m
+[0;32mI (407) MSPI DQS: tuning success, best delayline id is 16[0m
+[0;32mI (407) esp_psram: Found 32MB PSRAM device[0m
+[0;32mI (407) esp_psram: Speed: 200MHz[0m
+[0;32mI (408) hex_psram: psram CS IO is dedicated[0m
+[0;32mI (408) cpu_start: Multicore app[0m
+[0;32mI (1360) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1369) cpu_start: Pro cpu start user code[0m
+[0;32mI (1369) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (1370) app_init: Application information:[0m
+[0;32mI (1370) app_init: Project name:     hello_world[0m
+[0;32mI (1370) app_init: App version:      1[0m
+[0;32mI (1370) app_init: Compile time:     Jul 18 2026 00:23:40[0m
+[0;32mI (1370) app_init: ELF file SHA256:  45b7c11ec...[0m
+[0;32mI (1370) app_init: ESP-IDF:          v5.4.4[0m
+[0;32mI (1371) efuse_init: Min chip rev:     v0.1[0m
+[0;32mI (1371) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (1371) efuse_init: Chip rev:         v1.3[0m
+[0;32mI (1372) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1372) heap_init: At 4FF211D0 len 00019DF0 (103 KiB): RETENT_RAM[0m
+[0;32mI (1372) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (1373) heap_init: At 4FF50980 len 0004F680 (317 KiB): RAM[0m
+[0;32mI (1373) heap_init: At 5010809C len 00007F64 (31 KiB): RTCRAM[0m
+[0;32mI (1373) heap_init: At 30100068 len 00001F98 (7 KiB): TCM[0m
+[0;32mI (1374) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator[0m
+[0;32mI (1375) spi_flash: detected chip: gd[0m
+[0;32mI (1375) spi_flash: flash io: dio[0m
+[0;33mW (1376) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1376) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1377) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1378) main_task: Started on CPU0[0m
+[0;32mI (1388) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1388) main_task: Calling app_main()[0m
+[0;32mI (1388) canokey_crypto: crypto port ready[0m
+[0;32mI (1388) usb_hid: USB MSC descriptor enabled; storage init is handled separately[0m
+[0;32mI (1388) tusb_desc: [0m
+┌─────────────────────────────────┐
+│  USB Device Descriptor Summary  │
+├───────────────────┬─────────────┤
+│bDeviceClass       │ 0           │
+├───────────────────┼─────────────┤
+│bDeviceSubClass    │ 0           │
+├───────────────────┼─────────────┤
+│bDeviceProtocol    │ 0           │
+├───────────────────┼─────────────┤
+│bMaxPacketSize0    │ 64          │
+├───────────────────┼─────────────┤
+│idVendor           │ 0x303a      │
+├───────────────────┼─────────────┤
+│idProduct          │ 0x4006      │
+├───────────────────┼─────────────┤
+│bcdDevice          │ 0x100       │
+├───────────────────┼─────────────┤
+│iManufacturer      │ 0x1         │
+├───────────────────┼─────────────┤
+│iProduct           │ 0x2         │
+├───────────────────┼─────────────┤
+│iSerialNumber      │ 0x3         │
+├───────────────────┼─────────────┤
+│bNumConfigurations │ 0x1         │
+└───────────────────┴─────────────┘
+[0;32mI (1398) TinyUSB: TinyUSB Driver installed on port 1[0m
+[0;32mI (1398) usb_hid: TinyUSB driver installed: mounted=0 hid0_ready=0 ctaphid_ready=0[0m
+[0;32mI (1398) canokey_usb: CTAPHID init start: itf=1 report_size=64 queue_depth=32[0m
+[0;32mI (1398) canokey_usb: CTAPHID event queue created[0m
+[0;32mI (1398) canokey_usb: CTAPHID init done: state=IDLE mounted=0 ready=0[0m
+[0;32mI (1398) usb_hid: USB HID keyboard initialized on TinyUSB default USB[0m
+[0;32mI (1398) usb_hid: MSC flash partition 'usbstore': offset=0x1000000 size=16777216 bytes[0m
+[0;33mW (1478) tinyusb_msc_storage: Default MSC event callback called, event ID: 0, mount point: 0[0m
+[0;33mW (1478) tinyusb_msc_storage: Default MSC event callback called, event ID: 1, mount point: 1[0m
+[0;32mI (1488) usb_hid: usbstore first-boot format already done: fmt_v2_done=1[0m
+[0;32mI (1488) usb_hid: MSC flash storage mounted to APP; use switch_usbstore to expose USB disk[0m
+[0;32mI (1488) usb_hid: usbstore FAT boot OK: bps=4096 spc=1 reserved=1 fats=2 root_entries=512 total16=4060 total32=0 fatsz16=2 type='FAT12   '[0m
+[0;32mI (1488) usb_hid: usbstore config OK: partition=usbstore offset=0x1000000 size=16777216 mount=/data wl_size=16629760 wl_sector=4096 msc_sectors=4060 msc_sector=4096[0m
+[0;32mI (1488) usb_hid: usbstore already mounted to APP: /data[0m
+[0;32mI (1488) st7701sn_lcd: Initialize ST7701SN 480x640 MIPI display with ESP-IDF DSI flow[0m
+[0;32mI (1488) st7701sn_lcd: MIPI DSI PHY LDO enabled[0m
+[0;32mI (1488) st7701sn_lcd: Create MIPI DSI bus[0m
+[0;32mI (1488) st7701sn_lcd: Create MIPI DBI command IO[0m
+[0;32mI (1488) st7701sn_lcd: MIPI DSI command ACK disabled[0m
+[0;32mI (1488) st7701sn_lcd: Create MIPI DPI panel[0m
+[0;32mI (1498) st7701sn_lcd: MIPI DPI panel created[0m
+[0;32mI (1498) gpio: GPIO[37]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1498) st7701sn_lcd: LCD reset GPIO37 configured, readback=0[0m
+[0;32mI (1498) st7701sn_lcd: Precharge LCD reset on GPIO37 high[0m
+[0;32mI (1498) st7701sn_lcd: LCD reset GPIO37 precharge high, readback=0[0m
+[0;32mI (1498) st7701sn_lcd: Assert LCD reset on GPIO37[0m
+[0;32mI (1498) st7701sn_lcd: LCD reset GPIO37 after assert, readback=0[0m
+[0;32mI (1498) st7701sn_lcd: Release LCD reset on GPIO37[0m
+[0;32mI (1498) st7701sn_lcd: LCD reset GPIO37 after release, readback=0[0m
+[0;32mI (1548) st7701sn_lcd: Send ST7701SN init commands[0m
+[0;32mI (1548) st7701sn_lcd: LCD init cmd[0]: 0x01, len=0[0m
+[0;32mI (1578) usb_hid: MSC storage mount start: APP[0m
+[0;32mI (1578) usb_hid: MSC storage mount complete: USB[0m
+[0;32mI (1578) usb_hid: USB host attached on rhport=1 mounted=1 hid0_ready=1 ctaphid_ready=1[0m
+[0;32mI (1598) usb_hid: HID report descriptor requested instance=0[0m
+[0;32mI (1598) usb_hid: HID report descriptor requested instance=1[0m
+[0;32mI (1638) usb_hid: HID SET_REPORT/OUT instance=0 report_id=1 type=2 len=1[0m
+[0;32mI (1678) st7701sn_lcd: LCD init cmd[1]: 0xFF, len=5[0m
+[0;32mI (1698) st7701sn_lcd: LCD init cmd[2]: 0xEF, len=1[0m
+[0;32mI (1708) st7701sn_lcd: LCD init cmd[3]: 0xFF, len=5[0m
+[0;32mI (1728) st7701sn_lcd: LCD init cmd[4]: 0xC0, len=2[0m
+[0;32mI (1738) st7701sn_lcd: LCD init cmd[5]: 0xC1, len=2[0m
+[0;32mI (1748) st7701sn_lcd: LCD init cmd[6]: 0xC2, len=2[0m
+[0;32mI (1758) st7701sn_lcd: LCD init cmd[7]: 0xC3, len=3[0m
+[0;32mI (1768) st7701sn_lcd: LCD init cmd[8]: 0xCC, len=1[0m
+[0;32mI (1778) st7701sn_lcd: LCD init cmd[9]: 0xB0, len=16[0m
+[0;32mI (1798) st7701sn_lcd: LCD init cmd[10]: 0xB1, len=16[0m
+[0;32mI (1818) st7701sn_lcd: LCD init cmd[11]: 0xFF, len=5[0m
+[0;32mI (1838) st7701sn_lcd: LCD init cmd[12]: 0xB0, len=1[0m
+[0;32mI (1848) st7701sn_lcd: LCD init cmd[13]: 0xB1, len=1[0m
+[0;32mI (1858) st7701sn_lcd: LCD init cmd[14]: 0xB2, len=1[0m
+[0;32mI (1868) st7701sn_lcd: LCD init cmd[15]: 0xB3, len=1[0m
+[0;32mI (1878) st7701sn_lcd: LCD init cmd[16]: 0xB5, len=1[0m
+[0;32mI (1888) st7701sn_lcd: LCD init cmd[17]: 0xB7, len=1[0m
+[0;32mI (1898) st7701sn_lcd: LCD init cmd[18]: 0xB8, len=1[0m
+[0;32mI (1908) st7701sn_lcd: LCD init cmd[19]: 0xC0, len=1[0m
+[0;32mI (1918) st7701sn_lcd: LCD init cmd[20]: 0xC1, len=1[0m
+[0;32mI (1928) st7701sn_lcd: LCD init cmd[21]: 0xC2, len=1[0m
+[0;32mI (1938) st7701sn_lcd: LCD init cmd[22]: 0xD0, len=1[0m
+[0;32mI (1948) st7701sn_lcd: LCD init cmd[23]: 0xE0, len=3[0m
+[0;32mI (1958) st7701sn_lcd: LCD init cmd[24]: 0xE1, len=11[0m
+[0;32mI (1978) st7701sn_lcd: LCD init cmd[25]: 0xE2, len=13[0m
+[0;32mI (1998) st7701sn_lcd: LCD init cmd[26]: 0xE3, len=4[0m
+[0;32mI (2008) st7701sn_lcd: LCD init cmd[27]: 0xE4, len=2[0m
+[0;32mI (2018) st7701sn_lcd: LCD init cmd[28]: 0xE5, len=16[0m
+[0;32mI (2038) st7701sn_lcd: LCD init cmd[29]: 0xE6, len=4[0m
+[0;32mI (2048) st7701sn_lcd: LCD init cmd[30]: 0xE7, len=2[0m
+[0;32mI (2058) st7701sn_lcd: LCD init cmd[31]: 0xE8, len=16[0m
+[0;32mI (2078) st7701sn_lcd: LCD init cmd[32]: 0xEB, len=7[0m
+[0;32mI (2098) st7701sn_lcd: LCD init cmd[33]: 0xEC, len=2[0m
+[0;32mI (2108) st7701sn_lcd: LCD init cmd[34]: 0xED, len=16[0m
+[0;32mI (2128) st7701sn_lcd: LCD init cmd[35]: 0xEF, len=6[0m
+[0;32mI (2148) st7701sn_lcd: LCD init cmd[36]: 0xFF, len=5[0m
+[0;32mI (2168) st7701sn_lcd: LCD init cmd[37]: 0xE8, len=2[0m
+[0;32mI (2178) st7701sn_lcd: LCD init cmd[38]: 0xE8, len=2[0m
+[0;32mI (2208) st7701sn_lcd: LCD init cmd[39]: 0xE8, len=2[0m
+[0;32mI (2218) st7701sn_lcd: LCD init cmd[40]: 0xFF, len=5[0m
+[0;32mI (2238) st7701sn_lcd: LCD init cmd[41]: 0x11, len=0[0m
+[0;32mI (2368) st7701sn_lcd: LCD init cmd[42]: 0x3A, len=1[0m
+[0;32mI (2378) st7701sn_lcd: LCD init cmd[43]: 0x29, len=0[0m
+[0;32mI (2408) st7701sn_lcd: Start MIPI DPI panel init[0m
+[0;32mI (2408) st7701sn_lcd: MIPI DPI panel init done, video stream should be enabled[0m
+[0;32mI (2408) st7701sn_lcd: LCD backlight enabled[0m
+[0;32mI (2408) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2518) gpio: GPIO[7]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2518) ft6336: FT6336 detected, chip_id=0x00 vendor_id=0x00[0m
+[0;32mI (2518) app: Start LVGL[0m
+[0;32mI (2598) port_ui: user presence callback registered[0m
+[0;32mI (2598) ui_fido: FIDO confirm callback registered[0m
+[0;32mI (2598) canokey_port: CanoKey task starting[0m
+[0;32mI (2598) canokey_port: CanoKey LittleFS mount begin[0m
+[0;32mI (2608) canokey_flash: CanoKey LittleFS mounted: label=canokey_lfs offset=0xf00000 size=1048576 blocks=255[0m
+[0;32mI (2608) canokey_port: CanoKey LittleFS mount done[0m
+[0;32mI (2608) canokey_port: CanoKey crypto port init begin[0m
+[0;32mI (2608) canokey_crypto: crypto port ready[0m
+[0;32mI (2608) canokey_crypto: SHA256/HMAC-SHA256/AES-256-ECB selftest passed[0m
+[0;32mI (2608) canokey_port: CanoKey crypto port init done[0m
+[0;32mI (2608) canokey_port: CanoKey APDU buffer init begin[0m
+[0;32mI (2608) canokey_port: CanoKey APDU buffer init done[0m
+[0;32mI (2608) canokey_port: CanoKey device_init begin[0m
+[0;32mI (2608) canokey_port: CanoKey device_init done[0m
+[0;32mI (2608) canokey_port: CanoKey applets_install begin[0m
+[0;32mI (2618) canokey_flash: Platform config loaded from flash offset=0xfff000 len=512[0m
+[0;33mW (2698) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x02(PIN_ATTR) request_len=32 ret=16[0m
+[0;33mW (2698) canokey_fs: CTAP flash attr read data preview len=16/16[0m
+[0;33mW (2698) canokey_fs: 0x4ff38570   03 ac 67 42 16 f3 e1 5c  76 1e e1 a5 e2 55 f0 67  |..gB...\v....U.g|[0m
+[0;33mW (2718) canokey_fs: CTAP flash attr read path=ctap_dc attr=0x00(DC_GENERAL_ATTR) request_len=9 ret=9[0m
+[0;33mW (2718) canokey_fs: CTAP flash attr read data preview len=9/9[0m
+[0;33mW (2718) canokey_fs: 0x4ff38564   00 00 00 00 00 00 00 00  00                       |.........|[0m
+[0;33mW (2718) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x01(SIGN_CTR_ATTR) request_len=4 ret=4[0m
+[0;33mW (2718) canokey_fs: CTAP flash attr read data preview len=4/4[0m
+[0;33mW (2718) canokey_fs: 0x4ff38570   0d 00 00 00                                       |....|[0m
+[0;33mW (2718) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x03(PIN_CTR_ATTR) request_len=1 ret=1[0m
+[0;33mW (2718) canokey_fs: CTAP flash attr read data preview len=1/1[0m
+[0;33mW (2718) canokey_fs: 0x4ff3856f   08                                                |.|[0m
+[0;33mW (2728) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x04(KH_KEY_ATTR) request_len=32 ret=32[0m
+[0;33mW (2728) canokey_fs: CTAP flash attr read data preview len=32/32[0m
+[0;33mW (2728) canokey_fs: 0x4ff38570   d9 1d 04 cd 2b 6d 74 5a  f2 c6 59 c5 df d9 7a 09  |....+mtZ..Y...z.|[0m
+[0;33mW (2728) canokey_fs: 0x4ff38580   03 e1 8d be c6 c4 3b 1a  fc 48 37 95 72 15 82 89  |......;..H7.r...|[0m
+[0;33mW (2728) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x05(HE_KEY_ATTR) request_len=32 ret=32[0m
+[0;33mW (2728) canokey_fs: CTAP flash attr read data preview len=32/32[0m
+[0;33mW (2728) canokey_fs: 0x4ff38570   81 ab 44 7b 92 e8 03 2d  30 bb aa c2 63 9f 57 33  |..D{...-0...c.W3|[0m
+[0;33mW (2728) canokey_fs: 0x4ff38580   6d 5a 71 f5 d9 cc 2e c3  f1 41 85 4c 83 d5 04 88  |mZq......A.L....|[0m
+[0;32mI (2748) canokey_port: CanoKey applets_install done[0m
+[0;32mI (3788) touch: touch count=1 id=0 event=2 x=105 y=321[0m
+[0;32mI (3908) touch: release[0m
+[0;32mI (4468) touch: touch count=1 id=0 event=2 x=265 y=315[0m
+[0;32mI (4558) touch: release[0m
+[0;32mI (4888) touch: touch count=1 id=0 event=2 x=417 y=330[0m
+[0;32mI (4968) touch: release[0m
+[0;32mI (5568) touch: touch count=1 id=0 event=0 x=107 y=433[0m
+[0;32mI (5648) touch: release[0m
+[0;32mI (6178) touch: touch count=1 id=0 event=2 x=381 y=614[0m
+[0;32mI (6178) PIN_PAGE: PIN input: 1234[0m
+[0;32mI (6258) touch: release[0m
+[0;32mI (45908) usb_hid: HID SET_REPORT/OUT instance=1 report_id=0 type=2 len=64[0m
+[0;32mI (45908) usb_hid: CTAPHID OUT raw=0x86 cmd=0x06 len=8[0m
+[0;32mI (45908) canokey_usb: CTAPHID RX cmd=0x06(CTAPHID_INIT) raw=0x86 len=8 mounted=1 ready=1[0m
+[0;32mI (45908) canokey_usb: 0x4ff15d00   ff ff ff ff 86 00 08 36  94 dc 83 17 9e 4c 6a 00  |.......6.....Lj.|[0m
+[0;32mI (45908) canokey_usb: 0x4ff15d10   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (45908) canokey_usb: 0x4ff15d20   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (45908) canokey_usb: 0x4ff15d30   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (45928) canokey_usb: CTAPHID RX dequeue cmd=0x06(CTAPHID_INIT) raw=0x86 len=8 state=IDLE[0m
+[0;32mI (45928) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (45928) canokey_usb: CTAPHID IN cmd=0x06(CTAPHID_INIT) raw=0x86 len=17[0m
+[0;32mI (45928) canokey_usb: 0x4ff20053   36 94 dc 83 17 9e 4c 6a  cc e8 c3 7c 02 01 00 00  |6.....Lj...|....|[0m
+[0;32mI (45928) canokey_usb: 0x4ff20063   04                                                |.|[0m
+[0;32mI (45928) canokey_usb: CTAPHID IN submitted raw=0x86[0m
+[0;32mI (45928) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (45928) usb_hid: HID report complete instance=1 len=64 byte4=0x86[0m
+[0;32mI (45928) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (45928) usb_hid: HID SET_REPORT/OUT instance=1 report_id=0 type=2 len=64[0m
+[0;32mI (45928) usb_hid: CTAPHID OUT raw=0x90 cmd=0x10 len=1[0m
+[0;32mI (45928) canokey_usb: CTAPHID RX cmd=0x10(CTAPHID_CBOR) raw=0x90 len=1 mounted=1 ready=1[0m
+[0;33mW (45928) canokey_usb: CTAPHID RX CBOR cmd=0x04(authenticatorGetInfo) payload_len=1 cid=cce8c37c[0m
+[0;32mI (45928) canokey_usb: 0x4ff15d00   cc e8 c3 7c 90 00 01 04  00 00 00 00 00 00 00 00  |...|............|[0m
+[0;32mI (45928) canokey_usb: 0x4ff15d10   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (45928) canokey_usb: 0x4ff15d20   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (45928) canokey_usb: 0x4ff15d30   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (45948) canokey_usb: CTAPHID RX dequeue cmd=0x10(CTAPHID_CBOR) raw=0x90 len=1 state=IDLE[0m
+[0;33mW (45948) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x02(PIN_ATTR) request_len=1 ret=16[0m
+[0;33mW (45948) canokey_fs: CTAP flash attr read data preview len=1/16[0m
+[0;33mW (45948) canokey_fs: 0x4ff384bf   03                                                |.|[0m
+[0;32mI (46008) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (46008) canokey_usb: CTAPHID IN cmd=0x10(CTAPHID_CBOR) raw=0x90 len=427[0m
+[0;32mI (46008) canokey_usb: CTAPHID IN CTAPHID_CBOR full report[0m
+[0;32mI (46008) canokey_usb: 0x4ff2004c   cc e8 c3 7c 90 01 ab 00  b5 01 84 66 55 32 46 5f  |...|.......fU2F_|[0m
+[0;32mI (46008) canokey_usb: 0x4ff2005c   56 32 68 46 49 44 4f 5f  32 5f 30 68 46 49 44 4f  |V2hFIDO_2_0hFIDO|[0m
+[0;32mI (46008) canokey_usb: 0x4ff2006c   5f 32 5f 31 68 46 49 44  4f 5f 32 5f 33 02 87 68  |_2_1hFIDO_2_3..h|[0m
+[0;32mI (46008) canokey_usb: 0x4ff2007c   63 72 65 64 42 6c 6f 62  6b 63 72 65 64 50 72 6f  |credBlobkcredPro|[0m
+[0;32mI (46018) canokey_usb: CTAPHID IN submitted raw=0x90[0m
+[0;32mI (46018) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (46018) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (46018) usb_hid: HID report complete instance=1 len=64 byte4=0x90[0m
+[0;32mI (46018) canokey_usb: CTAPHID IN cont seq=0x00[0m
+[0;32mI (46018) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (46018) canokey_usb: CTAPHID IN submitted raw=0x00[0m
+[0;32mI (46018) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (46018) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (46018) canokey_usb: CTAPHID IN cont seq=0x01[0m
+[0;32mI (46018) canokey_usb: CTAPHID IN submitted raw=0x01[0m
+[0;32mI (46018) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (46018) usb_hid: HID report complete instance=1 len=64 byte4=0x00[0m
+[0;32mI (46018) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (46018) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (46018) usb_hid: HID report complete instance=1 len=64 byte4=0x01[0m
+[0;32mI (46018) canokey_usb: CTAPHID IN cont seq=0x02[0m
+[0;32mI (46018) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (46018) canokey_usb: CTAPHID IN submitted raw=0x02[0m
+[0;32mI (46018) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (46018) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (46018) canokey_usb: CTAPHID IN cont seq=0x03[0m
+[0;32mI (46018) canokey_usb: CTAPHID IN submitted raw=0x03[0m
+[0;32mI (46018) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (46018) usb_hid: HID report complete instance=1 len=64 byte4=0x02[0m
+[0;32mI (46018) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (46018) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (46018) usb_hid: HID report complete instance=1 len=64 byte4=0x03[0m
+[0;32mI (46018) canokey_usb: CTAPHID IN cont seq=0x04[0m
+[0;32mI (46028) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (46028) canokey_usb: CTAPHID IN submitted raw=0x04[0m
+[0;32mI (46028) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (46028) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (46028) canokey_usb: CTAPHID IN cont seq=0x05[0m
+[0;32mI (46028) canokey_usb: CTAPHID IN submitted raw=0x05[0m
+[0;32mI (46028) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (46028) usb_hid: HID report complete instance=1 len=64 byte4=0x04[0m
+[0;32mI (46028) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (46028) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (46028) usb_hid: HID report complete instance=1 len=64 byte4=0x05[0m
+[0;32mI (46028) canokey_usb: CTAPHID IN cont seq=0x06[0m
+[0;32mI (46028) usb_hid: CTAPHID IN complete len=64[0m
+[0;33mW (46028) canokey_usb: CTAP response full payload status=0x00 len=427[0m
+[0;33mW (46028) canokey_usb: 0x4ff1f712   00 b5 01 84 66 55 32 46  5f 56 32 68 46 49 44 4f  |....fU2F_V2hFIDO|[0m
+[0;33mW (46028) canokey_usb: 0x4ff1f722   5f 32 5f 30 68 46 49 44  4f 5f 32 5f 31 68 46 49  |_2_0hFIDO_2_1hFI|[0m
+[0;33mW (46028) canokey_usb: 0x4ff1f732   44 4f 5f 32 5f 33 02 87  68 63 72 65 64 42 6c 6f  |DO_2_3..hcredBlo|[0m
+[0;33mW (46028) canokey_usb: 0x4ff1f742   62 6b 63 72 65 64 50 72  6f 74 65 63 74 6b 68 6d  |bkcredProtectkhm|[0m
+[0;33mW (46028) canokey_usb: 0x4ff1f752   61 63 2d 73 65 63 72 65  74 6e 68 6d 61 63 2d 73  |ac-secretnhmac-s|[0m
+[0;33mW (46028) canokey_usb: 0x4ff1f762   65 63 72 65 74 2d 6d 63  6c 6c 61 72 67 65 42 6c  |ecret-mcllargeBl|[0m
+[0;33mW (46028) canokey_usb: 0x4ff1f772   6f 62 4b 65 79 6c 6d 69  6e 50 69 6e 4c 65 6e 67  |obKeylminPinLeng|[0m
+[0;33mW (46028) canokey_usb: 0x4ff1f782   74 68 71 74 68 69 72 64  50 61 72 74 79 50 61 79  |thqthirdPartyPay|[0m
+[0;33mW (46028) canokey_usb: 0x4ff1f792   6d 65 6e 74 03 50 24 4e  b2 9e e0 90 4e 49 81 fe  |ment.P$N....NI..|[0m
+[0;33mW (46028) canokey_usb: 0x4ff1f7a2   1f 20 f8 d3 b8 f4 04 a9  62 72 6b f5 68 61 6c 77  |. ......brk.halw|[0m
+[0;33mW (46028) canokey_usb: 0x4ff1f7b2   61 79 73 55 76 f4 68 63  72 65 64 4d 67 6d 74 f5  |aysUv.hcredMgmt.|[0m
+[0;33mW (46028) canokey_usb: 0x4ff1f7c2   69 61 75 74 68 6e 72 43  66 67 f5 69 63 6c 69 65  |iauthnrCfg.iclie|[0m
+[0;33mW (46028) canokey_usb: 0x4ff1f7d2   6e 74 50 69 6e f5 6a 6c  61 72 67 65 42 6c 6f 62  |ntPin.jlargeBlob|[0m
+[0;33mW (46028) canokey_usb: 0x4ff1f7e2   73 f5 6e 70 69 6e 55 76  41 75 74 68 54 6f 6b 65  |s.npinUvAuthToke|[0m
+[0;33mW (46028) canokey_usb: 0x4ff1f7f2   6e f5 6f 73 65 74 4d 69  6e 50 49 4e 4c 65 6e 67  |n.osetMinPINLeng|[0m
+[0;33mW (46028) canokey_usb: 0x4ff1f802   74 68 f5 70 6d 61 6b 65  43 72 65 64 55 76 4e 6f  |th.pmakeCredUvNo|[0m
+[0;33mW (46028) canokey_usb: 0x4ff1f812   74 52 71 64 f5 05 19 05  1c 06 82 01 02 07 10 08  |tRqd............|[0m
+[0;33mW (46028) canokey_usb: 0x4ff1f822   18 46 09 82 63 6e 66 63  63 75 73 62 0a 84 a2 63  |.F..cnfccusb...c|[0m
+[0;33mW (46028) canokey_usb: 0x4ff1f832   61 6c 67 26 64 74 79 70  65 6a 70 75 62 6c 69 63  |alg&dtypejpublic|[0m
+[0;33mW (46038) canokey_usb: 0x4ff1f842   2d 6b 65 79 a2 63 61 6c  67 27 64 74 79 70 65 6a  |-key.calg'dtypej|[0m
+[0;33mW (46038) canokey_usb: 0x4ff1f852   70 75 62 6c 69 63 2d 6b  65 79 a2 63 61 6c 67 38  |public-key.calg8|[0m
+[0;33mW (46038) canokey_usb: 0x4ff1f862   30 64 74 79 70 65 6a 70  75 62 6c 69 63 2d 6b 65  |0dtypejpublic-ke|[0m
+[0;33mW (46038) canokey_usb: 0x4ff1f872   79 a2 63 61 6c 67 38 35  64 74 79 70 65 6a 70 75  |y.calg85dtypejpu|[0m
+[0;33mW (46038) canokey_usb: 0x4ff1f882   62 6c 69 63 2d 6b 65 79  0b 19 10 00 0d 04 0e 18  |blic-key........|[0m
+[0;33mW (46038) canokey_usb: 0x4ff1f892   c9 0f 18 20 10 04 14 19  09 aa 16 81 66 70 61 63  |... ........fpac|[0m
+[0;33mW (46038) canokey_usb: 0x4ff1f8a2   6b 65 64 18 18 f4 18 1a  82 63 6e 66 63 63 75 73  |ked......cnfccus|[0m
+[0;33mW (46038) canokey_usb: 0x4ff1f8b2   62 18 1d 18 3f 18 1f 83  02 03 04                 |b...?......|[0m
+[0;33mW (46038) canokey_usb: CTAP response signature key=3 status=0x00 sigLen=16[0m
+[0;33mW (46038) canokey_usb: 0x4ff1f798   24 4e b2 9e e0 90 4e 49  81 fe 1f 20 f8 d3 b8 f4  |$N....NI... ....|[0m
+[0;32mI (46038) canokey_usb: CTAPHID IN submitted raw=0x06[0m
+[0;32mI (46038) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (46038) usb_hid: HID report complete instance=1 len=64 byte4=0x06[0m
+[0;32mI (46038) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (46038) usb_hid: HID SET_REPORT/OUT instance=1 report_id=0 type=2 len=64[0m
+[0;32mI (46038) usb_hid: CTAPHID OUT raw=0x90 cmd=0x10 len=6[0m
+[0;32mI (46038) canokey_usb: CTAPHID RX cmd=0x10(CTAPHID_CBOR) raw=0x90 len=6 mounted=1 ready=1[0m
+[0;33mW (46038) canokey_usb: CTAPHID RX CBOR cmd=0x06(authenticatorClientPIN) payload_len=6 cid=cce8c37c[0m
+[0;32mI (46038) canokey_usb: 0x4ff15d00   cc e8 c3 7c 90 00 06 06  a2 01 01 02 01 00 00 00  |...|............|[0m
+[0;32mI (46038) canokey_usb: 0x4ff15d10   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (46038) canokey_usb: 0x4ff15d20   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (46038) canokey_usb: 0x4ff15d30   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (46058) canokey_usb: CTAPHID RX dequeue cmd=0x10(CTAPHID_CBOR) raw=0x90 len=6 state=IDLE[0m
+[0;33mW (46058) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x03(PIN_CTR_ATTR) request_len=1 ret=1[0m
+[0;33mW (46058) canokey_fs: CTAP flash attr read data preview len=1/1[0m
+[0;33mW (46058) canokey_fs: 0x4ff382cf   08                                                |.|[0m
+[0;32mI (46058) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (46058) canokey_usb: CTAPHID IN cmd=0x10(CTAPHID_CBOR) raw=0x90 len=4[0m
+[0;32mI (46058) canokey_usb: CTAPHID IN CTAPHID_CBOR full report[0m
+[0;32mI (46058) canokey_usb: 0x4ff2004c   cc e8 c3 7c 90 00 04 00  a1 03 08 00 00 00 00 00  |...|............|[0m
+[0;32mI (46058) canokey_usb: 0x4ff2005c   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (46058) canokey_usb: 0x4ff2006c   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (46058) canokey_usb: 0x4ff2007c   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;33mW (46058) canokey_usb: CTAP response full payload status=0x00 len=4[0m
+[0;33mW (46058) canokey_usb: 0x4ff1f712   00 a1 03 08                                       |....|[0m
+[0;32mI (46058) canokey_usb: CTAPHID IN submitted raw=0x90[0m
+[0;32mI (46058) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (46058) usb_hid: HID report complete instance=1 len=64 byte4=0x90[0m
+[0;32mI (46058) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (51528) usb_hid: HID SET_REPORT/OUT instance=1 report_id=0 type=2 len=64[0m
+[0;32mI (51528) usb_hid: CTAPHID OUT raw=0x86 cmd=0x06 len=8[0m
+[0;32mI (51528) canokey_usb: CTAPHID RX cmd=0x06(CTAPHID_INIT) raw=0x86 len=8 mounted=1 ready=1[0m
+[0;32mI (51528) canokey_usb: 0x4ff15d00   ff ff ff ff 86 00 08 b8  72 c2 18 f1 79 ac f5 00  |........r...y...|[0m
+[0;32mI (51528) canokey_usb: 0x4ff15d10   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (51528) canokey_usb: 0x4ff15d20   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (51538) canokey_usb: 0x4ff15d30   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (51558) canokey_usb: CTAPHID RX dequeue cmd=0x06(CTAPHID_INIT) raw=0x86 len=8 state=IDLE[0m
+[0;32mI (51558) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (51558) canokey_usb: CTAPHID IN cmd=0x06(CTAPHID_INIT) raw=0x86 len=17[0m
+[0;32mI (51558) canokey_usb: 0x4ff20053   b8 72 c2 18 f1 79 ac f5  ad f0 8a a7 02 01 00 00  |.r...y..........|[0m
+[0;32mI (51558) canokey_usb: 0x4ff20063   04                                                |.|[0m
+[0;32mI (51558) canokey_usb: CTAPHID IN submitted raw=0x86[0m
+[0;32mI (51558) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (51558) usb_hid: HID report complete instance=1 len=64 byte4=0x86[0m
+[0;32mI (51558) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (51558) usb_hid: HID SET_REPORT/OUT instance=1 report_id=0 type=2 len=64[0m
+[0;32mI (51558) usb_hid: CTAPHID OUT raw=0x90 cmd=0x10 len=1[0m
+[0;32mI (51558) canokey_usb: CTAPHID RX cmd=0x10(CTAPHID_CBOR) raw=0x90 len=1 mounted=1 ready=1[0m
+[0;33mW (51558) canokey_usb: CTAPHID RX CBOR cmd=0x04(authenticatorGetInfo) payload_len=1 cid=adf08aa7[0m
+[0;32mI (51558) canokey_usb: 0x4ff15d00   ad f0 8a a7 90 00 01 04  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (51558) canokey_usb: 0x4ff15d10   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (51558) canokey_usb: 0x4ff15d20   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (51558) canokey_usb: 0x4ff15d30   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (51578) canokey_usb: CTAPHID RX dequeue cmd=0x10(CTAPHID_CBOR) raw=0x90 len=1 state=IDLE[0m
+[0;33mW (51578) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x02(PIN_ATTR) request_len=1 ret=16[0m
+[0;33mW (51578) canokey_fs: CTAP flash attr read data preview len=1/16[0m
+[0;33mW (51578) canokey_fs: 0x4ff384bf   03                                                |.|[0m
+[0;32mI (51638) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (51638) canokey_usb: CTAPHID IN cmd=0x10(CTAPHID_CBOR) raw=0x90 len=427[0m
+[0;32mI (51638) canokey_usb: CTAPHID IN CTAPHID_CBOR full report[0m
+[0;32mI (51638) canokey_usb: 0x4ff2004c   ad f0 8a a7 90 01 ab 00  b5 01 84 66 55 32 46 5f  |...........fU2F_|[0m
+[0;32mI (51638) canokey_usb: 0x4ff2005c   56 32 68 46 49 44 4f 5f  32 5f 30 68 46 49 44 4f  |V2hFIDO_2_0hFIDO|[0m
+[0;32mI (51638) canokey_usb: 0x4ff2006c   5f 32 5f 31 68 46 49 44  4f 5f 32 5f 33 02 87 68  |_2_1hFIDO_2_3..h|[0m
+[0;32mI (51638) canokey_usb: 0x4ff2007c   63 72 65 64 42 6c 6f 62  6b 63 72 65 64 50 72 6f  |credBlobkcredPro|[0m
+[0;32mI (51638) canokey_usb: CTAPHID IN submitted raw=0x90[0m
+[0;32mI (51638) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (51638) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (51638) usb_hid: HID report complete instance=1 len=64 byte4=0x90[0m
+[0;32mI (51638) canokey_usb: CTAPHID IN cont seq=0x00[0m
+[0;32mI (51638) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (51648) canokey_usb: CTAPHID IN submitted raw=0x00[0m
+[0;32mI (51648) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (51648) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (51648) canokey_usb: CTAPHID IN cont seq=0x01[0m
+[0;32mI (51648) usb_hid: HID report complete instance=1 len=64 byte4=0x00[0m
+[0;32mI (51648) canokey_usb: CTAPHID IN submitted raw=0x01[0m
+[0;32mI (51648) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (51648) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (51648) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (51648) canokey_usb: CTAPHID IN cont seq=0x02[0m
+[0;32mI (51648) usb_hid: HID report complete instance=1 len=64 byte4=0x01[0m
+[0;32mI (51648) canokey_usb: CTAPHID IN submitted raw=0x02[0m
+[0;32mI (51648) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (51648) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (51648) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (51648) canokey_usb: CTAPHID IN cont seq=0x03[0m
+[0;32mI (51648) usb_hid: HID report complete instance=1 len=64 byte4=0x02[0m
+[0;32mI (51648) canokey_usb: CTAPHID IN submitted raw=0x03[0m
+[0;32mI (51648) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (51648) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (51648) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (51648) canokey_usb: CTAPHID IN cont seq=0x04[0m
+[0;32mI (51648) usb_hid: HID report complete instance=1 len=64 byte4=0x03[0m
+[0;32mI (51648) canokey_usb: CTAPHID IN submitted raw=0x04[0m
+[0;32mI (51648) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (51648) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (51648) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (51648) canokey_usb: CTAPHID IN cont seq=0x05[0m
+[0;32mI (51648) usb_hid: HID report complete instance=1 len=64 byte4=0x04[0m
+[0;32mI (51648) canokey_usb: CTAPHID IN submitted raw=0x05[0m
+[0;32mI (51658) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (51658) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (51658) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (51658) canokey_usb: CTAPHID IN cont seq=0x06[0m
+[0;32mI (51658) usb_hid: HID report complete instance=1 len=64 byte4=0x05[0m
+[0;33mW (51658) canokey_usb: CTAP response full payload status=0x00 len=427[0m
+[0;32mI (51658) usb_hid: CTAPHID IN complete len=64[0m
+[0;33mW (51658) canokey_usb: 0x4ff1f712   00 b5 01 84 66 55 32 46  5f 56 32 68 46 49 44 4f  |....fU2F_V2hFIDO|[0m
+[0;33mW (51658) canokey_usb: 0x4ff1f722   5f 32 5f 30 68 46 49 44  4f 5f 32 5f 31 68 46 49  |_2_0hFIDO_2_1hFI|[0m
+[0;33mW (51658) canokey_usb: 0x4ff1f732   44 4f 5f 32 5f 33 02 87  68 63 72 65 64 42 6c 6f  |DO_2_3..hcredBlo|[0m
+[0;33mW (51658) canokey_usb: 0x4ff1f742   62 6b 63 72 65 64 50 72  6f 74 65 63 74 6b 68 6d  |bkcredProtectkhm|[0m
+[0;33mW (51658) canokey_usb: 0x4ff1f752   61 63 2d 73 65 63 72 65  74 6e 68 6d 61 63 2d 73  |ac-secretnhmac-s|[0m
+[0;33mW (51658) canokey_usb: 0x4ff1f762   65 63 72 65 74 2d 6d 63  6c 6c 61 72 67 65 42 6c  |ecret-mcllargeBl|[0m
+[0;33mW (51658) canokey_usb: 0x4ff1f772   6f 62 4b 65 79 6c 6d 69  6e 50 69 6e 4c 65 6e 67  |obKeylminPinLeng|[0m
+[0;33mW (51658) canokey_usb: 0x4ff1f782   74 68 71 74 68 69 72 64  50 61 72 74 79 50 61 79  |thqthirdPartyPay|[0m
+[0;33mW (51658) canokey_usb: 0x4ff1f792   6d 65 6e 74 03 50 24 4e  b2 9e e0 90 4e 49 81 fe  |ment.P$N....NI..|[0m
+[0;33mW (51658) canokey_usb: 0x4ff1f7a2   1f 20 f8 d3 b8 f4 04 a9  62 72 6b f5 68 61 6c 77  |. ......brk.halw|[0m
+[0;33mW (51658) canokey_usb: 0x4ff1f7b2   61 79 73 55 76 f4 68 63  72 65 64 4d 67 6d 74 f5  |aysUv.hcredMgmt.|[0m
+[0;33mW (51658) canokey_usb: 0x4ff1f7c2   69 61 75 74 68 6e 72 43  66 67 f5 69 63 6c 69 65  |iauthnrCfg.iclie|[0m
+[0;33mW (51658) canokey_usb: 0x4ff1f7d2   6e 74 50 69 6e f5 6a 6c  61 72 67 65 42 6c 6f 62  |ntPin.jlargeBlob|[0m
+[0;33mW (51658) canokey_usb: 0x4ff1f7e2   73 f5 6e 70 69 6e 55 76  41 75 74 68 54 6f 6b 65  |s.npinUvAuthToke|[0m
+[0;33mW (51658) canokey_usb: 0x4ff1f7f2   6e f5 6f 73 65 74 4d 69  6e 50 49 4e 4c 65 6e 67  |n.osetMinPINLeng|[0m
+[0;33mW (51658) canokey_usb: 0x4ff1f802   74 68 f5 70 6d 61 6b 65  43 72 65 64 55 76 4e 6f  |th.pmakeCredUvNo|[0m
+[0;33mW (51658) canokey_usb: 0x4ff1f812   74 52 71 64 f5 05 19 05  1c 06 82 01 02 07 10 08  |tRqd............|[0m
+[0;33mW (51658) canokey_usb: 0x4ff1f822   18 46 09 82 63 6e 66 63  63 75 73 62 0a 84 a2 63  |.F..cnfccusb...c|[0m
+[0;33mW (51658) canokey_usb: 0x4ff1f832   61 6c 67 26 64 74 79 70  65 6a 70 75 62 6c 69 63  |alg&dtypejpublic|[0m
+[0;33mW (51658) canokey_usb: 0x4ff1f842   2d 6b 65 79 a2 63 61 6c  67 27 64 74 79 70 65 6a  |-key.calg'dtypej|[0m
+[0;33mW (51658) canokey_usb: 0x4ff1f852   70 75 62 6c 69 63 2d 6b  65 79 a2 63 61 6c 67 38  |public-key.calg8|[0m
+[0;33mW (51658) canokey_usb: 0x4ff1f862   30 64 74 79 70 65 6a 70  75 62 6c 69 63 2d 6b 65  |0dtypejpublic-ke|[0m
+[0;33mW (51658) canokey_usb: 0x4ff1f872   79 a2 63 61 6c 67 38 35  64 74 79 70 65 6a 70 75  |y.calg85dtypejpu|[0m
+[0;33mW (51658) canokey_usb: 0x4ff1f882   62 6c 69 63 2d 6b 65 79  0b 19 10 00 0d 04 0e 18  |blic-key........|[0m
+[0;33mW (51658) canokey_usb: 0x4ff1f892   c9 0f 18 20 10 04 14 19  09 aa 16 81 66 70 61 63  |... ........fpac|[0m
+[0;33mW (51658) canokey_usb: 0x4ff1f8a2   6b 65 64 18 18 f4 18 1a  82 63 6e 66 63 63 75 73  |ked......cnfccus|[0m
+[0;33mW (51658) canokey_usb: 0x4ff1f8b2   62 18 1d 18 3f 18 1f 83  02 03 04                 |b...?......|[0m
+[0;33mW (51658) canokey_usb: CTAP response signature key=3 status=0x00 sigLen=16[0m
+[0;33mW (51668) canokey_usb: 0x4ff1f798   24 4e b2 9e e0 90 4e 49  81 fe 1f 20 f8 d3 b8 f4  |$N....NI... ....|[0m
+[0;32mI (51668) canokey_usb: CTAPHID IN submitted raw=0x06[0m
+[0;32mI (51668) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (51668) usb_hid: HID report complete instance=1 len=64 byte4=0x06[0m
+[0;32mI (51668) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (51668) usb_hid: HID SET_REPORT/OUT instance=1 report_id=0 type=2 len=64[0m
+[0;32mI (51668) usb_hid: CTAPHID OUT raw=0x90 cmd=0x10 len=6[0m
+[0;32mI (51668) canokey_usb: CTAPHID RX cmd=0x10(CTAPHID_CBOR) raw=0x90 len=6 mounted=1 ready=1[0m
+[0;33mW (51668) canokey_usb: CTAPHID RX CBOR cmd=0x06(authenticatorClientPIN) payload_len=6 cid=adf08aa7[0m
+[0;32mI (51668) canokey_usb: 0x4ff15d00   ad f0 8a a7 90 00 06 06  a2 01 01 02 02 00 00 00  |................|[0m
+[0;32mI (51668) canokey_usb: 0x4ff15d10   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (51668) canokey_usb: 0x4ff15d20   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (51668) canokey_usb: 0x4ff15d30   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (51688) canokey_usb: CTAPHID RX dequeue cmd=0x10(CTAPHID_CBOR) raw=0x90 len=6 state=IDLE[0m
+[0;32mI (51688) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (51688) canokey_usb: CTAPHID IN cmd=0x10(CTAPHID_CBOR) raw=0x90 len=81[0m
+[0;32mI (51688) canokey_usb: CTAPHID IN CTAPHID_CBOR full report[0m
+[0;32mI (51688) canokey_usb: 0x4ff2004c   ad f0 8a a7 90 00 51 00  a1 01 a5 01 02 03 38 18  |......Q.......8.|[0m
+[0;32mI (51688) canokey_usb: 0x4ff2005c   20 01 21 58 20 47 b9 ab  5e 1a ad 08 41 fa f2 af  | .!X G..^...A...|[0m
+[0;32mI (51688) canokey_usb: 0x4ff2006c   98 e2 25 af 20 f5 2f c6  1d 09 b2 7d b0 92 1f cd  |..%. ./....}....|[0m
+[0;32mI (51688) canokey_usb: 0x4ff2007c   f5 f4 16 c2 90 22 58 20  79 f1 a6 6b 2e 64 a9 0f  |....."X y..k.d..|[0m
+[0;32mI (51688) canokey_usb: CTAPHID IN submitted raw=0x90[0m
+[0;32mI (51688) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (51688) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (51688) canokey_usb: CTAPHID IN cont seq=0x00[0m
+[0;32mI (51688) usb_hid: HID report complete instance=1 len=64 byte4=0x90[0m
+[0;33mW (51688) canokey_usb: CTAP response full payload status=0x00 len=81[0m
+[0;32mI (51688) usb_hid: CTAPHID IN complete len=64[0m
+[0;33mW (51688) canokey_usb: 0x4ff1f712   00 a1 01 a5 01 02 03 38  18 20 01 21 58 20 47 b9  |.......8. .!X G.|[0m
+[0;33mW (51688) canokey_usb: 0x4ff1f722   ab 5e 1a ad 08 41 fa f2  af 98 e2 25 af 20 f5 2f  |.^...A.....%. ./|[0m
+[0;33mW (51688) canokey_usb: 0x4ff1f732   c6 1d 09 b2 7d b0 92 1f  cd f5 f4 16 c2 90 22 58  |....}........."X|[0m
+[0;33mW (51688) canokey_usb: 0x4ff1f742   20 79 f1 a6 6b 2e 64 a9  0f a8 59 a7 4e 5e 52 5e  | y..k.d...Y.N^R^|[0m
+[0;33mW (51688) canokey_usb: 0x4ff1f752   c0 47 af 63 c7 de 11 9b  ff 30 63 3f 1b 3a a6 26  |.G.c.....0c?.:.&|[0m
+[0;33mW (51688) canokey_usb: 0x4ff1f762   5e                                                |^|[0m
+[0;32mI (51688) canokey_usb: CTAPHID IN submitted raw=0x00[0m
+[0;32mI (51688) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (51688) usb_hid: HID report complete instance=1 len=64 byte4=0x00[0m
+[0;32mI (51688) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (51688) usb_hid: HID SET_REPORT/OUT instance=1 report_id=0 type=2 len=64[0m
+[0;32mI (51688) usb_hid: CTAPHID OUT raw=0x90 cmd=0x10 len=103[0m
+[0;32mI (51688) canokey_usb: CTAPHID RX cmd=0x10(CTAPHID_CBOR) raw=0x90 len=103 mounted=1 ready=1[0m
+[0;33mW (51688) canokey_usb: CTAPHID RX CBOR cmd=0x06(authenticatorClientPIN) payload_len=103 cid=adf08aa7[0m
+[0;32mI (51688) canokey_usb: 0x4ff15d00   ad f0 8a a7 90 00 67 06  a4 01 01 02 05 03 a5 01  |......g.........|[0m
+[0;32mI (51688) canokey_usb: 0x4ff15d10   02 03 38 18 20 01 21 58  20 ec 0a 58 d2 26 2c be  |..8. .!X ..X.&,.|[0m
+[0;32mI (51698) canokey_usb: 0x4ff15d20   3b f0 d2 8e cd db 70 81  e5 63 5e e2 51 2b c0 05  |;.....p..c^.Q+..|[0m
+[0;32mI (51698) canokey_usb: 0x4ff15d30   70 2c b3 ce fb 7d de 29  b8 22 58 20 68 bb c5 51  |p,...}.)."X h..Q|[0m
+[0;32mI (51698) usb_hid: HID SET_REPORT/OUT instance=1 report_id=0 type=2 len=64[0m
+[0;32mI (51698) canokey_usb: CTAPHID RX cont seq=0x00[0m
+[0;32mI (51708) canokey_usb: CTAPHID RX dequeue cmd=0x10(CTAPHID_CBOR) raw=0x90 len=103 state=IDLE[0m
+[0;32mI (51708) canokey_usb: CTAPHID RX dequeue cont seq=0x00 state=IDLE[0m
+[0;33mW (51708) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x02(PIN_ATTR) request_len=1 ret=16[0m
+[0;33mW (51708) canokey_fs: CTAP flash attr read data preview len=1/16[0m
+[0;33mW (51708) canokey_fs: 0x4ff382cf   03                                                |.|[0m
+[0;33mW (51708) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x03(PIN_CTR_ATTR) request_len=1 ret=1[0m
+[0;33mW (51708) canokey_fs: CTAP flash attr read data preview len=1/1[0m
+[0;33mW (51708) canokey_fs: 0x4ff382cf   08                                                |.|[0m
+[0;33mW (51718) canokey_fs: CTAP flash attr write path=ctap_cert attr=0x03(PIN_CTR_ATTR) len=1[0m
+[0;33mW (51718) canokey_fs: 0x4ff382cf   07                                                |.|[0m
+[0;33mW (51728) canokey_fs: CTAP flash attr write result path=ctap_cert attr=0x03(PIN_CTR_ATTR) ret=0[0m
+[0;33mW (51728) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x02(PIN_ATTR) request_len=16 ret=16[0m
+[0;33mW (51728) canokey_fs: CTAP flash attr read data preview len=16/16[0m
+[0;33mW (51728) canokey_fs: 0x4ff382c0   03 ac 67 42 16 f3 e1 5c  76 1e e1 a5 e2 55 f0 67  |..gB...\v....U.g|[0m
+[0;33mW (51728) canokey_fs: CTAP flash attr write path=ctap_cert attr=0x03(PIN_CTR_ATTR) len=1[0m
+[0;33mW (51728) canokey_fs: 0x4ff382cf   08                                                |.|[0m
+[0;33mW (51728) canokey_fs: CTAP flash attr write result path=ctap_cert attr=0x03(PIN_CTR_ATTR) ret=0[0m
+[0;32mI (51728) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (51728) canokey_usb: CTAPHID IN cmd=0x10(CTAPHID_CBOR) raw=0x90 len=37[0m
+[0;32mI (51728) canokey_usb: CTAPHID IN CTAPHID_CBOR full report[0m
+[0;32mI (51728) canokey_usb: 0x4ff2004c   ad f0 8a a7 90 00 25 00  a1 02 58 20 59 23 ff b0  |......%...X Y#..|[0m
+[0;32mI (51728) canokey_usb: 0x4ff2005c   d8 bd 09 ac e4 cf f2 94  c3 04 c4 67 e1 4d 3e 64  |...........g.M>d|[0m
+[0;32mI (51738) canokey_usb: 0x4ff2006c   e9 18 33 99 dd 67 1a 3f  36 b7 03 27 00 00 00 00  |..3..g.?6..'....|[0m
+[0;32mI (51738) canokey_usb: 0x4ff2007c   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;33mW (51738) canokey_usb: CTAP response full payload status=0x00 len=37[0m
+[0;33mW (51738) canokey_usb: 0x4ff1f712   00 a1 02 58 20 59 23 ff  b0 d8 bd 09 ac e4 cf f2  |...X Y#.........|[0m
+[0;33mW (51738) canokey_usb: 0x4ff1f722   94 c3 04 c4 67 e1 4d 3e  64 e9 18 33 99 dd 67 1a  |....g.M>d..3..g.|[0m
+[0;33mW (51738) canokey_usb: 0x4ff1f732   3f 36 b7 03 27                                    |?6..'|[0m
+[0;33mW (51738) canokey_usb: CTAP response authData too short key=2 status=0x00 len=32[0m
+[0;32mI (51738) canokey_usb: CTAPHID IN submitted raw=0x90[0m
+[0;32mI (51738) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (51738) usb_hid: HID report complete instance=1 len=64 byte4=0x90[0m
+[0;32mI (51738) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (51738) usb_hid: HID SET_REPORT/OUT instance=1 report_id=0 type=2 len=64[0m
+[0;32mI (51738) usb_hid: CTAPHID OUT raw=0x90 cmd=0x10 len=240[0m
+[0;32mI (51738) canokey_usb: CTAPHID RX cmd=0x10(CTAPHID_CBOR) raw=0x90 len=240 mounted=1 ready=1[0m
+[0;33mW (51738) canokey_usb: CTAPHID RX CBOR cmd=0x01(authenticatorMakeCredential) payload_len=240 cid=adf08aa7[0m
+[0;32mI (51738) canokey_usb: 0x4ff15d00   ad f0 8a a7 90 00 f0 01  a6 01 58 20 51 4c 90 93  |..........X QL..|[0m
+[0;32mI (51738) canokey_usb: 0x4ff15d10   8e 94 17 ac 93 ea 4e cc  f7 45 f8 57 23 8d 0b f6  |......N..E.W#...|[0m
+[0;32mI (51738) canokey_usb: 0x4ff15d20   e9 af 35 1b 9f 3e a0 34  41 a3 eb 6a 02 a2 62 69  |..5..>.4A..j..bi|[0m
+[0;32mI (51738) canokey_usb: 0x4ff15d30   64 6b 77 65 62 61 75 74  68 6e 2e 69 6f 64 6e 61  |dkwebauthn.iodna|[0m
+[0;32mI (51738) usb_hid: HID SET_REPORT/OUT instance=1 report_id=0 type=2 len=64[0m
+[0;32mI (51738) canokey_usb: CTAPHID RX cont seq=0x00[0m
+[0;32mI (51748) usb_hid: HID SET_REPORT/OUT instance=1 report_id=0 type=2 len=64[0m
+[0;32mI (51748) canokey_usb: CTAPHID RX cont seq=0x01[0m
+[0;32mI (51748) usb_hid: HID SET_REPORT/OUT instance=1 report_id=0 type=2 len=64[0m
+[0;32mI (51748) canokey_usb: CTAPHID RX cont seq=0x02[0m
+[0;32mI (51748) usb_hid: HID SET_REPORT/OUT instance=1 report_id=0 type=2 len=64[0m
+[0;32mI (51748) canokey_usb: CTAPHID RX cont seq=0x03[0m
+[0;33mW (51748) canokey_usb: CTAP request clientDataHash captured cmd=0x01(authenticatorMakeCredential)[0m
+[0;33mW (51748) canokey_usb: 0x4ff1eedc   51 4c 90 93 8e 94 17 ac  93 ea 4e cc f7 45 f8 57  |QL........N..E.W|[0m
+[0;33mW (51748) canokey_usb: 0x4ff1eeec   23 8d 0b f6 e9 af 35 1b  9f 3e a0 34 41 a3 eb 6a  |#.....5..>.4A..j|[0m
+[0;33mW (51748) canokey_usb: CTAP makeCredential pubKeyCredParams count=3[0m
+[0;33mW (51748) canokey_usb: CTAP makeCredential pubKeyCredParams[0].alg=-8[0m
+[0;33mW (51748) canokey_usb: CTAP makeCredential force alg EdDSA(-8) -> ES256(-7) at offset=157[0m
+[0;33mW (51748) canokey_usb: CTAP makeCredential pubKeyCredParams[1].alg=-7[0m
+[0;33mW (51748) canokey_usb: CTAP makeCredential pubKeyCredParams[2].alg=-257[0m
+[0;33mW (51748) canokey_usb: CTAP makeCredential patched request enqueue reports=5 len=240[0m
+[0;33mW (51748) canokey_usb: CTAP makeCredential patched request enqueued len=240[0m
+[0;32mI (51758) canokey_usb: CTAPHID RX dequeue cmd=0x10(CTAPHID_CBOR) raw=0x90 len=240 state=IDLE[0m
+[0;32mI (51758) canokey_usb: CTAPHID RX dequeue cont seq=0x00 state=IDLE[0m
+[0;32mI (51758) canokey_usb: CTAPHID RX dequeue cont seq=0x01 state=IDLE[0m
+[0;32mI (51758) canokey_usb: CTAPHID RX dequeue cont seq=0x02 state=IDLE[0m
+[0;32mI (51758) canokey_usb: CTAPHID RX dequeue cont seq=0x03 state=IDLE[0m
+[0;32mI (51758) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (51758) canokey_usb: CTAPHID IN cmd=0x3b(CTAPHID_KEEPALIVE) raw=0xbb len=1[0m
+[0;33mW (51758) canokey_usb: CTAPHID KEEPALIVE status=1(PROCESSING) cid=adf08aa7[0m
+[0;32mI (51758) canokey_usb: CTAPHID IN submitted raw=0xbb[0m
+[0;32mI (51758) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;33mW (51758) canokey_fs: CTAP flash attr read path=ctap_dc attr=0x00(DC_GENERAL_ATTR) request_len=9 ret=9[0m
+[0;32mI (51758) usb_hid: HID report complete instance=1 len=64 byte4=0xbb[0m
+[0;33mW (51758) canokey_fs: CTAP flash attr read data preview len=9/9[0m
+[0;32mI (51758) usb_hid: CTAPHID IN complete len=64[0m
+[0;33mW (51758) canokey_fs: 0x4ff37c44   00 00 00 00 00 00 00 00  00                       |.........|[0m
+[0;32mI (51758) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (51758) canokey_usb: CTAPHID IN cmd=0x3b(CTAPHID_KEEPALIVE) raw=0xbb len=1[0m
+[0;33mW (51758) canokey_usb: CTAPHID KEEPALIVE status=1(PROCESSING) cid=adf08aa7[0m
+[0;32mI (51758) canokey_usb: CTAPHID IN submitted raw=0xbb[0m
+[0;32mI (51758) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;33mW (51768) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x02(PIN_ATTR) request_len=1 ret=16[0m
+[0;32mI (51768) usb_hid: HID report complete instance=1 len=64 byte4=0xbb[0m
+[0;33mW (51768) canokey_fs: CTAP flash attr read data preview len=1/16[0m
+[0;32mI (51768) usb_hid: CTAPHID IN complete len=64[0m
+[0;33mW (51768) canokey_fs: 0x4ff37c4f   03                                                |.|[0m
+[0;33mW (51768) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x02(PIN_ATTR) request_len=1 ret=16[0m
+[0;33mW (51768) canokey_fs: CTAP flash attr read data preview len=1/16[0m
+[0;33mW (51768) canokey_fs: 0x4ff37c4f   03                                                |.|[0m
+[0;33mW (51768) port_ui: user presence request hook entry=1 callback=1[0m
+[0;33mW (51768) ui_fido: user presence request entry=1 dialog=0 pending=0[0m
+[0;32mI (51768) ui_fido: schedule FIDO confirm dialog cmd=0x01 title=FIDO Registration[0m
+[0;33mW (51778) ui_fido: show FIDO confirm dialog[0m
+[0;32mI (51778) ui_fido: FIDO confirm dialog ready[0m
+[0;32mI (51868) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (51868) canokey_usb: CTAPHID IN cmd=0x3b(CTAPHID_KEEPALIVE) raw=0xbb len=1[0m
+[0;33mW (51868) canokey_usb: CTAPHID KEEPALIVE status=2(UPNEEDED) cid=adf08aa7[0m
+[0;32mI (51868) canokey_usb: CTAPHID IN submitted raw=0xbb[0m
+[0;32mI (51878) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (51878) usb_hid: HID report complete instance=1 len=64 byte4=0xbb[0m
+[0;32mI (51878) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (51968) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (51968) canokey_usb: CTAPHID IN cmd=0x3b(CTAPHID_KEEPALIVE) raw=0xbb len=1[0m
+[0;33mW (51968) canokey_usb: CTAPHID KEEPALIVE status=2(UPNEEDED) cid=adf08aa7[0m
+[0;32mI (51968) canokey_usb: CTAPHID IN submitted raw=0xbb[0m
+[0;32mI (51978) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (51978) usb_hid: HID report complete instance=1 len=64 byte4=0xbb[0m
+[0;32mI (51978) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (52068) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (52068) canokey_usb: CTAPHID IN cmd=0x3b(CTAPHID_KEEPALIVE) raw=0xbb len=1[0m
+[0;33mW (52068) canokey_usb: CTAPHID KEEPALIVE status=2(UPNEEDED) cid=adf08aa7[0m
+[0;32mI (52068) canokey_usb: CTAPHID IN submitted raw=0xbb[0m
+[0;32mI (52078) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (52078) usb_hid: HID report complete instance=1 len=64 byte4=0xbb[0m
+[0;32mI (52078) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (52168) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (52168) canokey_usb: CTAPHID IN cmd=0x3b(CTAPHID_KEEPALIVE) raw=0xbb len=1[0m
+[0;33mW (52168) canokey_usb: CTAPHID KEEPALIVE status=2(UPNEEDED) cid=adf08aa7[0m
+[0;32mI (52168) canokey_usb: CTAPHID IN submitted raw=0xbb[0m
+[0;32mI (52178) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (52178) usb_hid: HID report complete instance=1 len=64 byte4=0xbb[0m
+[0;32mI (52178) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (52268) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (52268) canokey_usb: CTAPHID IN cmd=0x3b(CTAPHID_KEEPALIVE) raw=0xbb len=1[0m
+[0;33mW (52268) canokey_usb: CTAPHID KEEPALIVE status=2(UPNEEDED) cid=adf08aa7[0m
+[0;32mI (52268) canokey_usb: CTAPHID IN submitted raw=0xbb[0m
+[0;32mI (52278) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (52278) usb_hid: HID report complete instance=1 len=64 byte4=0xbb[0m
+[0;32mI (52278) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (52368) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (52368) canokey_usb: CTAPHID IN cmd=0x3b(CTAPHID_KEEPALIVE) raw=0xbb len=1[0m
+[0;33mW (52368) canokey_usb: CTAPHID KEEPALIVE status=2(UPNEEDED) cid=adf08aa7[0m
+[0;32mI (52368) canokey_usb: CTAPHID IN submitted raw=0xbb[0m
+[0;32mI (52378) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (52378) usb_hid: HID report complete instance=1 len=64 byte4=0xbb[0m
+[0;32mI (52378) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (52468) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (52468) canokey_usb: CTAPHID IN cmd=0x3b(CTAPHID_KEEPALIVE) raw=0xbb len=1[0m
+[0;33mW (52468) canokey_usb: CTAPHID KEEPALIVE status=2(UPNEEDED) cid=adf08aa7[0m
+[0;32mI (52468) canokey_usb: CTAPHID IN submitted raw=0xbb[0m
+[0;32mI (52478) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (52478) usb_hid: HID report complete instance=1 len=64 byte4=0xbb[0m
+[0;32mI (52478) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (52568) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (52568) canokey_usb: CTAPHID IN cmd=0x3b(CTAPHID_KEEPALIVE) raw=0xbb len=1[0m
+[0;33mW (52568) canokey_usb: CTAPHID KEEPALIVE status=2(UPNEEDED) cid=adf08aa7[0m
+[0;32mI (52568) canokey_usb: CTAPHID IN submitted raw=0xbb[0m
+[0;32mI (52578) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (52578) usb_hid: HID report complete instance=1 len=64 byte4=0xbb[0m
+[0;32mI (52578) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (52668) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (52668) canokey_usb: CTAPHID IN cmd=0x3b(CTAPHID_KEEPALIVE) raw=0xbb len=1[0m
+[0;33mW (52668) canokey_usb: CTAPHID KEEPALIVE status=2(UPNEEDED) cid=adf08aa7[0m
+[0;32mI (52668) canokey_usb: CTAPHID IN submitted raw=0xbb[0m
+[0;32mI (52678) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (52678) usb_hid: HID report complete instance=1 len=64 byte4=0xbb[0m
+[0;32mI (52678) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (52768) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (52768) canokey_usb: CTAPHID IN cmd=0x3b(CTAPHID_KEEPALIVE) raw=0xbb len=1[0m
+[0;33mW (52768) canokey_usb: CTAPHID KEEPALIVE status=2(UPNEEDED) cid=adf08aa7[0m
+[0;32mI (52768) canokey_usb: CTAPHID IN submitted raw=0xbb[0m
+[0;32mI (52778) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (52778) usb_hid: HID report complete instance=1 len=64 byte4=0xbb[0m
+[0;32mI (52778) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (52868) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (52868) canokey_usb: CTAPHID IN cmd=0x3b(CTAPHID_KEEPALIVE) raw=0xbb len=1[0m
+[0;33mW (52868) canokey_usb: CTAPHID KEEPALIVE status=2(UPNEEDED) cid=adf08aa7[0m
+[0;32mI (52868) canokey_usb: CTAPHID IN submitted raw=0xbb[0m
+[0;32mI (52878) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (52878) usb_hid: HID report complete instance=1 len=64 byte4=0xbb[0m
+[0;32mI (52878) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (52968) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (52968) canokey_usb: CTAPHID IN cmd=0x3b(CTAPHID_KEEPALIVE) raw=0xbb len=1[0m
+[0;33mW (52968) canokey_usb: CTAPHID KEEPALIVE status=2(UPNEEDED) cid=adf08aa7[0m
+[0;32mI (52968) canokey_usb: CTAPHID IN submitted raw=0xbb[0m
+[0;32mI (52978) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (52978) usb_hid: HID report complete instance=1 len=64 byte4=0xbb[0m
+[0;32mI (52978) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (53068) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (53068) canokey_usb: CTAPHID IN cmd=0x3b(CTAPHID_KEEPALIVE) raw=0xbb len=1[0m
+[0;33mW (53068) canokey_usb: CTAPHID KEEPALIVE status=2(UPNEEDED) cid=adf08aa7[0m
+[0;32mI (53068) canokey_usb: CTAPHID IN submitted raw=0xbb[0m
+[0;32mI (53078) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (53078) usb_hid: HID report complete instance=1 len=64 byte4=0xbb[0m
+[0;32mI (53078) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (53168) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (53168) canokey_usb: CTAPHID IN cmd=0x3b(CTAPHID_KEEPALIVE) raw=0xbb len=1[0m
+[0;33mW (53168) canokey_usb: CTAPHID KEEPALIVE status=2(UPNEEDED) cid=adf08aa7[0m
+[0;32mI (53168) canokey_usb: CTAPHID IN submitted raw=0xbb[0m
+[0;32mI (53178) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (53178) usb_hid: HID report complete instance=1 len=64 byte4=0xbb[0m
+[0;32mI (53178) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (53268) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (53268) canokey_usb: CTAPHID IN cmd=0x3b(CTAPHID_KEEPALIVE) raw=0xbb len=1[0m
+[0;33mW (53268) canokey_usb: CTAPHID KEEPALIVE status=2(UPNEEDED) cid=adf08aa7[0m
+[0;32mI (53268) canokey_usb: CTAPHID IN submitted raw=0xbb[0m
+[0;32mI (53278) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (53278) usb_hid: HID report complete instance=1 len=64 byte4=0xbb[0m
+[0;32mI (53278) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (53368) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (53368) canokey_usb: CTAPHID IN cmd=0x3b(CTAPHID_KEEPALIVE) raw=0xbb len=1[0m
+[0;33mW (53368) canokey_usb: CTAPHID KEEPALIVE status=2(UPNEEDED) cid=adf08aa7[0m
+[0;32mI (53368) canokey_usb: CTAPHID IN submitted raw=0xbb[0m
+[0;32mI (53378) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (53378) usb_hid: HID report complete instance=1 len=64 byte4=0xbb[0m
+[0;32mI (53378) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (53418) touch: touch count=1 id=0 event=2 x=329 y=411[0m
+[0;32mI (53468) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (53468) canokey_usb: CTAPHID IN cmd=0x3b(CTAPHID_KEEPALIVE) raw=0xbb len=1[0m
+[0;33mW (53468) canokey_usb: CTAPHID KEEPALIVE status=2(UPNEEDED) cid=adf08aa7[0m
+[0;32mI (53468) canokey_usb: CTAPHID IN submitted raw=0xbb[0m
+[0;32mI (53478) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (53478) usb_hid: HID report complete instance=1 len=64 byte4=0xbb[0m
+[0;32mI (53478) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (53518) touch: release[0m
+[0;32mI (53568) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (53568) canokey_usb: CTAPHID IN cmd=0x3b(CTAPHID_KEEPALIVE) raw=0xbb len=1[0m
+[0;33mW (53568) canokey_usb: CTAPHID KEEPALIVE status=2(UPNEEDED) cid=adf08aa7[0m
+[0;32mI (53568) canokey_usb: CTAPHID IN submitted raw=0xbb[0m
+[0;32mI (53578) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (53578) usb_hid: HID report complete instance=1 len=64 byte4=0xbb[0m
+[0;32mI (53578) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (53668) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (53668) canokey_usb: CTAPHID IN cmd=0x3b(CTAPHID_KEEPALIVE) raw=0xbb len=1[0m
+[0;33mW (53668) canokey_usb: CTAPHID KEEPALIVE status=2(UPNEEDED) cid=adf08aa7[0m
+[0;32mI (53668) canokey_usb: CTAPHID IN submitted raw=0xbb[0m
+[0;32mI (53678) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (53678) usb_hid: HID report complete instance=1 len=64 byte4=0xbb[0m
+[0;32mI (53678) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (53768) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (53768) canokey_usb: CTAPHID IN cmd=0x3b(CTAPHID_KEEPALIVE) raw=0xbb len=1[0m
+[0;33mW (53768) canokey_usb: CTAPHID KEEPALIVE status=2(UPNEEDED) cid=adf08aa7[0m
+[0;32mI (53768) canokey_usb: CTAPHID IN submitted raw=0xbb[0m
+[0;32mI (53778) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (53778) usb_hid: HID report complete instance=1 len=64 byte4=0xbb[0m
+[0;32mI (53778) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (53868) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (53868) canokey_usb: CTAPHID IN cmd=0x3b(CTAPHID_KEEPALIVE) raw=0xbb len=1[0m
+[0;33mW (53868) canokey_usb: CTAPHID KEEPALIVE status=2(UPNEEDED) cid=adf08aa7[0m
+[0;32mI (53868) canokey_usb: CTAPHID IN submitted raw=0xbb[0m
+[0;32mI (53878) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (53878) usb_hid: HID report complete instance=1 len=64 byte4=0xbb[0m
+[0;32mI (53878) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (53968) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (53968) canokey_usb: CTAPHID IN cmd=0x3b(CTAPHID_KEEPALIVE) raw=0xbb len=1[0m
+[0;33mW (53968) canokey_usb: CTAPHID KEEPALIVE status=2(UPNEEDED) cid=adf08aa7[0m
+[0;32mI (53968) canokey_usb: CTAPHID IN submitted raw=0xbb[0m
+[0;32mI (53978) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (53978) usb_hid: HID report complete instance=1 len=64 byte4=0xbb[0m
+[0;32mI (53978) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (54068) touch: touch count=1 id=0 event=2 x=322 y=380[0m
+[0;32mI (54068) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (54068) canokey_usb: CTAPHID IN cmd=0x3b(CTAPHID_KEEPALIVE) raw=0xbb len=1[0m
+[0;33mW (54068) canokey_usb: CTAPHID KEEPALIVE status=2(UPNEEDED) cid=adf08aa7[0m
+[0;32mI (54068) canokey_usb: CTAPHID IN submitted raw=0xbb[0m
+[0;32mI (54078) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (54078) usb_hid: HID report complete instance=1 len=64 byte4=0xbb[0m
+[0;32mI (54078) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (54168) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (54168) touch: release[0m
+[0;32mI (54168) canokey_usb: CTAPHID IN cmd=0x3b(CTAPHID_KEEPALIVE) raw=0xbb len=1[0m
+[0;33mW (54168) canokey_usb: CTAPHID KEEPALIVE status=2(UPNEEDED) cid=adf08aa7[0m
+[0;32mI (54168) canokey_usb: CTAPHID IN submitted raw=0xbb[0m
+[0;32mI (54168) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (54168) usb_hid: HID report complete instance=1 len=64 byte4=0xbb[0m
+[0;32mI (54168) usb_hid: CTAPHID IN complete len=64[0m
+[0;33mW (54168) ui_fido: FIDO user presence confirmed: set TOUCH_SHORT[0m
+[0;32mI (54168) ui_fido: close FIDO confirm dialog[0m
+[0;33mW (54178) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x04(KH_KEY_ATTR) request_len=32 ret=32[0m
+[0;33mW (54178) canokey_fs: CTAP flash attr read data preview len=32/32[0m
+[0;33mW (54178) canokey_fs: 0x4ff37698   d9 1d 04 cd 2b 6d 74 5a  f2 c6 59 c5 df d9 7a 09  |....+mtZ..Y...z.|[0m
+[0;33mW (54178) canokey_fs: 0x4ff376a8   03 e1 8d be c6 c4 3b 1a  fc 48 37 95 72 15 82 89  |......;..H7.r...|[0m
+[0;33mW (54188) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x01(SIGN_CTR_ATTR) request_len=4 ret=4[0m
+[0;33mW (54188) canokey_fs: CTAP flash attr read data preview len=4/4[0m
+[0;33mW (54188) canokey_fs: 0x4ff377e0   0d 00 00 00                                       |....|[0m
+[0;33mW (54188) canokey_fs: CTAP flash attr write path=ctap_cert attr=0x01(SIGN_CTR_ATTR) len=4[0m
+[0;33mW (54188) canokey_fs: 0x4ff377e0   0e 00 00 00                                       |....|[0m
+[0;33mW (54208) canokey_fs: CTAP flash attr write result path=ctap_cert attr=0x01(SIGN_CTR_ATTR) ret=0[0m
+[0;33mW (54208) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x00(KEY_ATTR) request_len=32 ret=-61[0m
+[0;32mI (54218) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (54218) canokey_usb: CTAPHID IN cmd=0x10(CTAPHID_CBOR) raw=0x90 len=1[0m
+[0;32mI (54218) canokey_usb: CTAPHID IN CTAPHID_CBOR full report[0m
+[0;32mI (54218) canokey_usb: 0x4ff2004c   ad f0 8a a7 90 00 01 f1  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (54218) canokey_usb: 0x4ff2005c   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (54218) canokey_usb: 0x4ff2006c   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (54218) canokey_usb: 0x4ff2007c   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (54218) canokey_usb: CTAPHID IN submitted raw=0x90[0m
+[0;32mI (54218) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (54218) usb_hid: HID report complete instance=1 len=64 byte4=0x90[0m
+[0;32mI (54218) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (54218) usb_hid: HID SET_REPORT/OUT instance=1 report_id=0 type=2 len=64[0m
+[0;32mI (54218) usb_hid: CTAPHID OUT raw=0x86 cmd=0x06 len=8[0m
+[0;32mI (54218) canokey_usb: CTAPHID RX cmd=0x06(CTAPHID_INIT) raw=0x86 len=8 mounted=1 ready=1[0m
+[0;32mI (54218) canokey_usb: 0x4ff15d00   ff ff ff ff 86 00 08 f2  3e 77 25 28 a1 7a 54 00  |........>w%(.zT.|[0m
+[0;32mI (54218) canokey_usb: 0x4ff15d10   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (54228) canokey_usb: 0x4ff15d20   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (54228) canokey_usb: 0x4ff15d30   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (54238) canokey_usb: CTAPHID RX dequeue cmd=0x06(CTAPHID_INIT) raw=0x86 len=8 state=IDLE[0m
+[0;32mI (54238) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (54238) canokey_usb: CTAPHID IN cmd=0x06(CTAPHID_INIT) raw=0x86 len=17[0m
+[0;32mI (54238) canokey_usb: 0x4ff20053   f2 3e 77 25 28 a1 7a 54  45 81 a5 0c 02 01 00 00  |.>w%(.zTE.......|[0m
+[0;32mI (54238) canokey_usb: 0x4ff20063   04                                                |.|[0m
+[0;32mI (54238) canokey_usb: CTAPHID IN submitted raw=0x86[0m
+[0;32mI (54238) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (54238) usb_hid: HID report complete instance=1 len=64 byte4=0x86[0m
+[0;32mI (54238) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (54238) usb_hid: HID SET_REPORT/OUT instance=1 report_id=0 type=2 len=64[0m
+[0;32mI (54238) usb_hid: CTAPHID OUT raw=0x90 cmd=0x10 len=1[0m
+[0;32mI (54238) canokey_usb: CTAPHID RX cmd=0x10(CTAPHID_CBOR) raw=0x90 len=1 mounted=1 ready=1[0m
+[0;33mW (54238) canokey_usb: CTAPHID RX CBOR cmd=0x04(authenticatorGetInfo) payload_len=1 cid=4581a50c[0m
+[0;32mI (54238) canokey_usb: 0x4ff15d00   45 81 a5 0c 90 00 01 04  00 00 00 00 00 00 00 00  |E...............|[0m
+[0;32mI (54238) canokey_usb: 0x4ff15d10   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (54238) canokey_usb: 0x4ff15d20   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (54238) canokey_usb: 0x4ff15d30   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (54258) canokey_usb: CTAPHID RX dequeue cmd=0x10(CTAPHID_CBOR) raw=0x90 len=1 state=IDLE[0m
+[0;33mW (54258) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x02(PIN_ATTR) request_len=1 ret=16[0m
+[0;33mW (54258) canokey_fs: CTAP flash attr read data preview len=1/16[0m
+[0;33mW (54258) canokey_fs: 0x4ff384bf   03                                                |.|[0m
+[0;32mI (54328) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (54328) canokey_usb: CTAPHID IN cmd=0x10(CTAPHID_CBOR) raw=0x90 len=427[0m
+[0;32mI (54328) canokey_usb: CTAPHID IN CTAPHID_CBOR full report[0m
+[0;32mI (54328) canokey_usb: 0x4ff2004c   45 81 a5 0c 90 01 ab 00  b5 01 84 66 55 32 46 5f  |E..........fU2F_|[0m
+[0;32mI (54328) canokey_usb: 0x4ff2005c   56 32 68 46 49 44 4f 5f  32 5f 30 68 46 49 44 4f  |V2hFIDO_2_0hFIDO|[0m
+[0;32mI (54328) canokey_usb: 0x4ff2006c   5f 32 5f 31 68 46 49 44  4f 5f 32 5f 33 02 87 68  |_2_1hFIDO_2_3..h|[0m
+[0;32mI (54328) canokey_usb: 0x4ff2007c   63 72 65 64 42 6c 6f 62  6b 63 72 65 64 50 72 6f  |credBlobkcredPro|[0m
+[0;32mI (54328) canokey_usb: CTAPHID IN submitted raw=0x90[0m
+[0;32mI (54328) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (54328) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (54328) usb_hid: HID report complete instance=1 len=64 byte4=0x90[0m
+[0;32mI (54328) canokey_usb: CTAPHID IN cont seq=0x00[0m
+[0;32mI (54328) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (54328) canokey_usb: CTAPHID IN submitted raw=0x00[0m
+[0;32mI (54338) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (54338) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (54338) canokey_usb: CTAPHID IN cont seq=0x01[0m
+[0;32mI (54338) usb_hid: HID report complete instance=1 len=64 byte4=0x00[0m
+[0;32mI (54338) canokey_usb: CTAPHID IN submitted raw=0x01[0m
+[0;32mI (54338) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (54338) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (54338) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (54338) canokey_usb: CTAPHID IN cont seq=0x02[0m
+[0;32mI (54338) usb_hid: HID report complete instance=1 len=64 byte4=0x01[0m
+[0;32mI (54338) canokey_usb: CTAPHID IN submitted raw=0x02[0m
+[0;32mI (54338) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (54338) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (54338) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (54338) canokey_usb: CTAPHID IN cont seq=0x03[0m
+[0;32mI (54338) usb_hid: HID report complete instance=1 len=64 byte4=0x02[0m
+[0;32mI (54338) canokey_usb: CTAPHID IN submitted raw=0x03[0m
+[0;32mI (54338) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (54338) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (54338) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (54338) canokey_usb: CTAPHID IN cont seq=0x04[0m
+[0;32mI (54338) usb_hid: HID report complete instance=1 len=64 byte4=0x03[0m
+[0;32mI (54338) canokey_usb: CTAPHID IN submitted raw=0x04[0m
+[0;32mI (54338) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (54338) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (54338) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (54338) canokey_usb: CTAPHID IN cont seq=0x05[0m
+[0;32mI (54338) usb_hid: HID report complete instance=1 len=64 byte4=0x04[0m
+[0;32mI (54338) canokey_usb: CTAPHID IN submitted raw=0x05[0m
+[0;32mI (54348) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (54348) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (54348) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (54348) canokey_usb: CTAPHID IN cont seq=0x06[0m
+[0;32mI (54348) usb_hid: HID report complete instance=1 len=64 byte4=0x05[0m
+[0;33mW (54348) canokey_usb: CTAP response full payload status=0x00 len=427[0m
+[0;32mI (54348) usb_hid: CTAPHID IN complete len=64[0m
+[0;33mW (54348) canokey_usb: 0x4ff1f712   00 b5 01 84 66 55 32 46  5f 56 32 68 46 49 44 4f  |....fU2F_V2hFIDO|[0m
+[0;33mW (54348) canokey_usb: 0x4ff1f722   5f 32 5f 30 68 46 49 44  4f 5f 32 5f 31 68 46 49  |_2_0hFIDO_2_1hFI|[0m
+[0;33mW (54348) canokey_usb: 0x4ff1f732   44 4f 5f 32 5f 33 02 87  68 63 72 65 64 42 6c 6f  |DO_2_3..hcredBlo|[0m
+[0;33mW (54348) canokey_usb: 0x4ff1f742   62 6b 63 72 65 64 50 72  6f 74 65 63 74 6b 68 6d  |bkcredProtectkhm|[0m
+[0;33mW (54348) canokey_usb: 0x4ff1f752   61 63 2d 73 65 63 72 65  74 6e 68 6d 61 63 2d 73  |ac-secretnhmac-s|[0m
+[0;33mW (54348) canokey_usb: 0x4ff1f762   65 63 72 65 74 2d 6d 63  6c 6c 61 72 67 65 42 6c  |ecret-mcllargeBl|[0m
+[0;33mW (54348) canokey_usb: 0x4ff1f772   6f 62 4b 65 79 6c 6d 69  6e 50 69 6e 4c 65 6e 67  |obKeylminPinLeng|[0m
+[0;33mW (54348) canokey_usb: 0x4ff1f782   74 68 71 74 68 69 72 64  50 61 72 74 79 50 61 79  |thqthirdPartyPay|[0m
+[0;33mW (54348) canokey_usb: 0x4ff1f792   6d 65 6e 74 03 50 24 4e  b2 9e e0 90 4e 49 81 fe  |ment.P$N....NI..|[0m
+[0;33mW (54348) canokey_usb: 0x4ff1f7a2   1f 20 f8 d3 b8 f4 04 a9  62 72 6b f5 68 61 6c 77  |. ......brk.halw|[0m
+[0;33mW (54348) canokey_usb: 0x4ff1f7b2   61 79 73 55 76 f4 68 63  72 65 64 4d 67 6d 74 f5  |aysUv.hcredMgmt.|[0m
+[0;33mW (54348) canokey_usb: 0x4ff1f7c2   69 61 75 74 68 6e 72 43  66 67 f5 69 63 6c 69 65  |iauthnrCfg.iclie|[0m
+[0;33mW (54348) canokey_usb: 0x4ff1f7d2   6e 74 50 69 6e f5 6a 6c  61 72 67 65 42 6c 6f 62  |ntPin.jlargeBlob|[0m
+[0;33mW (54348) canokey_usb: 0x4ff1f7e2   73 f5 6e 70 69 6e 55 76  41 75 74 68 54 6f 6b 65  |s.npinUvAuthToke|[0m
+[0;33mW (54348) canokey_usb: 0x4ff1f7f2   6e f5 6f 73 65 74 4d 69  6e 50 49 4e 4c 65 6e 67  |n.osetMinPINLeng|[0m
+[0;33mW (54348) canokey_usb: 0x4ff1f802   74 68 f5 70 6d 61 6b 65  43 72 65 64 55 76 4e 6f  |th.pmakeCredUvNo|[0m
+[0;33mW (54348) canokey_usb: 0x4ff1f812   74 52 71 64 f5 05 19 05  1c 06 82 01 02 07 10 08  |tRqd............|[0m
+[0;33mW (54348) canokey_usb: 0x4ff1f822   18 46 09 82 63 6e 66 63  63 75 73 62 0a 84 a2 63  |.F..cnfccusb...c|[0m
+[0;33mW (54348) canokey_usb: 0x4ff1f832   61 6c 67 26 64 74 79 70  65 6a 70 75 62 6c 69 63  |alg&dtypejpublic|[0m
+[0;33mW (54348) canokey_usb: 0x4ff1f842   2d 6b 65 79 a2 63 61 6c  67 27 64 74 79 70 65 6a  |-key.calg'dtypej|[0m
+[0;33mW (54348) canokey_usb: 0x4ff1f852   70 75 62 6c 69 63 2d 6b  65 79 a2 63 61 6c 67 38  |public-key.calg8|[0m
+[0;33mW (54348) canokey_usb: 0x4ff1f862   30 64 74 79 70 65 6a 70  75 62 6c 69 63 2d 6b 65  |0dtypejpublic-ke|[0m
+[0;33mW (54348) canokey_usb: 0x4ff1f872   79 a2 63 61 6c 67 38 35  64 74 79 70 65 6a 70 75  |y.calg85dtypejpu|[0m
+[0;33mW (54348) canokey_usb: 0x4ff1f882   62 6c 69 63 2d 6b 65 79  0b 19 10 00 0d 04 0e 18  |blic-key........|[0m
+[0;33mW (54348) canokey_usb: 0x4ff1f892   c9 0f 18 20 10 04 14 19  09 aa 16 81 66 70 61 63  |... ........fpac|[0m
+[0;33mW (54348) canokey_usb: 0x4ff1f8a2   6b 65 64 18 18 f4 18 1a  82 63 6e 66 63 63 75 73  |ked......cnfccus|[0m
+[0;33mW (54348) canokey_usb: 0x4ff1f8b2   62 18 1d 18 3f 18 1f 83  02 03 04                 |b...?......|[0m
+[0;33mW (54358) canokey_usb: CTAP response signature key=3 status=0x00 sigLen=16[0m
+[0;33mW (54358) canokey_usb: 0x4ff1f798   24 4e b2 9e e0 90 4e 49  81 fe 1f 20 f8 d3 b8 f4  |$N....NI... ....|[0m
+[0;32mI (54358) canokey_usb: CTAPHID IN submitted raw=0x06[0m
+[0;32mI (54358) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (54358) usb_hid: HID report complete instance=1 len=64 byte4=0x06[0m
+[0;32mI (54358) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (54358) usb_hid: HID SET_REPORT/OUT instance=1 report_id=0 type=2 len=64[0m
+[0;32mI (54358) usb_hid: CTAPHID OUT raw=0x90 cmd=0x10 len=6[0m
+[0;32mI (54358) canokey_usb: CTAPHID RX cmd=0x10(CTAPHID_CBOR) raw=0x90 len=6 mounted=1 ready=1[0m
+[0;33mW (54358) canokey_usb: CTAPHID RX CBOR cmd=0x06(authenticatorClientPIN) payload_len=6 cid=4581a50c[0m
+[0;32mI (54358) canokey_usb: 0x4ff15d00   45 81 a5 0c 90 00 06 06  a2 01 01 02 01 00 00 00  |E...............|[0m
+[0;32mI (54358) canokey_usb: 0x4ff15d10   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (54358) canokey_usb: 0x4ff15d20   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (54358) canokey_usb: 0x4ff15d30   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (54378) canokey_usb: CTAPHID RX dequeue cmd=0x10(CTAPHID_CBOR) raw=0x90 len=6 state=IDLE[0m
+[0;33mW (54378) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x03(PIN_CTR_ATTR) request_len=1 ret=1[0m
+[0;33mW (54378) canokey_fs: CTAP flash attr read data preview len=1/1[0m
+[0;33mW (54378) canokey_fs: 0x4ff382cf   08                                                |.|[0m
+[0;32mI (54378) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (54378) canokey_usb: CTAPHID IN cmd=0x10(CTAPHID_CBOR) raw=0x90 len=4[0m
+[0;32mI (54378) canokey_usb: CTAPHID IN CTAPHID_CBOR full report[0m
+[0;32mI (54378) canokey_usb: 0x4ff2004c   45 81 a5 0c 90 00 04 00  a1 03 08 00 00 00 00 00  |E...............|[0m
+[0;32mI (54378) canokey_usb: 0x4ff2005c   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (54378) canokey_usb: 0x4ff2006c   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (54378) canokey_usb: 0x4ff2007c   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;33mW (54378) canokey_usb: CTAP response full payload status=0x00 len=4[0m
+[0;33mW (54378) canokey_usb: 0x4ff1f712   00 a1 03 08                                       |....|[0m
+[0;32mI (54378) canokey_usb: CTAPHID IN submitted raw=0x90[0m
+[0;32mI (54378) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (54378) usb_hid: HID report complete instance=1 len=64 byte4=0x90[0m
+[0;32mI (54378) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (56928) usb_hid: HID SET_REPORT/OUT instance=1 report_id=0 type=2 len=64[0m
+[0;32mI (56928) usb_hid: CTAPHID OUT raw=0x86 cmd=0x06 len=8[0m
+[0;32mI (56928) canokey_usb: CTAPHID RX cmd=0x06(CTAPHID_INIT) raw=0x86 len=8 mounted=1 ready=1[0m
+[0;32mI (56928) canokey_usb: 0x4ff15d00   ff ff ff ff 86 00 08 de  9b 0b f9 c8 94 9d b9 00  |................|[0m
+[0;32mI (56928) canokey_usb: 0x4ff15d10   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (56928) canokey_usb: 0x4ff15d20   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (56928) canokey_usb: 0x4ff15d30   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (56938) canokey_usb: CTAPHID RX dequeue cmd=0x06(CTAPHID_INIT) raw=0x86 len=8 state=IDLE[0m
+[0;32mI (56938) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (56938) canokey_usb: CTAPHID IN cmd=0x06(CTAPHID_INIT) raw=0x86 len=17[0m
+[0;32mI (56938) canokey_usb: 0x4ff20053   de 9b 0b f9 c8 94 9d b9  8b c2 c8 c0 02 01 00 00  |................|[0m
+[0;32mI (56938) canokey_usb: 0x4ff20063   04                                                |.|[0m
+[0;32mI (56938) canokey_usb: CTAPHID IN submitted raw=0x86[0m
+[0;32mI (56938) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (56938) usb_hid: HID report complete instance=1 len=64 byte4=0x86[0m
+[0;32mI (56938) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (56938) usb_hid: HID SET_REPORT/OUT instance=1 report_id=0 type=2 len=64[0m
+[0;32mI (56938) usb_hid: CTAPHID OUT raw=0x90 cmd=0x10 len=1[0m
+[0;32mI (56938) canokey_usb: CTAPHID RX cmd=0x10(CTAPHID_CBOR) raw=0x90 len=1 mounted=1 ready=1[0m
+[0;33mW (56938) canokey_usb: CTAPHID RX CBOR cmd=0x04(authenticatorGetInfo) payload_len=1 cid=8bc2c8c0[0m
+[0;32mI (56938) canokey_usb: 0x4ff15d00   8b c2 c8 c0 90 00 01 04  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (56938) canokey_usb: 0x4ff15d10   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (56938) canokey_usb: 0x4ff15d20   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (56938) canokey_usb: 0x4ff15d30   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (56958) canokey_usb: CTAPHID RX dequeue cmd=0x10(CTAPHID_CBOR) raw=0x90 len=1 state=IDLE[0m
+[0;33mW (56958) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x02(PIN_ATTR) request_len=1 ret=16[0m
+[0;33mW (56958) canokey_fs: CTAP flash attr read data preview len=1/16[0m
+[0;33mW (56958) canokey_fs: 0x4ff384bf   03                                                |.|[0m
+[0;32mI (57028) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (57028) canokey_usb: CTAPHID IN cmd=0x10(CTAPHID_CBOR) raw=0x90 len=427[0m
+[0;32mI (57028) canokey_usb: CTAPHID IN CTAPHID_CBOR full report[0m
+[0;32mI (57028) canokey_usb: 0x4ff2004c   8b c2 c8 c0 90 01 ab 00  b5 01 84 66 55 32 46 5f  |...........fU2F_|[0m
+[0;32mI (57028) canokey_usb: 0x4ff2005c   56 32 68 46 49 44 4f 5f  32 5f 30 68 46 49 44 4f  |V2hFIDO_2_0hFIDO|[0m
+[0;32mI (57028) canokey_usb: 0x4ff2006c   5f 32 5f 31 68 46 49 44  4f 5f 32 5f 33 02 87 68  |_2_1hFIDO_2_3..h|[0m
+[0;32mI (57028) canokey_usb: 0x4ff2007c   63 72 65 64 42 6c 6f 62  6b 63 72 65 64 50 72 6f  |credBlobkcredPro|[0m
+[0;32mI (57028) canokey_usb: CTAPHID IN submitted raw=0x90[0m
+[0;32mI (57028) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (57028) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (57028) usb_hid: HID report complete instance=1 len=64 byte4=0x90[0m
+[0;32mI (57028) canokey_usb: CTAPHID IN cont seq=0x00[0m
+[0;32mI (57028) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (57028) canokey_usb: CTAPHID IN submitted raw=0x00[0m
+[0;32mI (57038) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (57038) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (57038) canokey_usb: CTAPHID IN cont seq=0x01[0m
+[0;32mI (57038) usb_hid: HID report complete instance=1 len=64 byte4=0x00[0m
+[0;32mI (57038) canokey_usb: CTAPHID IN submitted raw=0x01[0m
+[0;32mI (57038) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (57038) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (57038) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (57038) canokey_usb: CTAPHID IN cont seq=0x02[0m
+[0;32mI (57038) usb_hid: HID report complete instance=1 len=64 byte4=0x01[0m
+[0;32mI (57038) canokey_usb: CTAPHID IN submitted raw=0x02[0m
+[0;32mI (57038) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (57038) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (57038) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (57038) canokey_usb: CTAPHID IN cont seq=0x03[0m
+[0;32mI (57038) usb_hid: HID report complete instance=1 len=64 byte4=0x02[0m
+[0;32mI (57038) canokey_usb: CTAPHID IN submitted raw=0x03[0m
+[0;32mI (57038) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (57038) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (57038) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (57038) canokey_usb: CTAPHID IN cont seq=0x04[0m
+[0;32mI (57038) usb_hid: HID report complete instance=1 len=64 byte4=0x03[0m
+[0;32mI (57038) canokey_usb: CTAPHID IN submitted raw=0x04[0m
+[0;32mI (57038) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (57038) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (57038) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (57038) canokey_usb: CTAPHID IN cont seq=0x05[0m
+[0;32mI (57038) usb_hid: HID report complete instance=1 len=64 byte4=0x04[0m
+[0;32mI (57038) canokey_usb: CTAPHID IN submitted raw=0x05[0m
+[0;32mI (57038) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (57048) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (57048) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (57048) canokey_usb: CTAPHID IN cont seq=0x06[0m
+[0;32mI (57048) usb_hid: HID report complete instance=1 len=64 byte4=0x05[0m
+[0;33mW (57048) canokey_usb: CTAP response full payload status=0x00 len=427[0m
+[0;32mI (57048) usb_hid: CTAPHID IN complete len=64[0m
+[0;33mW (57048) canokey_usb: 0x4ff1f712   00 b5 01 84 66 55 32 46  5f 56 32 68 46 49 44 4f  |....fU2F_V2hFIDO|[0m
+[0;33mW (57048) canokey_usb: 0x4ff1f722   5f 32 5f 30 68 46 49 44  4f 5f 32 5f 31 68 46 49  |_2_0hFIDO_2_1hFI|[0m
+[0;33mW (57048) canokey_usb: 0x4ff1f732   44 4f 5f 32 5f 33 02 87  68 63 72 65 64 42 6c 6f  |DO_2_3..hcredBlo|[0m
+[0;33mW (57048) canokey_usb: 0x4ff1f742   62 6b 63 72 65 64 50 72  6f 74 65 63 74 6b 68 6d  |bkcredProtectkhm|[0m
+[0;33mW (57048) canokey_usb: 0x4ff1f752   61 63 2d 73 65 63 72 65  74 6e 68 6d 61 63 2d 73  |ac-secretnhmac-s|[0m
+[0;33mW (57048) canokey_usb: 0x4ff1f762   65 63 72 65 74 2d 6d 63  6c 6c 61 72 67 65 42 6c  |ecret-mcllargeBl|[0m
+[0;33mW (57048) canokey_usb: 0x4ff1f772   6f 62 4b 65 79 6c 6d 69  6e 50 69 6e 4c 65 6e 67  |obKeylminPinLeng|[0m
+[0;33mW (57048) canokey_usb: 0x4ff1f782   74 68 71 74 68 69 72 64  50 61 72 74 79 50 61 79  |thqthirdPartyPay|[0m
+[0;33mW (57048) canokey_usb: 0x4ff1f792   6d 65 6e 74 03 50 24 4e  b2 9e e0 90 4e 49 81 fe  |ment.P$N....NI..|[0m
+[0;33mW (57048) canokey_usb: 0x4ff1f7a2   1f 20 f8 d3 b8 f4 04 a9  62 72 6b f5 68 61 6c 77  |. ......brk.halw|[0m
+[0;33mW (57048) canokey_usb: 0x4ff1f7b2   61 79 73 55 76 f4 68 63  72 65 64 4d 67 6d 74 f5  |aysUv.hcredMgmt.|[0m
+[0;33mW (57048) canokey_usb: 0x4ff1f7c2   69 61 75 74 68 6e 72 43  66 67 f5 69 63 6c 69 65  |iauthnrCfg.iclie|[0m
+[0;33mW (57048) canokey_usb: 0x4ff1f7d2   6e 74 50 69 6e f5 6a 6c  61 72 67 65 42 6c 6f 62  |ntPin.jlargeBlob|[0m
+[0;33mW (57048) canokey_usb: 0x4ff1f7e2   73 f5 6e 70 69 6e 55 76  41 75 74 68 54 6f 6b 65  |s.npinUvAuthToke|[0m
+[0;33mW (57048) canokey_usb: 0x4ff1f7f2   6e f5 6f 73 65 74 4d 69  6e 50 49 4e 4c 65 6e 67  |n.osetMinPINLeng|[0m
+[0;33mW (57048) canokey_usb: 0x4ff1f802   74 68 f5 70 6d 61 6b 65  43 72 65 64 55 76 4e 6f  |th.pmakeCredUvNo|[0m
+[0;33mW (57048) canokey_usb: 0x4ff1f812   74 52 71 64 f5 05 19 05  1c 06 82 01 02 07 10 08  |tRqd............|[0m
+[0;33mW (57048) canokey_usb: 0x4ff1f822   18 46 09 82 63 6e 66 63  63 75 73 62 0a 84 a2 63  |.F..cnfccusb...c|[0m
+[0;33mW (57048) canokey_usb: 0x4ff1f832   61 6c 67 26 64 74 79 70  65 6a 70 75 62 6c 69 63  |alg&dtypejpublic|[0m
+[0;33mW (57048) canokey_usb: 0x4ff1f842   2d 6b 65 79 a2 63 61 6c  67 27 64 74 79 70 65 6a  |-key.calg'dtypej|[0m
+[0;33mW (57048) canokey_usb: 0x4ff1f852   70 75 62 6c 69 63 2d 6b  65 79 a2 63 61 6c 67 38  |public-key.calg8|[0m
+[0;33mW (57048) canokey_usb: 0x4ff1f862   30 64 74 79 70 65 6a 70  75 62 6c 69 63 2d 6b 65  |0dtypejpublic-ke|[0m
+[0;33mW (57048) canokey_usb: 0x4ff1f872   79 a2 63 61 6c 67 38 35  64 74 79 70 65 6a 70 75  |y.calg85dtypejpu|[0m
+[0;33mW (57048) canokey_usb: 0x4ff1f882   62 6c 69 63 2d 6b 65 79  0b 19 10 00 0d 04 0e 18  |blic-key........|[0m
+[0;33mW (57048) canokey_usb: 0x4ff1f892   c9 0f 18 20 10 04 14 19  09 aa 16 81 66 70 61 63  |... ........fpac|[0m
+[0;33mW (57048) canokey_usb: 0x4ff1f8a2   6b 65 64 18 18 f4 18 1a  82 63 6e 66 63 63 75 73  |ked......cnfccus|[0m
+[0;33mW (57048) canokey_usb: 0x4ff1f8b2   62 18 1d 18 3f 18 1f 83  02 03 04                 |b...?......|[0m
+[0;33mW (57048) canokey_usb: CTAP response signature key=3 status=0x00 sigLen=16[0m
+[0;33mW (57048) canokey_usb: 0x4ff1f798   24 4e b2 9e e0 90 4e 49  81 fe 1f 20 f8 d3 b8 f4  |$N....NI... ....|[0m
+[0;32mI (57058) canokey_usb: CTAPHID IN submitted raw=0x06[0m
+[0;32mI (57058) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (57058) usb_hid: HID report complete instance=1 len=64 byte4=0x06[0m
+[0;32mI (57058) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (57058) usb_hid: HID SET_REPORT/OUT instance=1 report_id=0 type=2 len=64[0m
+[0;32mI (57058) usb_hid: CTAPHID OUT raw=0x90 cmd=0x10 len=6[0m
+[0;32mI (57058) canokey_usb: CTAPHID RX cmd=0x10(CTAPHID_CBOR) raw=0x90 len=6 mounted=1 ready=1[0m
+[0;33mW (57058) canokey_usb: CTAPHID RX CBOR cmd=0x06(authenticatorClientPIN) payload_len=6 cid=8bc2c8c0[0m
+[0;32mI (57058) canokey_usb: 0x4ff15d00   8b c2 c8 c0 90 00 06 06  a2 01 01 02 02 00 00 00  |................|[0m
+[0;32mI (57058) canokey_usb: 0x4ff15d10   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (57058) canokey_usb: 0x4ff15d20   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (57058) canokey_usb: 0x4ff15d30   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (57078) canokey_usb: CTAPHID RX dequeue cmd=0x10(CTAPHID_CBOR) raw=0x90 len=6 state=IDLE[0m
+[0;32mI (57078) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (57078) canokey_usb: CTAPHID IN cmd=0x10(CTAPHID_CBOR) raw=0x90 len=81[0m
+[0;32mI (57078) canokey_usb: CTAPHID IN CTAPHID_CBOR full report[0m
+[0;32mI (57078) canokey_usb: 0x4ff2004c   8b c2 c8 c0 90 00 51 00  a1 01 a5 01 02 03 38 18  |......Q.......8.|[0m
+[0;32mI (57078) canokey_usb: 0x4ff2005c   20 01 21 58 20 47 b9 ab  5e 1a ad 08 41 fa f2 af  | .!X G..^...A...|[0m
+[0;32mI (57078) canokey_usb: 0x4ff2006c   98 e2 25 af 20 f5 2f c6  1d 09 b2 7d b0 92 1f cd  |..%. ./....}....|[0m
+[0;32mI (57078) canokey_usb: 0x4ff2007c   f5 f4 16 c2 90 22 58 20  79 f1 a6 6b 2e 64 a9 0f  |....."X y..k.d..|[0m
+[0;32mI (57078) canokey_usb: CTAPHID IN submitted raw=0x90[0m
+[0;32mI (57078) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (57078) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (57078) canokey_usb: CTAPHID IN cont seq=0x00[0m
+[0;32mI (57078) usb_hid: HID report complete instance=1 len=64 byte4=0x90[0m
+[0;33mW (57078) canokey_usb: CTAP response full payload status=0x00 len=81[0m
+[0;32mI (57078) usb_hid: CTAPHID IN complete len=64[0m
+[0;33mW (57078) canokey_usb: 0x4ff1f712   00 a1 01 a5 01 02 03 38  18 20 01 21 58 20 47 b9  |.......8. .!X G.|[0m
+[0;33mW (57078) canokey_usb: 0x4ff1f722   ab 5e 1a ad 08 41 fa f2  af 98 e2 25 af 20 f5 2f  |.^...A.....%. ./|[0m
+[0;33mW (57078) canokey_usb: 0x4ff1f732   c6 1d 09 b2 7d b0 92 1f  cd f5 f4 16 c2 90 22 58  |....}........."X|[0m
+[0;33mW (57078) canokey_usb: 0x4ff1f742   20 79 f1 a6 6b 2e 64 a9  0f a8 59 a7 4e 5e 52 5e  | y..k.d...Y.N^R^|[0m
+[0;33mW (57078) canokey_usb: 0x4ff1f752   c0 47 af 63 c7 de 11 9b  ff 30 63 3f 1b 3a a6 26  |.G.c.....0c?.:.&|[0m
+[0;33mW (57078) canokey_usb: 0x4ff1f762   5e                                                |^|[0m
+[0;32mI (57078) canokey_usb: CTAPHID IN submitted raw=0x00[0m
+[0;32mI (57078) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (57078) usb_hid: HID report complete instance=1 len=64 byte4=0x00[0m
+[0;32mI (57078) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (57088) usb_hid: HID SET_REPORT/OUT instance=1 report_id=0 type=2 len=64[0m
+[0;32mI (57088) usb_hid: CTAPHID OUT raw=0x90 cmd=0x10 len=103[0m
+[0;32mI (57088) canokey_usb: CTAPHID RX cmd=0x10(CTAPHID_CBOR) raw=0x90 len=103 mounted=1 ready=1[0m
+[0;33mW (57088) canokey_usb: CTAPHID RX CBOR cmd=0x06(authenticatorClientPIN) payload_len=103 cid=8bc2c8c0[0m
+[0;32mI (57088) canokey_usb: 0x4ff15d00   8b c2 c8 c0 90 00 67 06  a4 01 01 02 05 03 a5 01  |......g.........|[0m
+[0;32mI (57088) canokey_usb: 0x4ff15d10   02 03 38 18 20 01 21 58  20 79 00 0f c0 4b 71 62  |..8. .!X y...Kqb|[0m
+[0;32mI (57088) canokey_usb: 0x4ff15d20   ae 8d e2 5a 45 0e 4c 22  b8 ae 16 e8 e4 0a 3b 97  |...ZE.L"......;.|[0m
+[0;32mI (57088) canokey_usb: 0x4ff15d30   a5 0d 8a 1e 5c 05 7b 41  11 22 58 20 24 bc 35 9f  |....\.{A."X $.5.|[0m
+[0;32mI (57088) usb_hid: HID SET_REPORT/OUT instance=1 report_id=0 type=2 len=64[0m
+[0;32mI (57088) canokey_usb: CTAPHID RX cont seq=0x00[0m
+[0;32mI (57098) canokey_usb: CTAPHID RX dequeue cmd=0x10(CTAPHID_CBOR) raw=0x90 len=103 state=IDLE[0m
+[0;32mI (57098) canokey_usb: CTAPHID RX dequeue cont seq=0x00 state=IDLE[0m
+[0;33mW (57098) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x02(PIN_ATTR) request_len=1 ret=16[0m
+[0;33mW (57098) canokey_fs: CTAP flash attr read data preview len=1/16[0m
+[0;33mW (57098) canokey_fs: 0x4ff382cf   03                                                |.|[0m
+[0;33mW (57098) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x03(PIN_CTR_ATTR) request_len=1 ret=1[0m
+[0;33mW (57098) canokey_fs: CTAP flash attr read data preview len=1/1[0m
+[0;33mW (57098) canokey_fs: 0x4ff382cf   08                                                |.|[0m
+[0;33mW (57108) canokey_fs: CTAP flash attr write path=ctap_cert attr=0x03(PIN_CTR_ATTR) len=1[0m
+[0;33mW (57108) canokey_fs: 0x4ff382cf   07                                                |.|[0m
+[0;33mW (57118) canokey_fs: CTAP flash attr write result path=ctap_cert attr=0x03(PIN_CTR_ATTR) ret=0[0m
+[0;33mW (57118) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x02(PIN_ATTR) request_len=16 ret=16[0m
+[0;33mW (57118) canokey_fs: CTAP flash attr read data preview len=16/16[0m
+[0;33mW (57118) canokey_fs: 0x4ff382c0   03 ac 67 42 16 f3 e1 5c  76 1e e1 a5 e2 55 f0 67  |..gB...\v....U.g|[0m
+[0;33mW (57118) canokey_fs: CTAP flash attr write path=ctap_cert attr=0x03(PIN_CTR_ATTR) len=1[0m
+[0;33mW (57118) canokey_fs: 0x4ff382cf   08                                                |.|[0m
+[0;33mW (57118) canokey_fs: CTAP flash attr write result path=ctap_cert attr=0x03(PIN_CTR_ATTR) ret=0[0m
+[0;32mI (57118) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (57118) canokey_usb: CTAPHID IN cmd=0x10(CTAPHID_CBOR) raw=0x90 len=37[0m
+[0;32mI (57118) canokey_usb: CTAPHID IN CTAPHID_CBOR full report[0m
+[0;32mI (57118) canokey_usb: 0x4ff2004c   8b c2 c8 c0 90 00 25 00  a1 02 58 20 3e 28 aa eb  |......%...X >(..|[0m
+[0;32mI (57128) canokey_usb: 0x4ff2005c   5e 70 20 0a 4e 0a d2 49  d4 f1 b8 e2 93 75 2b 00  |^p .N..I.....u+.|[0m
+[0;32mI (57128) canokey_usb: 0x4ff2006c   44 f2 5a f5 47 5e 74 aa  bb 5c f9 d5 00 00 00 00  |D.Z.G^t..\......|[0m
+[0;32mI (57128) canokey_usb: 0x4ff2007c   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;33mW (57128) canokey_usb: CTAP response full payload status=0x00 len=37[0m
+[0;33mW (57128) canokey_usb: 0x4ff1f712   00 a1 02 58 20 3e 28 aa  eb 5e 70 20 0a 4e 0a d2  |...X >(..^p .N..|[0m
+[0;33mW (57128) canokey_usb: 0x4ff1f722   49 d4 f1 b8 e2 93 75 2b  00 44 f2 5a f5 47 5e 74  |I.....u+.D.Z.G^t|[0m
+[0;33mW (57128) canokey_usb: 0x4ff1f732   aa bb 5c f9 d5                                    |..\..|[0m
+[0;33mW (57128) canokey_usb: CTAP response authData too short key=2 status=0x00 len=32[0m
+[0;32mI (57128) canokey_usb: CTAPHID IN submitted raw=0x90[0m
+[0;32mI (57128) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (57128) usb_hid: HID report complete instance=1 len=64 byte4=0x90[0m
+[0;32mI (57128) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (57128) usb_hid: HID SET_REPORT/OUT instance=1 report_id=0 type=2 len=64[0m
+[0;32mI (57128) usb_hid: CTAPHID OUT raw=0x90 cmd=0x10 len=240[0m
+[0;32mI (57128) canokey_usb: CTAPHID RX cmd=0x10(CTAPHID_CBOR) raw=0x90 len=240 mounted=1 ready=1[0m
+[0;33mW (57128) canokey_usb: CTAPHID RX CBOR cmd=0x01(authenticatorMakeCredential) payload_len=240 cid=8bc2c8c0[0m
+[0;32mI (57128) canokey_usb: 0x4ff15d00   8b c2 c8 c0 90 00 f0 01  a6 01 58 20 51 4c 90 93  |..........X QL..|[0m
+[0;32mI (57128) canokey_usb: 0x4ff15d10   8e 94 17 ac 93 ea 4e cc  f7 45 f8 57 23 8d 0b f6  |......N..E.W#...|[0m
+[0;32mI (57128) canokey_usb: 0x4ff15d20   e9 af 35 1b 9f 3e a0 34  41 a3 eb 6a 02 a2 62 69  |..5..>.4A..j..bi|[0m
+[0;32mI (57128) canokey_usb: 0x4ff15d30   64 6b 77 65 62 61 75 74  68 6e 2e 69 6f 64 6e 61  |dkwebauthn.iodna|[0m
+[0;32mI (57128) usb_hid: HID SET_REPORT/OUT instance=1 report_id=0 type=2 len=64[0m
+[0;32mI (57128) canokey_usb: CTAPHID RX cont seq=0x00[0m
+[0;32mI (57138) usb_hid: HID SET_REPORT/OUT instance=1 report_id=0 type=2 len=64[0m
+[0;32mI (57138) canokey_usb: CTAPHID RX cont seq=0x01[0m
+[0;32mI (57138) usb_hid: HID SET_REPORT/OUT instance=1 report_id=0 type=2 len=64[0m
+[0;32mI (57138) canokey_usb: CTAPHID RX cont seq=0x02[0m
+[0;32mI (57138) usb_hid: HID SET_REPORT/OUT instance=1 report_id=0 type=2 len=64[0m
+[0;32mI (57138) canokey_usb: CTAPHID RX cont seq=0x03[0m
+[0;33mW (57138) canokey_usb: CTAP request clientDataHash captured cmd=0x01(authenticatorMakeCredential)[0m
+[0;33mW (57138) canokey_usb: 0x4ff1eedc   51 4c 90 93 8e 94 17 ac  93 ea 4e cc f7 45 f8 57  |QL........N..E.W|[0m
+[0;33mW (57138) canokey_usb: 0x4ff1eeec   23 8d 0b f6 e9 af 35 1b  9f 3e a0 34 41 a3 eb 6a  |#.....5..>.4A..j|[0m
+[0;33mW (57138) canokey_usb: CTAP makeCredential pubKeyCredParams count=3[0m
+[0;33mW (57138) canokey_usb: CTAP makeCredential pubKeyCredParams[0].alg=-8[0m
+[0;33mW (57138) canokey_usb: CTAP makeCredential force alg EdDSA(-8) -> ES256(-7) at offset=157[0m
+[0;33mW (57138) canokey_usb: CTAP makeCredential pubKeyCredParams[1].alg=-7[0m
+[0;33mW (57138) canokey_usb: CTAP makeCredential pubKeyCredParams[2].alg=-257[0m
+[0;33mW (57138) canokey_usb: CTAP makeCredential patched request enqueue reports=5 len=240[0m
+[0;33mW (57138) canokey_usb: CTAP makeCredential patched request enqueued len=240[0m
+[0;32mI (57148) canokey_usb: CTAPHID RX dequeue cmd=0x10(CTAPHID_CBOR) raw=0x90 len=240 state=IDLE[0m
+[0;32mI (57148) canokey_usb: CTAPHID RX dequeue cont seq=0x00 state=IDLE[0m
+[0;32mI (57148) canokey_usb: CTAPHID RX dequeue cont seq=0x01 state=IDLE[0m
+[0;32mI (57148) canokey_usb: CTAPHID RX dequeue cont seq=0x02 state=IDLE[0m
+[0;32mI (57148) canokey_usb: CTAPHID RX dequeue cont seq=0x03 state=IDLE[0m
+[0;32mI (57148) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (57148) canokey_usb: CTAPHID IN cmd=0x3b(CTAPHID_KEEPALIVE) raw=0xbb len=1[0m
+[0;33mW (57148) canokey_usb: CTAPHID KEEPALIVE status=1(PROCESSING) cid=8bc2c8c0[0m
+[0;32mI (57148) canokey_usb: CTAPHID IN submitted raw=0xbb[0m
+[0;32mI (57148) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (57148) usb_hid: HID report complete instance=1 len=64 byte4=0xbb[0m
+[0;33mW (57148) canokey_fs: CTAP flash attr read path=ctap_dc attr=0x00(DC_GENERAL_ATTR) request_len=9 ret=9[0m
+[0;32mI (57148) usb_hid: CTAPHID IN complete len=64[0m
+[0;33mW (57148) canokey_fs: CTAP flash attr read data preview len=9/9[0m
+[0;33mW (57148) canokey_fs: 0x4ff37c44   00 00 00 00 00 00 00 00  00                       |.........|[0m
+[0;32mI (57148) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (57148) canokey_usb: CTAPHID IN cmd=0x3b(CTAPHID_KEEPALIVE) raw=0xbb len=1[0m
+[0;33mW (57148) canokey_usb: CTAPHID KEEPALIVE status=1(PROCESSING) cid=8bc2c8c0[0m
+[0;32mI (57148) canokey_usb: CTAPHID IN submitted raw=0xbb[0m
+[0;32mI (57148) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (57158) usb_hid: HID report complete instance=1 len=64 byte4=0xbb[0m
+[0;32mI (57158) usb_hid: CTAPHID IN complete len=64[0m
+[0;33mW (57158) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x02(PIN_ATTR) request_len=1 ret=16[0m
+[0;33mW (57158) canokey_fs: CTAP flash attr read data preview len=1/16[0m
+[0;33mW (57158) canokey_fs: 0x4ff37c4f   03                                                |.|[0m
+[0;33mW (57158) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x02(PIN_ATTR) request_len=1 ret=16[0m
+[0;33mW (57158) canokey_fs: CTAP flash attr read data preview len=1/16[0m
+[0;33mW (57158) canokey_fs: 0x4ff37c4f   03                                                |.|[0m
+[0;33mW (57158) port_ui: user presence request hook entry=1 callback=1[0m
+[0;33mW (57158) ui_fido: user presence request entry=1 dialog=0 pending=0[0m
+[0;32mI (57158) ui_fido: schedule FIDO confirm dialog cmd=0x01 title=FIDO Registration[0m
+Guru Meditation Error: Core  0 panic'ed (Load access fault). Exception was unhandled.
+
+Core  0 register dump:
+MEPC    : 0x4004efe4  RA      : 0x400514ac  SP      : 0x4ff35470  GP      : 0x4ff15180  
+TP      : 0x4ff354f0  T0      : 0x4007fe4a  T1      : 0x500c4000  T2      : 0x29462946  
+S0/FP   : 0x00000136  S1      : 0xffffffff  A0      : 0x4ff443a4  A1      : 0x4ff443c0  
+A2      : 0x7f000000  A3      : 0x00000000  A4      : 0x00000001  A5      : 0x4004efdc  
+A6      : 0x00000004  A7      : 0x00002000  S2      : 0x0000d570  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x29462946  T4      : 0x29462946  T5      : 0x29462946  T6      : 0x29462946  
+MSTATUS : 0x00011880  MTVEC   : 0x4ff00003  MCAUSE  : 0x00000005  MTVAL   : 0x00000136  
+MHARTID : 0x00000000  
+
+warning: could not convert 'main' from the host encoding (CP1252) to UTF-32.
+This normally should not happen, please file a bug report.
+lv_async_timer_cb (timer=0x4ff443a4 <work_mem_int+17316>) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/misc/lv_async.c:103
+103	    lv_async_info_t info_save = *info;
+#0  lv_async_timer_cb (timer=0x4ff443a4 <work_mem_int+17316>) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/misc/lv_async.c:103
+#1  0x400514ac in lv_timer_exec (timer=timer@entry=0x4ff443a4 <work_mem_int+17316>) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/misc/lv_timer.c:326
+#2  0x40051566 in lv_timer_handler () at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/misc/lv_timer.c:107
+#3  0x4000a908 in lvgl_task (arg=<error reading variable: value has been optimized out>) at E:/oyl/2026/202606/esp32-p4-passkey/main/hello_world_main.c:122
+#4  0x4ff0b2c6 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at E:/Espressif/.espressif/v5.4.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:255
+
+
+
+ELF file SHA256: 45b7c11ec
+
+Rebooting...
+ESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0xc (SW_CPU_RESET),boot:0x30c (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4ff04ba0
+Core1 Saved PC:0x4fc00234
+SPI mode:DIO, clock div:2
+load:0x4ff33ce0,len:0x16f0
+load:0x4ff2abd0,len:0xe3c
+load:0x4ff2cbd0,len:0x3358
+entry 0x4ff2abda
+[0;32mI (23) boot: ESP-IDF v5.4.4 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Jul 18 2026 00:41:37[0m
+[0;32mI (23) boot: Multicore bootloader[0m
+[0;32mI (24) boot: chip revision: v1.3[0m
+[0;32mI (24) boot: efuse block revision: v0.3[0m
+[0;32mI (25) boot.esp32p4: SPI Speed      : 40MHz[0m
+[0;32mI (25) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (25) boot.esp32p4: SPI Flash Size : 32MB[0m
+[0;32mI (25) boot: Enabling RNG early entropy source...[0m
+[0;32mI (26) boot: Partition Table:[0m
+[0;32mI (26) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (26) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (27) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (28) boot:  2 factory          factory app      00 00 00010000 00ef0000[0m
+[0;32mI (28) boot:  3 canokey_lfs      Unknown data     01 40 00f00000 00100000[0m
+[0;32mI (29) boot:  4 usbstore         Unknown data     01 81 01000000 01000000[0m
+[0;32mI (30) boot: End of partition table[0m
+[0;32mI (30) esp_image: segment 0: paddr=00010020 vaddr=400a0020 size=32908h (207112) map[0m
+[0;32mI (71) esp_image: segment 1: paddr=00042930 vaddr=30100000 size=00068h (   104) load[0m
+[0;32mI (73) esp_image: segment 2: paddr=000429a0 vaddr=4ff00000 size=0d678h ( 54904) load[0m
+[0;32mI (86) esp_image: segment 3: paddr=00050020 vaddr=40000020 size=9ef08h (651016) map[0m
+[0;32mI (212) esp_image: segment 4: paddr=000eef30 vaddr=4ff0d678 size=072a4h ( 29348) load[0m
+[0;32mI (220) esp_image: segment 5: paddr=000f61dc vaddr=4ff14980 size=05678h ( 22136) load[0m
+[0;32mI (226) esp_image: segment 6: paddr=000fb85c vaddr=50108080 size=0001ch (    28) load[0m
+[0;32mI (232) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (232) boot: Disabling RNG early entropy source...[0m
+[0;32mI (237) hex_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (237) hex_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (237) hex_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (238) hex_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (238) hex_psram: density      : 0x07 (256 Mbit)[0m
+[0;32mI (238) hex_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (239) hex_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (239) hex_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (239) hex_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (240) hex_psram: BitMode      : 0x01 (X16 Mode)[0m
+[0;32mI (240) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (240) hex_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (241) MSPI DQS: tuning success, best phase id is 0[0m
+[0;32mI (414) MSPI DQS: tuning success, best delayline id is 16[0m
+[0;32mI (414) esp_psram: Found 32MB PSRAM device[0m
+[0;32mI (414) esp_psram: Speed: 200MHz[0m
+[0;32mI (415) hex_psram: psram CS IO is dedicated[0m
+[0;32mI (415) cpu_start: Multicore app[0m
+[0;32mI (1365) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1374) cpu_start: Pro cpu start user code[0m
+[0;32mI (1375) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (1375) app_init: Application information:[0m
+[0;32mI (1375) app_init: Project name:     hello_world[0m
+[0;32mI (1375) app_init: App version:      1[0m
+[0;32mI (1375) app_init: Compile time:     Jul 18 2026 00:23:40[0m
+[0;32mI (1376) app_init: ELF file SHA256:  45b7c11ec...[0m
+[0;32mI (1376) app_init: ESP-IDF:          v5.4.4[0m
+[0;32mI (1376) efuse_init: Min chip rev:     v0.1[0m
+[0;32mI (1376) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (1376) efuse_init: Chip rev:         v1.3[0m
+[0;32mI (1377) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1377) heap_init: At 4FF211D0 len 00019DF0 (103 KiB): RETENT_RAM[0m
+[0;32mI (1377) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (1378) heap_init: At 4FF50980 len 0004F680 (317 KiB): RAM[0m
+[0;32mI (1378) heap_init: At 5010809C len 00007F64 (31 KiB): RTCRAM[0m
+[0;32mI (1378) heap_init: At 30100068 len 00001F98 (7 KiB): TCM[0m
+[0;32mI (1379) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator[0m
+[0;32mI (1380) spi_flash: detected chip: gd[0m
+[0;32mI (1381) spi_flash: flash io: dio[0m
+[0;33mW (1381) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1382) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1382) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1383) main_task: Started on CPU0[0m
+[0;32mI (1393) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1393) main_task: Calling app_main()[0m
+[0;32mI (1393) canokey_crypto: crypto port ready[0m
+[0;32mI (1393) usb_hid: USB MSC descriptor enabled; storage init is handled separately[0m
+[0;32mI (1393) tusb_desc: [0m
+┌─────────────────────────────────┐
+│  USB Device Descriptor Summary  │
+├───────────────────┬─────────────┤
+│bDeviceClass       │ 0           │
+├───────────────────┼─────────────┤
+│bDeviceSubClass    │ 0           │
+├───────────────────┼─────────────┤
+│bDeviceProtocol    │ 0           │
+├───────────────────┼─────────────┤
+│bMaxPacketSize0    │ 64          │
+├───────────────────┼─────────────┤
+│idVendor           │ 0x303a      │
+├───────────────────┼─────────────┤
+│idProduct          │ 0x4006      │
+├───────────────────┼─────────────┤
+│bcdDevice          │ 0x100       │
+├───────────────────┼─────────────┤
+│iManufacturer      │ 0x1         │
+├───────────────────┼─────────────┤
+│iProduct           │ 0x2         │
+├───────────────────┼─────────────┤
+│iSerialNumber      │ 0x3         │
+├───────────────────┼─────────────┤
+│bNumConfigurations │ 0x1         │
+└───────────────────┴─────────────┘
+[0;32mI (1403) TinyUSB: TinyUSB Driver installed on port 1[0m
+[0;32mI (1403) usb_hid: TinyUSB driver installed: mounted=0 hid0_ready=0 ctaphid_ready=0[0m
+[0;32mI (1403) canokey_usb: CTAPHID init start: itf=1 report_size=64 queue_depth=32[0m
+[0;32mI (1403) canokey_usb: CTAPHID event queue created[0m
+[0;32mI (1403) canokey_usb: CTAPHID init done: state=IDLE mounted=0 ready=0[0m
+[0;32mI (1403) usb_hid: USB HID keyboard initialized on TinyUSB default USB[0m
+[0;32mI (1403) usb_hid: MSC flash partition 'usbstore': offset=0x1000000 size=16777216 bytes[0m
+[0;33mW (1483) tinyusb_msc_storage: Default MSC event callback called, event ID: 0, mount point: 0[0m
+[0;33mW (1483) tinyusb_msc_storage: Default MSC event callback called, event ID: 1, mount point: 1[0m
+[0;32mI (1493) usb_hid: usbstore first-boot format already done: fmt_v2_done=1[0m
+[0;32mI (1493) usb_hid: MSC flash storage mounted to APP; use switch_usbstore to expose USB disk[0m
+[0;32mI (1493) usb_hid: usbstore FAT boot OK: bps=4096 spc=1 reserved=1 fats=2 root_entries=512 total16=4060 total32=0 fatsz16=2 type='FAT12   '[0m
+[0;32mI (1493) usb_hid: usbstore config OK: partition=usbstore offset=0x1000000 size=16777216 mount=/data wl_size=16629760 wl_sector=4096 msc_sectors=4060 msc_sector=4096[0m
+[0;32mI (1493) usb_hid: usbstore already mounted to APP: /data[0m
+[0;32mI (1493) st7701sn_lcd: Initialize ST7701SN 480x640 MIPI display with ESP-IDF DSI flow[0m
+[0;32mI (1493) st7701sn_lcd: MIPI DSI PHY LDO enabled[0m
+[0;32mI (1493) st7701sn_lcd: Create MIPI DSI bus[0m
+[0;32mI (1493) st7701sn_lcd: Create MIPI DBI command IO[0m
+[0;32mI (1493) st7701sn_lcd: MIPI DSI command ACK disabled[0m
+[0;32mI (1493) st7701sn_lcd: Create MIPI DPI panel[0m
+[0;32mI (1503) st7701sn_lcd: MIPI DPI panel created[0m
+[0;32mI (1503) gpio: GPIO[37]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1503) st7701sn_lcd: LCD reset GPIO37 configured, readback=0[0m
+[0;32mI (1503) st7701sn_lcd: Precharge LCD reset on GPIO37 high[0m
+[0;32mI (1503) st7701sn_lcd: LCD reset GPIO37 precharge high, readback=0[0m
+[0;32mI (1503) st7701sn_lcd: Assert LCD reset on GPIO37[0m
+[0;32mI (1503) st7701sn_lcd: LCD reset GPIO37 after assert, readback=0[0m
+[0;32mI (1503) st7701sn_lcd: Release LCD reset on GPIO37[0m
+[0;32mI (1503) st7701sn_lcd: LCD reset GPIO37 after release, readback=0[0m
+[0;32mI (1553) st7701sn_lcd: Send ST7701SN init commands[0m
+[0;32mI (1553) st7701sn_lcd: LCD init cmd[0]: 0x01, len=0[0m
+[0;32mI (1683) st7701sn_lcd: LCD init cmd[1]: 0xFF, len=5[0m
+[0;32mI (1703) st7701sn_lcd: LCD init cmd[2]: 0xEF, len=1[0m
+[0;32mI (1713) st7701sn_lcd: LCD init cmd[3]: 0xFF, len=5[0m
+[0;32mI (1733) st7701sn_lcd: LCD init cmd[4]: 0xC0, len=2[0m
+[0;32mI (1743) st7701sn_lcd: LCD init cmd[5]: 0xC1, len=2[0m
+[0;32mI (1753) st7701sn_lcd: LCD init cmd[6]: 0xC2, len=2[0m
+[0;32mI (1763) st7701sn_lcd: LCD init cmd[7]: 0xC3, len=3[0m
+[0;32mI (1773) st7701sn_lcd: LCD init cmd[8]: 0xCC, len=1[0m
+[0;32mI (1783) st7701sn_lcd: LCD init cmd[9]: 0xB0, len=16[0m
+[0;32mI (1803) st7701sn_lcd: LCD init cmd[10]: 0xB1, len=16[0m
+[0;32mI (1823) st7701sn_lcd: LCD init cmd[11]: 0xFF, len=5[0m
+[0;32mI (1843) st7701sn_lcd: LCD init cmd[12]: 0xB0, len=1[0m
+[0;32mI (1853) st7701sn_lcd: LCD init cmd[13]: 0xB1, len=1[0m
+[0;32mI (1863) st7701sn_lcd: LCD init cmd[14]: 0xB2, len=1[0m
+[0;32mI (1873) st7701sn_lcd: LCD init cmd[15]: 0xB3, len=1[0m
+[0;32mI (1883) st7701sn_lcd: LCD init cmd[16]: 0xB5, len=1[0m
+[0;32mI (1893) st7701sn_lcd: LCD init cmd[17]: 0xB7, len=1[0m
+[0;32mI (1903) st7701sn_lcd: LCD init cmd[18]: 0xB8, len=1[0m
+[0;32mI (1913) st7701sn_lcd: LCD init cmd[19]: 0xC0, len=1[0m
+[0;32mI (1923) st7701sn_lcd: LCD init cmd[20]: 0xC1, len=1[0m
+[0;32mI (1933) st7701sn_lcd: LCD init cmd[21]: 0xC2, len=1[0m
+[0;32mI (1943) st7701sn_lcd: LCD init cmd[22]: 0xD0, len=1[0m
+[0;32mI (1953) st7701sn_lcd: LCD init cmd[23]: 0xE0, len=3[0m
+[0;32mI (1963) st7701sn_lcd: LCD init cmd[24]: 0xE1, len=11[0m
+[0;32mI (1983) st7701sn_lcd: LCD init cmd[25]: 0xE2, len=13[0m
+[0;32mI (2003) st7701sn_lcd: LCD init cmd[26]: 0xE3, len=4[0m
+[0;32mI (2013) st7701sn_lcd: LCD init cmd[27]: 0xE4, len=2[0m
+[0;32mI (2023) st7701sn_lcd: LCD init cmd[28]: 0xE5, len=16[0m
+[0;32mI (2043) st7701sn_lcd: LCD init cmd[29]: 0xE6, len=4[0m
+[0;32mI (2053) st7701sn_lcd: LCD init cmd[30]: 0xE7, len=2[0m
+[0;32mI (2063) st7701sn_lcd: LCD init cmd[31]: 0xE8, len=16[0m
+[0;32mI (2073) usb_hid: MSC storage mount start: APP[0m
+[0;32mI (2073) usb_hid: MSC storage mount complete: USB[0m
+[0;32mI (2073) usb_hid: USB host attached on rhport=1 mounted=1 hid0_ready=1 ctaphid_ready=1[0m
+[0;32mI (2083) st7701sn_lcd: LCD init cmd[32]: 0xEB, len=7[0m
+[0;32mI (2093) usb_hid: HID report descriptor requested instance=0[0m
+[0;32mI (2093) usb_hid: HID report descriptor requested instance=1[0m
+[0;32mI (2103) st7701sn_lcd: LCD init cmd[33]: 0xEC, len=2[0m
+[0;32mI (2113) st7701sn_lcd: LCD init cmd[34]: 0xED, len=16[0m
+[0;32mI (2123) usb_hid: HID SET_REPORT/OUT instance=0 report_id=1 type=2 len=1[0m
+[0;32mI (2133) st7701sn_lcd: LCD init cmd[35]: 0xEF, len=6[0m
+[0;32mI (2143) usb_hid: HID SET_REPORT/OUT instance=1 report_id=0 type=2 len=64[0m
+[0;32mI (2143) usb_hid: CTAPHID OUT raw=0x86 cmd=0x06 len=8[0m
+[0;32mI (2143) canokey_usb: CTAPHID RX cmd=0x06(CTAPHID_INIT) raw=0x86 len=8 mounted=1 ready=1[0m
+[0;32mI (2143) canokey_usb: 0x4ff15d00   ff ff ff ff 86 00 08 eb  05 22 e8 12 f7 91 c1 00  |........."......|[0m
+[0;32mI (2143) canokey_usb: 0x4ff15d10   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (2143) canokey_usb: 0x4ff15d20   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (2143) canokey_usb: 0x4ff15d30   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (2153) st7701sn_lcd: LCD init cmd[36]: 0xFF, len=5[0m
+[0;32mI (2173) st7701sn_lcd: LCD init cmd[37]: 0xE8, len=2[0m
+[0;32mI (2183) st7701sn_lcd: LCD init cmd[38]: 0xE8, len=2[0m
+[0;32mI (2213) st7701sn_lcd: LCD init cmd[39]: 0xE8, len=2[0m
+[0;32mI (2223) st7701sn_lcd: LCD init cmd[40]: 0xFF, len=5[0m
+[0;32mI (2243) st7701sn_lcd: LCD init cmd[41]: 0x11, len=0[0m
+[0;32mI (2373) st7701sn_lcd: LCD init cmd[42]: 0x3A, len=1[0m
+[0;32mI (2383) st7701sn_lcd: LCD init cmd[43]: 0x29, len=0[0m
+[0;32mI (2413) st7701sn_lcd: Start MIPI DPI panel init[0m
+[0;32mI (2413) st7701sn_lcd: MIPI DPI panel init done, video stream should be enabled[0m
+[0;32mI (2413) st7701sn_lcd: LCD backlight enabled[0m
+[0;32mI (2413) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2523) gpio: GPIO[7]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2523) ft6336: FT6336 detected, chip_id=0x00 vendor_id=0x00[0m
+[0;32mI (2523) app: Start LVGL[0m
+[0;32mI (2603) port_ui: user presence callback registered[0m
+[0;32mI (2603) ui_fido: FIDO confirm callback registered[0m
+[0;32mI (2603) canokey_port: CanoKey task starting[0m
+[0;32mI (2603) canokey_port: CanoKey LittleFS mount begin[0m
+[0;32mI (2613) canokey_flash: CanoKey LittleFS mounted: label=canokey_lfs offset=0xf00000 size=1048576 blocks=255[0m
+[0;32mI (2613) canokey_port: CanoKey LittleFS mount done[0m
+[0;32mI (2613) canokey_port: CanoKey crypto port init begin[0m
+[0;32mI (2613) canokey_crypto: crypto port ready[0m
+[0;32mI (2613) canokey_crypto: SHA256/HMAC-SHA256/AES-256-ECB selftest passed[0m
+[0;32mI (2613) canokey_port: CanoKey crypto port init done[0m
+[0;32mI (2613) canokey_port: CanoKey APDU buffer init begin[0m
+[0;32mI (2613) canokey_port: CanoKey APDU buffer init done[0m
+[0;32mI (2613) canokey_port: CanoKey device_init begin[0m
+[0;32mI (2613) canokey_port: CanoKey device_init done[0m
+[0;32mI (2613) canokey_port: CanoKey applets_install begin[0m
+[0;32mI (2623) canokey_flash: Platform config loaded from flash offset=0xfff000 len=512[0m
+[0;33mW (2733) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x02(PIN_ATTR) request_len=32 ret=16[0m
+[0;33mW (2733) canokey_fs: CTAP flash attr read data preview len=16/16[0m
+[0;33mW (2733) canokey_fs: 0x4ff38570   03 ac 67 42 16 f3 e1 5c  76 1e e1 a5 e2 55 f0 67  |..gB...\v....U.g|[0m
+[0;33mW (2743) canokey_fs: CTAP flash attr read path=ctap_dc attr=0x00(DC_GENERAL_ATTR) request_len=9 ret=9[0m
+[0;33mW (2753) canokey_fs: CTAP flash attr read data preview len=9/9[0m
+[0;33mW (2753) canokey_fs: 0x4ff38564   00 00 00 00 00 00 00 00  00                       |.........|[0m
+[0;33mW (2753) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x01(SIGN_CTR_ATTR) request_len=4 ret=4[0m
+[0;33mW (2753) canokey_fs: CTAP flash attr read data preview len=4/4[0m
+[0;33mW (2753) canokey_fs: 0x4ff38570   0e 00 00 00                                       |....|[0m
+[0;33mW (2753) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x03(PIN_CTR_ATTR) request_len=1 ret=1[0m
+[0;33mW (2753) canokey_fs: CTAP flash attr read data preview len=1/1[0m
+[0;33mW (2753) canokey_fs: 0x4ff3856f   08                                                |.|[0m
+[0;33mW (2753) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x04(KH_KEY_ATTR) request_len=32 ret=32[0m
+[0;33mW (2753) canokey_fs: CTAP flash attr read data preview len=32/32[0m
+[0;33mW (2753) canokey_fs: 0x4ff38570   d9 1d 04 cd 2b 6d 74 5a  f2 c6 59 c5 df d9 7a 09  |....+mtZ..Y...z.|[0m
+[0;33mW (2753) canokey_fs: 0x4ff38580   03 e1 8d be c6 c4 3b 1a  fc 48 37 95 72 15 82 89  |......;..H7.r...|[0m
+[0;33mW (2763) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x05(HE_KEY_ATTR) request_len=32 ret=32[0m
+[0;33mW (2763) canokey_fs: CTAP flash attr read data preview len=32/32[0m
+[0;33mW (2763) canokey_fs: 0x4ff38570   81 ab 44 7b 92 e8 03 2d  30 bb aa c2 63 9f 57 33  |..D{...-0...c.W3|[0m
+[0;33mW (2763) canokey_fs: 0x4ff38580   6d 5a 71 f5 d9 cc 2e c3  f1 41 85 4c 83 d5 04 88  |mZq......A.L....|[0m
+[0;32mI (2783) canokey_port: CanoKey applets_install done[0m
+[0;32mI (2783) canokey_usb: CTAPHID RX dequeue cmd=0x06(CTAPHID_INIT) raw=0x86 len=8 state=IDLE[0m
+[0;32mI (2783) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (2783) canokey_usb: CTAPHID IN cmd=0x06(CTAPHID_INIT) raw=0x86 len=17[0m
+[0;32mI (2783) canokey_usb: 0x4ff20053   eb 05 22 e8 12 f7 91 c1  05 54 d7 52 02 01 00 00  |.."......T.R....|[0m
+[0;32mI (2783) canokey_usb: 0x4ff20063   04                                                |.|[0m
+[0;32mI (2783) canokey_usb: CTAPHID IN submitted raw=0x86[0m
+[0;32mI (2783) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (2783) usb_hid: HID report complete instance=1 len=64 byte4=0x86[0m
+[0;32mI (2783) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (2783) usb_hid: HID SET_REPORT/OUT instance=1 report_id=0 type=2 len=64[0m
+[0;32mI (2783) usb_hid: CTAPHID OUT raw=0x90 cmd=0x10 len=1[0m
+[0;32mI (2783) canokey_usb: CTAPHID RX cmd=0x10(CTAPHID_CBOR) raw=0x90 len=1 mounted=1 ready=1[0m
+[0;33mW (2783) canokey_usb: CTAPHID RX CBOR cmd=0x04(authenticatorGetInfo) payload_len=1 cid=0554d752[0m
+[0;32mI (2783) canokey_usb: 0x4ff15d00   05 54 d7 52 90 00 01 04  00 00 00 00 00 00 00 00  |.T.R............|[0m
+[0;32mI (2783) canokey_usb: 0x4ff15d10   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (2783) canokey_usb: 0x4ff15d20   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (2783) canokey_usb: 0x4ff15d30   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (2803) canokey_usb: CTAPHID RX dequeue cmd=0x10(CTAPHID_CBOR) raw=0x90 len=1 state=IDLE[0m
+[0;33mW (2803) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x02(PIN_ATTR) request_len=1 ret=16[0m
+[0;33mW (2803) canokey_fs: CTAP flash attr read data preview len=1/16[0m
+[0;33mW (2803) canokey_fs: 0x4ff384bf   03                                                |.|[0m
+[0;32mI (2883) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (2883) canokey_usb: CTAPHID IN cmd=0x10(CTAPHID_CBOR) raw=0x90 len=427[0m
+[0;32mI (2883) canokey_usb: CTAPHID IN CTAPHID_CBOR full report[0m
+[0;32mI (2883) canokey_usb: 0x4ff2004c   05 54 d7 52 90 01 ab 00  b5 01 84 66 55 32 46 5f  |.T.R.......fU2F_|[0m
+[0;32mI (2883) canokey_usb: 0x4ff2005c   56 32 68 46 49 44 4f 5f  32 5f 30 68 46 49 44 4f  |V2hFIDO_2_0hFIDO|[0m
+[0;32mI (2883) canokey_usb: 0x4ff2006c   5f 32 5f 31 68 46 49 44  4f 5f 32 5f 33 02 87 68  |_2_1hFIDO_2_3..h|[0m
+[0;32mI (2883) canokey_usb: 0x4ff2007c   63 72 65 64 42 6c 6f 62  6b 63 72 65 64 50 72 6f  |credBlobkcredPro|[0m
+[0;32mI (2883) canokey_usb: CTAPHID IN submitted raw=0x90[0m
+[0;32mI (2883) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (2883) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (2883) usb_hid: HID report complete instance=1 len=64 byte4=0x90[0m
+[0;32mI (2883) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (2883) canokey_usb: CTAPHID IN cont seq=0x00[0m
+[0;32mI (2883) canokey_usb: CTAPHID IN submitted raw=0x00[0m
+[0;32mI (2883) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (2883) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (2883) usb_hid: HID report complete instance=1 len=64 byte4=0x00[0m
+[0;32mI (2883) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (2883) canokey_usb: CTAPHID IN cont seq=0x01[0m
+[0;32mI (2883) canokey_usb: CTAPHID IN submitted raw=0x01[0m
+[0;32mI (2883) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (2883) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (2883) usb_hid: HID report complete instance=1 len=64 byte4=0x01[0m
+[0;32mI (2883) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (2883) canokey_usb: CTAPHID IN cont seq=0x02[0m
+[0;32mI (2883) canokey_usb: CTAPHID IN submitted raw=0x02[0m
+[0;32mI (2883) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (2893) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (2893) usb_hid: HID report complete instance=1 len=64 byte4=0x02[0m
+[0;32mI (2893) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (2893) canokey_usb: CTAPHID IN cont seq=0x03[0m
+[0;32mI (2893) canokey_usb: CTAPHID IN submitted raw=0x03[0m
+[0;32mI (2893) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (2893) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (2893) usb_hid: HID report complete instance=1 len=64 byte4=0x03[0m
+[0;32mI (2893) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (2893) canokey_usb: CTAPHID IN cont seq=0x04[0m
+[0;32mI (2893) canokey_usb: CTAPHID IN submitted raw=0x04[0m
+[0;32mI (2893) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (2893) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (2893) usb_hid: HID report complete instance=1 len=64 byte4=0x04[0m
+[0;32mI (2893) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (2893) canokey_usb: CTAPHID IN cont seq=0x05[0m
+[0;32mI (2893) canokey_usb: CTAPHID IN submitted raw=0x05[0m
+[0;32mI (2893) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=0 state=BUSY[0m
+[0;32mI (2893) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (2893) usb_hid: HID report complete instance=1 len=64 byte4=0x05[0m
+[0;32mI (2893) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (2893) canokey_usb: CTAPHID IN cont seq=0x06[0m
+[0;33mW (2893) canokey_usb: CTAP response full payload status=0x00 len=427[0m
+[0;33mW (2893) canokey_usb: 0x4ff1f712   00 b5 01 84 66 55 32 46  5f 56 32 68 46 49 44 4f  |....fU2F_V2hFIDO|[0m
+[0;33mW (2893) canokey_usb: 0x4ff1f722   5f 32 5f 30 68 46 49 44  4f 5f 32 5f 31 68 46 49  |_2_0hFIDO_2_1hFI|[0m
+[0;33mW (2893) canokey_usb: 0x4ff1f732   44 4f 5f 32 5f 33 02 87  68 63 72 65 64 42 6c 6f  |DO_2_3..hcredBlo|[0m
+[0;33mW (2893) canokey_usb: 0x4ff1f742   62 6b 63 72 65 64 50 72  6f 74 65 63 74 6b 68 6d  |bkcredProtectkhm|[0m
+[0;33mW (2893) canokey_usb: 0x4ff1f752   61 63 2d 73 65 63 72 65  74 6e 68 6d 61 63 2d 73  |ac-secretnhmac-s|[0m
+[0;33mW (2893) canokey_usb: 0x4ff1f762   65 63 72 65 74 2d 6d 63  6c 6c 61 72 67 65 42 6c  |ecret-mcllargeBl|[0m
+[0;33mW (2893) canokey_usb: 0x4ff1f772   6f 62 4b 65 79 6c 6d 69  6e 50 69 6e 4c 65 6e 67  |obKeylminPinLeng|[0m
+[0;33mW (2893) canokey_usb: 0x4ff1f782   74 68 71 74 68 69 72 64  50 61 72 74 79 50 61 79  |thqthirdPartyPay|[0m
+[0;33mW (2893) canokey_usb: 0x4ff1f792   6d 65 6e 74 03 50 24 4e  b2 9e e0 90 4e 49 81 fe  |ment.P$N....NI..|[0m
+[0;33mW (2893) canokey_usb: 0x4ff1f7a2   1f 20 f8 d3 b8 f4 04 a9  62 72 6b f5 68 61 6c 77  |. ......brk.halw|[0m
+[0;33mW (2893) canokey_usb: 0x4ff1f7b2   61 79 73 55 76 f4 68 63  72 65 64 4d 67 6d 74 f5  |aysUv.hcredMgmt.|[0m
+[0;33mW (2893) canokey_usb: 0x4ff1f7c2   69 61 75 74 68 6e 72 43  66 67 f5 69 63 6c 69 65  |iauthnrCfg.iclie|[0m
+[0;33mW (2903) canokey_usb: 0x4ff1f7d2   6e 74 50 69 6e f5 6a 6c  61 72 67 65 42 6c 6f 62  |ntPin.jlargeBlob|[0m
+[0;33mW (2903) canokey_usb: 0x4ff1f7e2   73 f5 6e 70 69 6e 55 76  41 75 74 68 54 6f 6b 65  |s.npinUvAuthToke|[0m
+[0;33mW (2903) canokey_usb: 0x4ff1f7f2   6e f5 6f 73 65 74 4d 69  6e 50 49 4e 4c 65 6e 67  |n.osetMinPINLeng|[0m
+[0;33mW (2903) canokey_usb: 0x4ff1f802   74 68 f5 70 6d 61 6b 65  43 72 65 64 55 76 4e 6f  |th.pmakeCredUvNo|[0m
+[0;33mW (2903) canokey_usb: 0x4ff1f812   74 52 71 64 f5 05 19 05  1c 06 82 01 02 07 10 08  |tRqd............|[0m
+[0;33mW (2903) canokey_usb: 0x4ff1f822   18 46 09 82 63 6e 66 63  63 75 73 62 0a 84 a2 63  |.F..cnfccusb...c|[0m
+[0;33mW (2903) canokey_usb: 0x4ff1f832   61 6c 67 26 64 74 79 70  65 6a 70 75 62 6c 69 63  |alg&dtypejpublic|[0m
+[0;33mW (2903) canokey_usb: 0x4ff1f842   2d 6b 65 79 a2 63 61 6c  67 27 64 74 79 70 65 6a  |-key.calg'dtypej|[0m
+[0;33mW (2903) canokey_usb: 0x4ff1f852   70 75 62 6c 69 63 2d 6b  65 79 a2 63 61 6c 67 38  |public-key.calg8|[0m
+[0;33mW (2903) canokey_usb: 0x4ff1f862   30 64 74 79 70 65 6a 70  75 62 6c 69 63 2d 6b 65  |0dtypejpublic-ke|[0m
+[0;33mW (2903) canokey_usb: 0x4ff1f872   79 a2 63 61 6c 67 38 35  64 74 79 70 65 6a 70 75  |y.calg85dtypejpu|[0m
+[0;33mW (2903) canokey_usb: 0x4ff1f882   62 6c 69 63 2d 6b 65 79  0b 19 10 00 0d 04 0e 18  |blic-key........|[0m
+[0;33mW (2903) canokey_usb: 0x4ff1f892   c9 0f 18 20 10 04 14 19  09 aa 16 81 66 70 61 63  |... ........fpac|[0m
+[0;33mW (2903) canokey_usb: 0x4ff1f8a2   6b 65 64 18 18 f4 18 1a  82 63 6e 66 63 63 75 73  |ked......cnfccus|[0m
+[0;33mW (2903) canokey_usb: 0x4ff1f8b2   62 18 1d 18 3f 18 1f 83  02 03 04                 |b...?......|[0m
+[0;33mW (2903) canokey_usb: CTAP response signature key=3 status=0x00 sigLen=16[0m
+[0;33mW (2903) canokey_usb: 0x4ff1f798   24 4e b2 9e e0 90 4e 49  81 fe 1f 20 f8 d3 b8 f4  |$N....NI... ....|[0m
+[0;32mI (2903) canokey_usb: CTAPHID IN submitted raw=0x06[0m
+[0;32mI (2903) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (2903) usb_hid: HID report complete instance=1 len=64 byte4=0x06[0m
+[0;32mI (2903) usb_hid: CTAPHID IN complete len=64[0m
+[0;32mI (2903) usb_hid: HID SET_REPORT/OUT instance=1 report_id=0 type=2 len=64[0m
+[0;32mI (2903) usb_hid: CTAPHID OUT raw=0x90 cmd=0x10 len=6[0m
+[0;32mI (2903) canokey_usb: CTAPHID RX cmd=0x10(CTAPHID_CBOR) raw=0x90 len=6 mounted=1 ready=1[0m
+[0;33mW (2903) canokey_usb: CTAPHID RX CBOR cmd=0x06(authenticatorClientPIN) payload_len=6 cid=0554d752[0m
+[0;32mI (2903) canokey_usb: 0x4ff15d00   05 54 d7 52 90 00 06 06  a2 01 01 02 01 00 00 00  |.T.R............|[0m
+[0;32mI (2903) canokey_usb: 0x4ff15d10   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (2903) canokey_usb: 0x4ff15d20   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (2903) canokey_usb: 0x4ff15d30   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (2923) canokey_usb: CTAPHID RX dequeue cmd=0x10(CTAPHID_CBOR) raw=0x90 len=6 state=IDLE[0m
+[0;33mW (2923) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x03(PIN_CTR_ATTR) request_len=1 ret=1[0m
+[0;33mW (2923) canokey_fs: CTAP flash attr read data preview len=1/1[0m
+[0;33mW (2923) canokey_fs: 0x4ff382cf   08                                                |.|[0m
+[0;32mI (2923) canokey_usb: CTAPHID IN send request len=64 mounted=1 ready=1 state=IDLE[0m
+[0;32mI (2923) canokey_usb: CTAPHID IN cmd=0x10(CTAPHID_CBOR) raw=0x90 len=4[0m
+[0;32mI (2923) canokey_usb: CTAPHID IN CTAPHID_CBOR full report[0m
+[0;32mI (2923) canokey_usb: 0x4ff2004c   05 54 d7 52 90 00 04 00  a1 03 08 00 00 00 00 00  |.T.R............|[0m
+[0;32mI (2923) canokey_usb: 0x4ff2005c   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (2923) canokey_usb: 0x4ff2006c   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;32mI (2923) canokey_usb: 0x4ff2007c   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|[0m
+[0;33mW (2923) canokey_usb: CTAP response full payload status=0x00 len=4[0m
+[0;33mW (2923) canokey_usb: 0x4ff1f712   00 a1 03 08                                       |....|[0m
+[0;32mI (2923) canokey_usb: CTAPHID IN submitted raw=0x90[0m
+[0;32mI (2923) canokey_usb: CTAPHID IN complete: state=IDLE[0m
+[0;32mI (2923) usb_hid: HID report complete instance=1 len=64 byte4=0x90[0m
+[0;32mI (2923) usb_hid: CTAPHID IN complete len=64[0m

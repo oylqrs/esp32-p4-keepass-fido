@@ -1,0 +1,17 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D E:\oyl\2026\202606\esp32-p4-passkey\build\bootloader\esp-idf\esptool_py && C:\Espressif\tools\python\v5.4.4\venv\Scripts\python.exe E:/Espressif/.espressif/v5.4.4/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 E:/oyl/2026/202606/esp32-p4-passkey/build/bootloader/bootloader.bin"
+Bootloader binary size 0x58e0 bytes. 0x720 bytes (7%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/UI_SCREEN2.c.obj
+[5/9] Linking C static library esp-idf\main\libmain.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable hello_world.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.11.0
+Creating esp32p4 image...
+Merged 3 ELF sections
+Successfully created esp32p4 image.
+Generated E:/oyl/2026/202606/esp32-p4-passkey/build/hello_world.bin
+[9/9] C:\Windows\system32\cmd.exe /C "cd /D E:\oyl\2026\202606\esp32-p4-passkey\build\esp-idf\esptool_py && C:\Espressif\tools\python\v5.4.4\venv\Scripts\python.exe E:/Espressif/.espressif/v5.4.4/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app E:/oyl/2026/202606/esp32-p4-passkey/build/partition_table/partition-table.bin E:/oyl/2026/202606/esp32-p4-passkey/build/hello_world.bin"
+hello_world.bin binary size 0xd4990 bytes. Smallest app partition is 0xef0000 bytes. 0xe1b670 bytes (94%) free.

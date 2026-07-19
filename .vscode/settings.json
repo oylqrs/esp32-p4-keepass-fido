@@ -1,0 +1,27 @@
+{
+  "idf.customExtraVars": {
+    "IDF_TOOLS_PATH": "C:\\Espressif\\tools",
+    "IDF_PYTHON_ENV_PATH": "C:\\Espressif\\tools\\python\\v5.4.4\\venv"
+  },
+  "idf.currentSetup": "E:\\Espressif\\.espressif\\v5.4.4\\esp-idf",
+  "terminal.integrated.defaultProfile.windows": "ESP-IDF PowerShell",
+  "terminal.integrated.profiles.windows": {
+    "ESP-IDF PowerShell": {
+      "source": "PowerShell",
+      "args": [
+        "-ExecutionPolicy",
+        "Bypass",
+        "-NoExit",
+        "-File",
+        "C:\\Espressif\\tools\\Microsoft.v5.4.4.PowerShell_profile.ps1"
+      ]
+    }
+  },
+  "clangd.path": "C:\\Espressif\\tools\\esp-clang\\esp-18.1.2_20240912\\esp-clang\\bin\\clangd.exe",
+  "clangd.arguments": [
+    "--background-index",
+    "--query-driver=**",
+    "--compile-commands-dir=e:\\oyl\\2026\\202606\\esp32-p4_hello\\build"
+  ],
+  "idf.portWin": "COM6"
+}

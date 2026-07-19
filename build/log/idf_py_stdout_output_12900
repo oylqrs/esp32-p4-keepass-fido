@@ -1,0 +1,965 @@
+[0;32mI (202) esp_image: segment 4: paddr=000f0160 vaddr=4ff0c618 sizeESP-ROM:esp32p4-eco2-20240710[0m
+Build:Jul 10 2024
+rst:0x17 (CHIP_USB_UART_RESET),boot:0x20c (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4000a39e
+Core1 Saved PC:0x4fc012cc
+SPI mode:DIO, clock div:2
+load:0x4ff33ce0,len:0x16f0
+load:0x4ff2abd0,len:0xe3c
+load:0x4ff2cbd0,len:0x3358
+entry 0x4ff2abda
+[0;32mI (13) boot: ESP-IDF v5.4.4 2nd stage bootloader[0m
+[0;32mI (14) boot: compile time Jul 18 2026 23:23:46[0m
+[0;32mI (14) boot: Multicore bootloader[0m
+[0;32mI (15) boot: chip revision: v1.3[0m
+[0;32mI (15) boot: efuse block revision: v0.3[0m
+[0;32mI (16) boot.esp32p4: SPI Speed      : 40MHz[0m
+[0;32mI (16) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (16) boot.esp32p4: SPI Flash Size : 32MB[0m
+[0;32mI (17) boot: Enabling RNG early entropy source...[0m
+[0;32mI (17) boot: Partition Table:[0m
+[0;32mI (17) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (18) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (18) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (19) boot:  2 factory          factory app      00 00 00010000 00ef0000[0m
+[0;32mI (19) boot:  3 canokey_lfs      Unknown data     01 40 00f00000 00100000[0m
+[0;32mI (20) boot:  4 usbstore         Unknown data     01 81 01000000 01000000[0m
+[0;32mI (21) boot: End of partition table[0m
+[0;32mI (22) esp_image: segment 0: paddr=00010020 vaddr=400b0020 size=33968h (211304) map[0m
+[0;32mI (64) esp_image: segment 1: paddr=00043990 vaddr=30100000 size=00068h (   104) load[0m
+[0;32mI (65) esp_image: segment 2: paddr=00043a00 vaddr=4ff00000 size=0c618h ( 50712) load[0m
+[0;32mI (77) esp_image: segment 3: paddr=00050020 vaddr=40000020 size=a0138h (655672) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000f0160 vaddr=4ff0c618 size=08300h ( 33536) load[0m
+[0;32mI (214) esp_image: segment 5: paddr=000f8468 vaddr=4ff14980 size=05678h ( 22136) load[0m
+[0;32mI (220) esp_image: segment 6: paddr=000fdae8 vaddr=50108080 size=0001ch (    28) load[0m
+[0;32mI (225) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (226) boot: Disabling RNG early entropy source...[0m
+[0;32mI (231) hex_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (231) hex_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (231) hex_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (232) hex_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (232) hex_psram: density      : 0x07 (256 Mbit)[0m
+[0;32mI (232) hex_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (233) hex_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (233) hex_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (234) hex_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (234) hex_psram: BitMode      : 0x01 (X16 Mode)[0m
+[0;32mI (234) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (235) hex_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (235) MSPI DQS: tuning success, best phase id is 0[0m
+[0;32mI (408) MSPI DQS: tuning success, best delayline id is 16[0m
+[0;32mI (408) esp_psram: Found 32MB PSRAM device[0m
+[0;32mI (409) esp_psram: Speed: 200MHz[0m
+[0;32mI (410) hex_psram: psram CS IO is dedicated[0m
+[0;32mI (410) cpu_start: Multicore app[0m
+[0;32mI (1360) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1369) cpu_start: Pro cpu start user code[0m
+[0;32mI (1370) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (1370) app_init: Application information:[0m
+[0;32mI (1370) app_init: Project name:     hello_world[0m
+[0;32mI (1370) app_init: App version:      1[0m
+[0;32mI (1370) app_init: Compile time:     Jul 18 2026 23:25:33[0m
+[0;32mI (1371) app_init: ELF file SHA256:  4a2c5193a...[0m
+[0;32mI (1371) app_init: ESP-IDF:          v5.4.4[0m
+[0;32mI (1371) efuse_init: Min chip rev:     v0.1[0m
+[0;32mI (1371) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (1372) efuse_init: Chip rev:         v1.3[0m
+[0;32mI (1372) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1372) heap_init: At 4FF21590 len 00019A30 (102 KiB): RETENT_RAM[0m
+[0;32mI (1373) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (1373) heap_init: At 4FF50980 len 0004F680 (317 KiB): RAM[0m
+[0;32mI (1373) heap_init: At 5010809C len 00007F64 (31 KiB): RTCRAM[0m
+[0;32mI (1374) heap_init: At 30100068 len 00001F98 (7 KiB): TCM[0m
+[0;32mI (1374) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator[0m
+[0;32mI (1376) spi_flash: detected chip: gd[0m
+[0;32mI (1376) spi_flash: flash io: dio[0m
+[0;33mW (1376) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1377) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1377) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1378) main_task: Started on CPU0[0m
+[0;32mI (1388) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1388) main_task: Calling app_main()[0m
+[0;32mI (1388) canokey_crypto: crypto port ready[0m
+[0;32mI (1388) usb_hid: USB MSC descriptor enabled; storage init is handled separately[0m
+[0;32mI (1388) tusb_desc: [0m
+┌─────────────────────────────────┐
+│  USB Device Descriptor Summary  │
+├───────────────────┬─────────────┤
+│bDeviceClass       │ 0           │
+├───────────────────┼─────────────┤
+│bDeviceSubClass    │ 0           │
+├───────────────────┼─────────────┤
+│bDeviceProtocol    │ 0           │
+├───────────────────┼─────────────┤
+│bMaxPacketSize0    │ 64          │
+├───────────────────┼─────────────┤
+│idVendor           │ 0x303a      │
+├───────────────────┼─────────────┤
+│idProduct          │ 0x4006      │
+├───────────────────┼─────────────┤
+│bcdDevice          │ 0x100       │
+├───────────────────┼─────────────┤
+│iManufacturer      │ 0x1         │
+├───────────────────┼─────────────┤
+│iProduct           │ 0x2         │
+├───────────────────┼─────────────┤
+│iSerialNumber      │ 0x3         │
+├───────────────────┼─────────────┤
+│bNumConfigurations │ 0x1         │
+└───────────────────┴─────────────┘
+[0;32mI (1398) TinyUSB: TinyUSB Driver installed on port 1[0m
+[0;32mI (1398) usb_hid: TinyUSB driver installed: mounted=0 hid0_ready=0 ctaphid_ready=0[0m
+[0;32mI (1398) canokey_usb: CTAPHID init start: itf=1 report_size=64 queue_depth=32[0m
+[0;32mI (1398) canokey_usb: CTAPHID event queue created[0m
+[0;32mI (1398) canokey_usb: CTAPHID init done: state=IDLE mounted=0 ready=0[0m
+[0;32mI (1398) usb_hid: USB HID keyboard initialized on TinyUSB default USB[0m
+[0;32mI (1398) usb_hid: MSC flash partition 'usbstore': offset=0x1000000 size=16777216 bytes[0m
+[0;33mW (1478) tinyusb_msc_storage: Default MSC event callback called, event ID: 0, mount point: 0[0m
+[0;33mW (1478) tinyusb_msc_storage: Default MSC event callback called, event ID: 1, mount point: 1[0m
+[0;32mI (1488) usb_hid: usbstore first-boot format already done: fmt_v2_done=1[0m
+[0;32mI (1488) usb_hid: MSC flash storage mounted to APP; use switch_usbstore to expose USB disk[0m
+[0;32mI (1488) usb_hid: usbstore FAT boot OK: bps=4096 spc=1 reserved=1 fats=2 root_entries=512 total16=4060 total32=0 fatsz16=2 type='FAT12   '[0m
+[0;32mI (1488) usb_hid: usbstore config OK: partition=usbstore offset=0x1000000 size=16777216 mount=/data wl_size=16629760 wl_sector=4096 msc_sectors=4060 msc_sector=4096[0m
+[0;32mI (1488) usb_hid: usbstore already mounted to APP: /data[0m
+[0;32mI (1488) st7701sn_lcd: Initialize ST7701SN 480x640 MIPI display with ESP-IDF DSI flow[0m
+[0;32mI (1488) st7701sn_lcd: MIPI DSI PHY LDO enabled[0m
+[0;32mI (1488) st7701sn_lcd: Create MIPI DSI bus[0m
+[0;32mI (1488) st7701sn_lcd: Create MIPI DBI command IO[0m
+[0;32mI (1488) st7701sn_lcd: MIPI DSI command ACK disabled[0m
+[0;32mI (1488) st7701sn_lcd: Create MIPI DPI panel[0m
+[0;32mI (1498) st7701sn_lcd: MIPI DPI panel created[0m
+[0;32mI (1498) gpio: GPIO[37]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1498) st7701sn_lcd: LCD reset GPIO37 configured, readback=0[0m
+[0;32mI (1498) st7701sn_lcd: Precharge LCD reset on GPIO37 high[0m
+[0;32mI (1498) st7701sn_lcd: LCD reset GPIO37 precharge high, readback=0[0m
+[0;32mI (1498) st7701sn_lcd: Assert LCD reset on GPIO37[0m
+[0;32mI (1498) st7701sn_lcd: LCD reset GPIO37 after assert, readback=0[0m
+[0;32mI (1498) st7701sn_lcd: Release LCD reset on GPIO37[0m
+[0;32mI (1498) st7701sn_lcd: LCD reset GPIO37 after release, readback=0[0m
+[0;32mI (1548) st7701sn_lcd: Send ST7701SN init commands[0m
+[0;32mI (1548) st7701sn_lcd: LCD init cmd[0]: 0x01, len=0[0m
+[0;32mI (1678) st7701sn_lcd: LCD init cmd[1]: 0xFF, len=5[0m
+[0;32mI (1698) st7701sn_lcd: LCD init cmd[2]: 0xEF, len=1[0m
+[0;32mI (1708) st7701sn_lcd: LCD init cmd[3]: 0xFF, len=5[0m
+[0;32mI (1728) st7701sn_lcd: LCD init cmd[4]: 0xC0, len=2[0m
+[0;32mI (1738) st7701sn_lcd: LCD init cmd[5]: 0xC1, len=2[0m
+[0;32mI (1748) st7701sn_lcd: LCD init cmd[6]: 0xC2, len=2[0m
+[0;32mI (1758) st7701sn_lcd: LCD init cmd[7]: 0xC3, len=3[0m
+[0;32mI (1768) st7701sn_lcd: LCD init cmd[8]: 0xCC, len=1[0m
+[0;32mI (1778) st7701sn_lcd: LCD init cmd[9]: 0xB0, len=16[0m
+[0;32mI (1798) st7701sn_lcd: LCD init cmd[10]: 0xB1, len=16[0m
+[0;32mI (1818) st7701sn_lcd: LCD init cmd[11]: 0xFF, len=5[0m
+[0;32mI (1838) st7701sn_lcd: LCD init cmd[12]: 0xB0, len=1[0m
+[0;32mI (1848) st7701sn_lcd: LCD init cmd[13]: 0xB1, len=1[0m
+[0;32mI (1858) st7701sn_lcd: LCD init cmd[14]: 0xB2, len=1[0m
+[0;32mI (1868) st7701sn_lcd: LCD init cmd[15]: 0xB3, len=1[0m
+[0;32mI (1878) st7701sn_lcd: LCD init cmd[16]: 0xB5, len=1[0m
+[0;32mI (1888) st7701sn_lcd: LCD init cmd[17]: 0xB7, len=1[0m
+[0;32mI (1898) st7701sn_lcd: LCD init cmd[18]: 0xB8, len=1[0m
+[0;32mI (1908) st7701sn_lcd: LCD init cmd[19]: 0xC0, len=1[0m
+[0;32mI (1918) st7701sn_lcd: LCD init cmd[20]: 0xC1, len=1[0m
+[0;32mI (1928) st7701sn_lcd: LCD init cmd[21]: 0xC2, len=1[0m
+[0;32mI (1938) st7701sn_lcd: LCD init cmd[22]: 0xD0, len=1[0m
+[0;32mI (1948) st7701sn_lcd: LCD init cmd[23]: 0xE0, len=3[0m
+[0;32mI (1958) st7701sn_lcd: LCD init cmd[24]: 0xE1, len=11[0m
+[0;32mI (1978) st7701sn_lcd: LCD init cmd[25]: 0xE2, len=13[0m
+[0;32mI (1998) st7701sn_lcd: LCD init cmd[26]: 0xE3, len=4[0m
+[0;32mI (2008) st7701sn_lcd: LCD init cmd[27]: 0xE4, len=2[0m
+[0;32mI (2018) st7701sn_lcd: LCD init cmd[28]: 0xE5, len=16[0m
+[0;32mI (2038) st7701sn_lcd: LCD init cmd[29]: 0xE6, len=4[0m
+[0;32mI (2048) st7701sn_lcd: LCD init cmd[30]: 0xE7, len=2[0m
+[0;32mI (2058) st7701sn_lcd: LCD init cmd[31]: 0xE8, len=16[0m
+[0;32mI (2078) st7701sn_lcd: LCD init cmd[32]: 0xEB, len=7[0m
+[0;32mI (2098) st7701sn_lcd: LCD init cmd[33]: 0xEC, len=2[0m
+[0;32mI (2108) st7701sn_lcd: LCD init cmd[34]: 0xED, len=16[0m
+[0;32mI (2128) st7701sn_lcd: LCD init cmd[35]: 0xEF, len=6[0m
+[0;32mI (2148) st7701sn_lcd: LCD init cmd[36]: 0xFF, len=5[0m
+[0;32mI (2168) st7701sn_lcd: LCD init cmd[37]: 0xE8, len=2[0m
+[0;32mI (2178) st7701sn_lcd: LCD init cmd[38]: 0xE8, len=2[0m
+[0;32mI (2208) st7701sn_lcd: LCD init cmd[39]: 0xE8, len=2[0m
+[0;32mI (2218) st7701sn_lcd: LCD init cmd[40]: 0xFF, len=5[0m
+[0;32mI (2238) st7701sn_lcd: LCD init cmd[41]: 0x11, len=0[0m
+[0;32mI (2368) st7701sn_lcd: LCD init cmd[42]: 0x3A, len=1[0m
+[0;32mI (2378) st7701sn_lcd: LCD init cmd[43]: 0x29, len=0[0m
+[0;32mI (2408) st7701sn_lcd: Start MIPI DPI panel init[0m
+[0;32mI (2408) st7701sn_lcd: MIPI DPI panel init done, video stream should be enabled[0m
+[0;32mI (2408) st7701sn_lcd: LCD backlight enabled[0m
+[0;32mI (2408) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2518) gpio: GPIO[7]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2518) ft6336: FT6336 detected, chip_id=0x00 vendor_id=0x00[0m
+[0;32mI (2518) app: Start LVGL[0m
+[0;32mI (2598) port_ui: user presence callback registered[0m
+[0;32mI (2598) ui_fido: FIDO confirm callback registered[0m
+[0;32mI (2598) canokey_port: CanoKey task starting[0m
+[0;32mI (2598) canokey_port: CanoKey LittleFS mount begin[0m
+[0;32mI (2608) canokey_flash: CanoKey LittleFS mounted: label=canokey_lfs offset=0xf00000 size=1048576 blocks=255[0m
+[0;32mI (2608) canokey_port: CanoKey LittleFS mount done[0m
+[0;32mI (2608) canokey_port: CanoKey crypto port init begin[0m
+[0;32mI (2608) canokey_crypto: crypto port ready[0m
+[0;32mI (2608) canokey_crypto: SHA256/HMAC-SHA256/AES-256-ECB selftest passed[0m
+[0;32mI (2608) canokey_port: CanoKey crypto port init done[0m
+[0;32mI (2608) canokey_port: CanoKey APDU buffer init begin[0m
+[0;32mI (2608) canokey_port: CanoKey APDU buffer init done[0m
+[0;32mI (2608) canokey_port: CanoKey device_init begin[0m
+[0;32mI (2608) canokey_port: CanoKey device_init done[0m
+[0;32mI (2608) canokey_port: CanoKey applets_install begin[0m
+[0;32mI (2618) canokey_flash: Platform config loaded from flash offset=0xfff000 len=512[0m
+[0;33mW (2718) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x02(PIN_ATTR) request_len=32 ret=16[0m
+[0;33mW (2718) canokey_fs: CTAP flash attr read data preview len=16/16[0m
+[0;33mW (2718) canokey_fs: 0x4ff39da0   03 ac 67 42 16 f3 e1 5c  76 1e e1 a5 e2 55 f0 67  |..gB...\v....U.g|[0m
+[0;33mW (2728) canokey_fs: CTAP flash attr read path=ctap_dc attr=0x00(DC_GENERAL_ATTR) request_len=9 ret=9[0m
+[0;33mW (2728) canokey_fs: CTAP flash attr read data preview len=9/9[0m
+[0;33mW (2728) canokey_fs: 0x4ff39d94   02 00 00 00 01 00 00 00  00                       |.........|[0m
+[0;33mW (2738) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x01(SIGN_CTR_ATTR) request_len=4 ret=4[0m
+[0;33mW (2738) canokey_fs: CTAP flash attr read data preview len=4/4[0m
+[0;33mW (2738) canokey_fs: 0x4ff39da0   23 00 00 00                                       |#...|[0m
+[0;33mW (2738) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x03(PIN_CTR_ATTR) request_len=1 ret=1[0m
+[0;33mW (2738) canokey_fs: CTAP flash attr read data preview len=1/1[0m
+[0;33mW (2738) canokey_fs: 0x4ff39d9f   08                                                |.|[0m
+[0;33mW (2738) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x04(KH_KEY_ATTR) request_len=32 ret=32[0m
+[0;33mW (2738) canokey_fs: CTAP flash attr read data preview len=32/32[0m
+[0;33mW (2738) canokey_fs: 0x4ff39da0   d9 1d 04 cd 2b 6d 74 5a  f2 c6 59 c5 df d9 7a 09  |....+mtZ..Y...z.|[0m
+[0;33mW (2738) canokey_fs: 0x4ff39db0   03 e1 8d be c6 c4 3b 1a  fc 48 37 95 72 15 82 89  |......;..H7.r...|[0m
+[0;33mW (2748) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x05(HE_KEY_ATTR) request_len=32 ret=32[0m
+[0;33mW (2748) canokey_fs: CTAP flash attr read data preview len=32/32[0m
+[0;33mW (2748) canokey_fs: 0x4ff39da0   81 ab 44 7b 92 e8 03 2d  30 bb aa c2 63 9f 57 33  |..D{...-0...c.W3|[0m
+[0;33mW (2748) canokey_fs: 0x4ff39db0   6d 5a 71 f5 d9 cc 2e c3  f1 41 85 4c 83 d5 04 88  |mZq......A.L....|[0m
+[0;32mI (2768) canokey_port: CanoKey applets_install done[0m
+[0;33mW (2768) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x00(KEY_ATTR) request_len=32 ret=32[0m
+[0;33mW (2768) canokey_fs: CTAP flash attr read data preview len=32/32[0m
+[0;33mW (2768) canokey_fs: 0x4ff39e10   01 01 01 01 01 01 01 01  01 01 01 01 01 01 01 01  |................|[0m
+[0;33mW (2768) canokey_fs: 0x4ff39e20   01 01 01 01 01 01 01 01  01 01 01 01 01 01 01 01  |................|[0m
+[0;32mI (2768) canokey_port: CTAP attestation already installed: key_len=32 cert_len=5[0m
+[0;32mI (5178) touch: touch count=1 id=0 event=2 x=116 y=310[0m
+[0;32mI (5238) touch: release[0m
+[0;32mI (5558) touch: touch count=1 id=0 event=2 x=261 y=310[0m
+[0;32mI (5618) touch: release[0m
+[0;32mI (5938) touch: touch count=1 id=0 event=2 x=378 y=310[0m
+[0;32mI (5988) touch: release[0m
+[0;32mI (6388) touch: touch count=1 id=0 event=0 x=113 y=427[0m
+[0;32mI (6468) touch: release[0m
+[0;32mI (7068) touch: touch count=1 id=0 event=2 x=403 y=582[0m
+[0;32mI (7068) PIN_PAGE: PIN input: 1234[0m
+[0;32mI (7148) touch: release[0m
+[0;32mI (8638) touch: touch count=1 id=0 event=0 x=361 y=106[0m
+[0;32mI (8738) touch: release[0m
+[0;32mI (8748) usb_hid: usbstore FAT boot OK: bps=4096 spc=1 reserved=1 fats=2 root_entries=512 total16=4060 total32=0 fatsz16=2 type='FAT12   '[0m
+[0;32mI (8758) usb_hid: usbstore config OK: partition=usbstore offset=0x1000000 size=16777216 mount=/data wl_size=16629760 wl_sector=4096 msc_sectors=4060 msc_sector=4096[0m
+[0;32mI (8758) usb_hid: usbstore already mounted to APP: /data[0m
+[0;33mW (8758) ui_password: usbstore is mounted to APP[0m
+[0;32mI (8758) kdbx: Scanning for .kdbx/.kdb under /data[0m
+[0;32mI (8758) kdbx: [DIR] /data/SYSTEM~1 size=0[0m
+[0;32mI (8758) kdbx:   [FILE] /data/SYSTEM~1/WPSETT~1.DAT size=12[0m
+[0;32mI (8758) kdbx:   [FILE] /data/SYSTEM~1/INDEXE~1 size=76[0m
+[0;32mI (8758) kdbx: [FILE] /data/123.TXT size=23[0m
+[0;32mI (8758) kdbx: [FILE] /data/OY_DAT~1.KDB size=2327[0m
+[0;32mI (8758) kdbx: Found KDBX database: /data/OY_DAT~1.KDB size=2327[0m
+[0;32mI (8758) kdbx: KDBX timing: find first KDBX took 4800 us (4 ms)[0m
+[0;32mI (8758) kdbx: Found password file: /data/123.TXT[0m
+[0;32mI (8758) kdbx: KDBX master password source: /data/123.TXT[0m
+[0;32mI (8758) kdbx: Loaded password from /data/123.TXT len=10[0m
+[0;32mI (8758) kdbx: KDBX timing: read password took 2384 us (2 ms)[0m
+[0;32mI (8758) kdbx: KDBX timing: open KDBX file took 67 us (0 ms)[0m
+[0;32mI (8768) kdbx: KDBX timing: read fixed KDBX header took 921 us (0 ms)[0m
+[0;32mI (8768) kdbx: KDBX 4.0 header OK: /data/OY_DAT~1.KDB password_len=10[0m
+[0;32mI (8768) kdbx: KDBX header field id=2 (CipherID) size=16[0m
+[0;32mI (8768) kdbx: CipherID len=16 first=31c1f2e6bf714350be5805216afc5aff[0m
+[0;32mI (8768) kdbx: KDBX header field id=3 (CompressionFlags) size=4[0m
+[0;32mI (8768) kdbx: CompressionFlags value=1[0m
+[0;32mI (8768) kdbx: KDBX header field id=4 (MasterSeed) size=32[0m
+[0;32mI (8768) kdbx: MasterSeed len=32 first=20c8e8cead35dc44cd5d928cff60892c...[0m
+[0;32mI (8768) kdbx: KDBX header field id=11 (KdfParameters) size=93[0m
+[0;32mI (8768) kdbx: KDF parameters version=0x0100[0m
+[0;32mI (8768) kdbx: KDF $UUID type=0x42 len=16 first=c9d9f39a628a4460bf740d08c18a4fea[0m
+[0;32mI (8768) kdbx: KDF R type=0x05 value=100000[0m
+[0;32mI (8768) kdbx: KDF S type=0x42 len=32 first=c616cf4b0bb25cbaff14a5d1dac0c188...[0m
+[0;32mI (8768) kdbx: KDF parameters end[0m
+[0;32mI (8768) kdbx: KDBX header field id=7 (EncryptionIV) size=16[0m
+[0;32mI (8768) kdbx: EncryptionIV len=16 first=5a4904ed928558a8dd8466c76aedc5f2[0m
+[0;32mI (8768) kdbx: KDBX header field id=0 (EndOfHeader) size=4[0m
+[0;32mI (8768) kdbx: KDBX timing: header fields count=6[0m
+[0;32mI (8768) kdbx: KDBX timing: read/parse KDBX header fields took 5925 us (5 ms)[0m
+[0;32mI (8768) kdbx: KDBX timing: read KDBX header bytes for hash took 639 us (0 ms)[0m
+[0;32mI (8768) kdbx: KDBX timing: AES-KDF password/composite hash took 1123 us (1 ms)[0m
+ESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0x7 (HP_SYS_HP_WDT_RESET),boot:0x20c (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4ff0efc0
+Core1 Saved PC:0x4ff0010e
+SPI mode:DIO, clock div:2
+load:0x4ff33ce0,len:0x16f0
+load:0x4ff2abd0,len:0xe3c
+load:0x4ff2cbd0,len:0x3358
+entry 0x4ff2abda
+[0;32mI (11) boot: ESP-IDF v5.4.4 2nd stage bootloader[0m
+[0;32mI (11) boot: compile time Jul 18 2026 23:23:46[0m
+[0;32mI (11) boot: Multicore bootloader[0m
+[0;32mI (12) boot: chip revision: v1.3[0m
+[0;32mI (12) boot: efuse block revision: v0.3[0m
+[0;32mI (13) boot.esp32p4: SPI Speed      : 40MHz[0m
+[0;32mI (13) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (13) boot.esp32p4: SPI Flash Size : 32MB[0m
+[0;33mW (14) boot.esp32p4: CPU has been reset by WDT.[0m
+[0;32mI (14) boot: Enabling RNG early entropy source...[0m
+[0;32mI (15) boot: Partition Table:[0m
+[0;32mI (15) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (15) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (16) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (16) boot:  2 factory          factory app      00 00 00010000 00ef0000[0m
+[0;32mI (17) boot:  3 canokey_lfs      Unknown data     01 40 00f00000 00100000[0m
+[0;32mI (18) boot:  4 usbstore         Unknown data     01 81 01000000 01000000[0m
+[0;32mI (19) boot: End of partition table[0m
+[0;32mI (19) esp_image: segment 0: paddr=00010020 vaddr=400b0020 size=33968h (211304) map[0m
+[0;32mI (61) esp_image: segment 1: paddr=00043990 vaddr=30100000 size=00068h (   104) load[0m
+[0;32mI (63) esp_image: segment 2: paddr=00043a00 vaddr=4ff00000 size=0c618h ( 50712) load[0m
+[0;32mI (75) esp_image: segment 3: paddr=00050020 vaddr=40000020 size=a0138h (655672) map[0m
+[0;32mI (202) esp_image: segment 4: paddr=000f0160 vaddr=4ff0c618 size=08300h ( 33536) load[0m
+[0;32mI (211) esp_image: segment 5: paddr=000f8468 vaddr=4ff14980 size=05678h ( 22136) load[0m
+[0;32mI (217) esp_image: segment 6: paddr=000fdae8 vaddr=50108080 size=0001ch (    28) load[0m
+[0;32mI (223) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (223) boot: Disabling RNG early entropy source...[0m
+[0;32mI (228) hex_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (229) hex_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (229) hex_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (229) hex_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (230) hex_psram: density      : 0x07 (256 Mbit)[0m
+[0;32mI (230) hex_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (230) hex_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (231) hex_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (231) hex_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (231) hex_psram: BitMode      : 0x01 (X16 Mode)[0m
+[0;32mI (232) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (232) hex_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (233) MSPI DQS: tuning success, best phase id is 0[0m
+[0;32mI (405) MSPI DQS: tuning success, best delayline id is 16[0m
+[0;32mI (406) esp_psram: Found 32MB PSRAM device[0m
+[0;32mI (406) esp_psram: Speed: 200MHz[0m
+[0;32mI (407) hex_psram: psram CS IO is dedicated[0m
+[0;32mI (407) cpu_start: Multicore app[0m
+[0;32mI (1357) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1367) cpu_start: Pro cpu start user code[0m
+[0;32mI (1367) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (1367) app_init: Application information:[0m
+[0;32mI (1367) app_init: Project name:     hello_world[0m
+[0;32mI (1368) app_init: App version:      1[0m
+[0;32mI (1368) app_init: Compile time:     Jul 18 2026 23:25:33[0m
+[0;32mI (1368) app_init: ELF file SHA256:  4a2c5193a...[0m
+[0;32mI (1368) app_init: ESP-IDF:          v5.4.4[0m
+[0;32mI (1369) efuse_init: Min chip rev:     v0.1[0m
+[0;32mI (1369) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (1369) efuse_init: Chip rev:         v1.3[0m
+[0;32mI (1370) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1370) heap_init: At 4FF21590 len 00019A30 (102 KiB): RETENT_RAM[0m
+[0;32mI (1370) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (1371) heap_init: At 4FF50980 len 0004F680 (317 KiB): RAM[0m
+[0;32mI (1371) heap_init: At 5010809C len 00007F64 (31 KiB): RTCRAM[0m
+[0;32mI (1371) heap_init: At 30100068 len 00001F98 (7 KiB): TCM[0m
+[0;32mI (1372) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator[0m
+[0;32mI (1373) spi_flash: detected chip: gd[0m
+[0;32mI (1373) spi_flash: flash io: dio[0m
+[0;33mW (1374) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1374) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1375) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1376) main_task: Started on CPU0[0m
+[0;32mI (1386) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1386) main_task: Calling app_main()[0m
+[0;32mI (1386) canokey_crypto: crypto port ready[0m
+[0;32mI (1386) usb_hid: USB MSC descriptor enabled; storage init is handled separately[0m
+[0;32mI (1386) tusb_desc: [0m
+┌─────────────────────────────────┐
+│  USB Device Descriptor Summary  │
+├───────────────────┬─────────────┤
+│bDeviceClass       │ 0           │
+├───────────────────┼─────────────┤
+│bDeviceSubClass    │ 0           │
+├───────────────────┼─────────────┤
+│bDeviceProtocol    │ 0           │
+├───────────────────┼─────────────┤
+│bMaxPacketSize0    │ 64          │
+├───────────────────┼─────────────┤
+│idVendor           │ 0x303a      │
+├───────────────────┼─────────────┤
+│idProduct          │ 0x4006      │
+├───────────────────┼─────────────┤
+│bcdDevice          │ 0x100       │
+├───────────────────┼─────────────┤
+│iManufacturer      │ 0x1         │
+├───────────────────┼─────────────┤
+│iProduct           │ 0x2         │
+├───────────────────┼─────────────┤
+│iSerialNumber      │ 0x3         │
+├───────────────────┼─────────────┤
+│bNumConfigurations │ 0x1         │
+└───────────────────┴─────────────┘
+[0;32mI (1396) TinyUSB: TinyUSB Driver installed on port 1[0m
+[0;32mI (1396) usb_hid: TinyUSB driver installed: mounted=0 hid0_ready=0 ctaphid_ready=0[0m
+[0;32mI (1396) canokey_usb: CTAPHID init start: itf=1 report_size=64 queue_depth=32[0m
+[0;32mI (1396) canokey_usb: CTAPHID event queue created[0m
+[0;32mI (1396) canokey_usb: CTAPHID init done: state=IDLE mounted=0 ready=0[0m
+[0;32mI (1396) usb_hid: USB HID keyboard initialized on TinyUSB default USB[0m
+[0;32mI (1396) usb_hid: MSC flash partition 'usbstore': offset=0x1000000 size=16777216 bytes[0m
+[0;33mW (1476) tinyusb_msc_storage: Default MSC event callback called, event ID: 0, mount point: 0[0m
+[0;33mW (1476) tinyusb_msc_storage: Default MSC event callback called, event ID: 1, mount point: 1[0m
+[0;32mI (1486) usb_hid: usbstore first-boot format already done: fmt_v2_done=1[0m
+[0;32mI (1486) usb_hid: MSC flash storage mounted to APP; use switch_usbstore to expose USB disk[0m
+[0;32mI (1486) usb_hid: usbstore FAT boot OK: bps=4096 spc=1 reserved=1 fats=2 root_entries=512 total16=4060 total32=0 fatsz16=2 type='FAT12   '[0m
+[0;32mI (1486) usb_hid: usbstore config OK: partition=usbstore offset=0x1000000 size=16777216 mount=/data wl_size=16629760 wl_sector=4096 msc_sectors=4060 msc_sector=4096[0m
+[0;32mI (1486) usb_hid: usbstore already mounted to APP: /data[0m
+[0;32mI (1486) st7701sn_lcd: Initialize ST7701SN 480x640 MIPI display with ESP-IDF DSI flow[0m
+[0;32mI (1486) st7701sn_lcd: MIPI DSI PHY LDO enabled[0m
+[0;32mI (1486) st7701sn_lcd: Create MIPI DSI bus[0m
+[0;32mI (1486) st7701sn_lcd: Create MIPI DBI command IO[0m
+[0;32mI (1486) st7701sn_lcd: MIPI DSI command ACK disabled[0m
+[0;32mI (1486) st7701sn_lcd: Create MIPI DPI panel[0m
+[0;32mI (1496) st7701sn_lcd: MIPI DPI panel created[0m
+[0;32mI (1496) gpio: GPIO[37]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1496) st7701sn_lcd: LCD reset GPIO37 configured, readback=0[0m
+[0;32mI (1496) st7701sn_lcd: Precharge LCD reset on GPIO37 high[0m
+[0;32mI (1496) st7701sn_lcd: LCD reset GPIO37 precharge high, readback=0[0m
+[0;32mI (1496) st7701sn_lcd: Assert LCD reset on GPIO37[0m
+[0;32mI (1496) st7701sn_lcd: LCD reset GPIO37 after assert, readback=0[0m
+[0;32mI (1496) st7701sn_lcd: Release LCD reset on GPIO37[0m
+[0;32mI (1496) st7701sn_lcd: LCD reset GPIO37 after release, readback=0[0m
+[0;32mI (1546) st7701sn_lcd: Send ST7701SN init commands[0m
+[0;32mI (1546) st7701sn_lcd: LCD init cmd[0]: 0x01, len=0[0m
+[0;32mI (1676) st7701sn_lcd: LCD init cmd[1]: 0xFF, len=5[0m
+[0;32mI (1696) st7701sn_lcd: LCD init cmd[2]: 0xEF, len=1[0m
+[0;32mI (1706) st7701sn_lcd: LCD init cmd[3]: 0xFF, len=5[0m
+[0;32mI (1726) st7701sn_lcd: LCD init cmd[4]: 0xC0, len=2[0m
+[0;32mI (1736) st7701sn_lcd: LCD init cmd[5]: 0xC1, len=2[0m
+[0;32mI (1746) st7701sn_lcd: LCD init cmd[6]: 0xC2, len=2[0m
+[0;32mI (1756) st7701sn_lcd: LCD init cmd[7]: 0xC3, len=3[0m
+[0;32mI (1766) st7701sn_lcd: LCD init cmd[8]: 0xCC, len=1[0m
+[0;32mI (1776) st7701sn_lcd: LCD init cmd[9]: 0xB0, len=16[0m
+[0;32mI (1796) st7701sn_lcd: LCD init cmd[10]: 0xB1, len=16[0m
+[0;32mI (1816) st7701sn_lcd: LCD init cmd[11]: 0xFF, len=5[0m
+[0;32mI (1836) st7701sn_lcd: LCD init cmd[12]: 0xB0, len=1[0m
+[0;32mI (1846) st7701sn_lcd: LCD init cmd[13]: 0xB1, len=1[0m
+[0;32mI (1856) st7701sn_lcd: LCD init cmd[14]: 0xB2, len=1[0m
+[0;32mI (1866) st7701sn_lcd: LCD init cmd[15]: 0xB3, len=1[0m
+[0;32mI (1876) st7701sn_lcd: LCD init cmd[16]: 0xB5, len=1[0m
+[0;32mI (1886) st7701sn_lcd: LCD init cmd[17]: 0xB7, len=1[0m
+[0;32mI (1896) st7701sn_lcd: LCD init cmd[18]: 0xB8, len=1[0m
+[0;32mI (1906) st7701sn_lcd: LCD init cmd[19]: 0xC0, len=1[0m
+[0;32mI (1916) st7701sn_lcd: LCD init cmd[20]: 0xC1, len=1[0m
+[0;32mI (1926) st7701sn_lcd: LCD init cmd[21]: 0xC2, len=1[0m
+[0;32mI (1936) st7701sn_lcd: LCD init cmd[22]: 0xD0, len=1[0m
+[0;32mI (1946) st7701sn_lcd: LCD init cmd[23]: 0xE0, len=3[0m
+[0;32mI (1956) st7701sn_lcd: LCD init cmd[24]: 0xE1, len=11[0m
+[0;32mI (1976) st7701sn_lcd: LCD init cmd[25]: 0xE2, len=13[0m
+[0;32mI (1996) st7701sn_lcd: LCD init cmd[26]: 0xE3, len=4[0m
+[0;32mI (2006) st7701sn_lcd: LCD init cmd[27]: 0xE4, len=2[0m
+[0;32mI (2016) st7701sn_lcd: LCD init cmd[28]: 0xE5, len=16[0m
+[0;32mI (2036) st7701sn_lcd: LCD init cmd[29]: 0xE6, len=4[0m
+[0;32mI (2046) st7701sn_lcd: LCD init cmd[30]: 0xE7, len=2[0m
+[0;32mI (2056) st7701sn_lcd: LCD init cmd[31]: 0xE8, len=16[0m
+[0;32mI (2076) st7701sn_lcd: LCD init cmd[32]: 0xEB, len=7[0m
+[0;32mI (2096) st7701sn_lcd: LCD init cmd[33]: 0xEC, len=2[0m
+[0;32mI (2106) st7701sn_lcd: LCD init cmd[34]: 0xED, len=16[0m
+[0;32mI (2126) st7701sn_lcd: LCD init cmd[35]: 0xEF, len=6[0m
+[0;32mI (2146) st7701sn_lcd: LCD init cmd[36]: 0xFF, len=5[0m
+[0;32mI (2166) st7701sn_lcd: LCD init cmd[37]: 0xE8, len=2[0m
+[0;32mI (2176) st7701sn_lcd: LCD init cmd[38]: 0xE8, len=2[0m
+[0;32mI (2206) st7701sn_lcd: LCD init cmd[39]: 0xE8, len=2[0m
+[0;32mI (2216) st7701sn_lcd: LCD init cmd[40]: 0xFF, len=5[0m
+[0;32mI (2236) st7701sn_lcd: LCD init cmd[41]: 0x11, len=0[0m
+[0;32mI (2366) st7701sn_lcd: LCD init cmd[42]: 0x3A, len=1[0m
+[0;32mI (2376) st7701sn_lcd: LCD init cmd[43]: 0x29, len=0[0m
+[0;32mI (2406) st7701sn_lcd: Start MIPI DPI panel init[0m
+[0;32mI (2406) st7701sn_lcd: MIPI DPI panel init done, video stream should be enabled[0m
+[0;32mI (2406) st7701sn_lcd: LCD backlight enabled[0m
+[0;32mI (2406) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2516) gpio: GPIO[7]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2516) ft6336: FT6336 detected, chip_id=0x00 vendor_id=0x00[0m
+[0;32mI (2516) app: Start LVGL[0m
+[0;32mI (2596) port_ui: user presence callback registered[0m
+[0;32mI (2596) ui_fido: FIDO confirm callback registered[0m
+[0;32mI (2596) canokey_port: CanoKey task starting[0m
+[0;32mI (2596) canokey_port: CanoKey LittleFS mount begin[0m
+[0;32mI (2606) canokey_flash: CanoKey LittleFS mounted: label=canokey_lfs offset=0xf00000 size=1048576 blocks=255[0m
+[0;32mI (2606) canokey_port: CanoKey LittleFS mount done[0m
+[0;32mI (2606) canokey_port: CanoKey crypto port init begin[0m
+[0;32mI (2606) canokey_crypto: crypto port ready[0m
+[0;32mI (2606) canokey_crypto: SHA256/HMAC-SHA256/AES-256-ECB selftest passed[0m
+[0;32mI (2606) canokey_port: CanoKey crypto port init done[0m
+[0;32mI (2606) canokey_port: CanoKey APDU buffer init begin[0m
+[0;32mI (2606) canokey_port: CanoKey APDU buffer init done[0m
+[0;32mI (2606) canokey_port: CanoKey device_init begin[0m
+[0;32mI (2606) canokey_port: CanoKey device_init done[0m
+[0;32mI (2606) canokey_port: CanoKey applets_install begin[0m
+[0;32mI (2616) canokey_flash: Platform config loaded from flash offset=0xfff000 len=512[0m
+[0;33mW (2716) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x02(PIN_ATTR) request_len=32 ret=16[0m
+[0;33mW (2716) canokey_fs: CTAP flash attr read data preview len=16/16[0m
+[0;33mW (2716) canokey_fs: 0x4ff39da0   03 ac 67 42 16 f3 e1 5c  76 1e e1 a5 e2 55 f0 67  |..gB...\v....U.g|[0m
+[0;33mW (2726) canokey_fs: CTAP flash attr read path=ctap_dc attr=0x00(DC_GENERAL_ATTR) request_len=9 ret=9[0m
+[0;33mW (2726) canokey_fs: CTAP flash attr read data preview len=9/9[0m
+[0;33mW (2726) canokey_fs: 0x4ff39d94   02 00 00 00 01 00 00 00  00                       |.........|[0m
+[0;33mW (2736) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x01(SIGN_CTR_ATTR) request_len=4 ret=4[0m
+[0;33mW (2736) canokey_fs: CTAP flash attr read data preview len=4/4[0m
+[0;33mW (2736) canokey_fs: 0x4ff39da0   23 00 00 00                                       |#...|[0m
+[0;33mW (2736) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x03(PIN_CTR_ATTR) request_len=1 ret=1[0m
+[0;33mW (2736) canokey_fs: CTAP flash attr read data preview len=1/1[0m
+[0;33mW (2736) canokey_fs: 0x4ff39d9f   08                                                |.|[0m
+[0;33mW (2736) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x04(KH_KEY_ATTR) request_len=32 ret=32[0m
+[0;33mW (2736) canokey_fs: CTAP flash attr read data preview len=32/32[0m
+[0;33mW (2736) canokey_fs: 0x4ff39da0   d9 1d 04 cd 2b 6d 74 5a  f2 c6 59 c5 df d9 7a 09  |....+mtZ..Y...z.|[0m
+[0;33mW (2736) canokey_fs: 0x4ff39db0   03 e1 8d be c6 c4 3b 1a  fc 48 37 95 72 15 82 89  |......;..H7.r...|[0m
+[0;33mW (2746) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x05(HE_KEY_ATTR) request_len=32 ret=32[0m
+[0;33mW (2746) canokey_fs: CTAP flash attr read data preview len=32/32[0m
+[0;33mW (2746) canokey_fs: 0x4ff39da0   81 ab 44 7b 92 e8 03 2d  30 bb aa c2 63 9f 57 33  |..D{...-0...c.W3|[0m
+[0;33mW (2746) canokey_fs: 0x4ff39db0   6d 5a 71 f5 d9 cc 2e c3  f1 41 85 4c 83 d5 04 88  |mZq......A.L....|[0m
+[0;32mI (2766) canokey_port: CanoKey applets_install done[0m
+[0;33mW (2766) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x00(KEY_ATTR) request_len=32 ret=32[0m
+[0;33mW (2766) canokey_fs: CTAP flash attr read data preview len=32/32[0m
+[0;33mW (2766) canokey_fs: 0x4ff39e10   01 01 01 01 01 01 01 01  01 01 01 01 01 01 01 01  |................|[0m
+[0;33mW (2766) canokey_fs: 0x4ff39e20   01 01 01 01 01 01 01 01  01 01 01 01 01 01 01 01  |................|[0m
+[0;32mI (2766) canokey_port: CTAP attestation already installed: key_len=32 cert_len=5[0m
+[0;32mI (4866) touch: touch count=1 id=0 event=2 x=132 y=330[0m
+[0;32mI (4926) touch: release[0m
+[0;32mI (5356) touch: touch count=1 id=0 event=2 x=258 y=320[0m
+[0;32mI (5406) touch: release[0m
+[0;32mI (5736) touch: touch count=1 id=0 event=0 x=409 y=320[0m
+[0;32mI (5816) touch: release[0m
+[0;32mI (6316) touch: touch count=1 id=0 event=2 x=135 y=433[0m
+[0;32mI (6366) touch: release[0m
+[0;32mI (7816) touch: touch count=1 id=0 event=2 x=398 y=563[0m
+[0;32mI (7816) PIN_PAGE: PIN input: 1234[0m
+[0;32mI (7886) touch: release[0m
+[0;32mI (8676) touch: touch count=1 id=0 event=0 x=352 y=122[0m
+[0;32mI (8776) touch: release[0m
+[0;32mI (8786) usb_hid: usbstore FAT boot OK: bps=4096 spc=1 reserved=1 fats=2 root_entries=512 total16=4060 total32=0 fatsz16=2 type='FAT12   '[0m
+[0;32mI (8786) usb_hid: usbstore config OK: partition=usbstore offset=0x1000000 size=16777216 mount=/data wl_size=16629760 wl_sector=4096 msc_sectors=4060 msc_sector=4096[0m
+[0;32mI (8786) usb_hid: usbstore already mounted to APP: /data[0m
+[0;33mW (8786) ui_password: usbstore is mounted to APP[0m
+[0;32mI (8786) kdbx: Scanning for .kdbx/.kdb under /data[0m
+[0;32mI (8786) kdbx: [DIR] /data/SYSTEM~1 size=0[0m
+[0;32mI (8786) kdbx:   [FILE] /data/SYSTEM~1/WPSETT~1.DAT size=12[0m
+[0;32mI (8786) kdbx:   [FILE] /data/SYSTEM~1/INDEXE~1 size=76[0m
+[0;32mI (8796) kdbx: [FILE] /data/123.TXT size=23[0m
+[0;32mI (8796) kdbx: [FILE] /data/OY_DAT~1.KDB size=2327[0m
+[0;32mI (8796) kdbx: Found KDBX database: /data/OY_DAT~1.KDB size=2327[0m
+[0;32mI (8796) kdbx: KDBX timing: find first KDBX took 4805 us (4 ms)[0m
+[0;32mI (8796) kdbx: Found password file: /data/123.TXT[0m
+[0;32mI (8796) kdbx: KDBX master password source: /data/123.TXT[0m
+[0;32mI (8796) kdbx: Loaded password from /data/123.TXT len=10[0m
+[0;32mI (8796) kdbx: KDBX timing: read password took 2333 us (2 ms)[0m
+[0;32mI (8796) kdbx: KDBX timing: open KDBX file took 67 us (0 ms)[0m
+[0;32mI (8796) kdbx: KDBX timing: read fixed KDBX header took 875 us (0 ms)[0m
+[0;32mI (8796) kdbx: KDBX 4.0 header OK: /data/OY_DAT~1.KDB password_len=10[0m
+[0;32mI (8796) kdbx: KDBX header field id=2 (CipherID) size=16[0m
+[0;32mI (8796) kdbx: CipherID len=16 first=31c1f2e6bf714350be5805216afc5aff[0m
+[0;32mI (8796) kdbx: KDBX header field id=3 (CompressionFlags) size=4[0m
+[0;32mI (8796) kdbx: CompressionFlags value=1[0m
+[0;32mI (8796) kdbx: KDBX header field id=4 (MasterSeed) size=32[0m
+[0;32mI (8796) kdbx: MasterSeed len=32 first=20c8e8cead35dc44cd5d928cff60892c...[0m
+[0;32mI (8796) kdbx: KDBX header field id=11 (KdfParameters) size=93[0m
+[0;32mI (8796) kdbx: KDF parameters version=0x0100[0m
+[0;32mI (8796) kdbx: KDF $UUID type=0x42 len=16 first=c9d9f39a628a4460bf740d08c18a4fea[0m
+[0;32mI (8796) kdbx: KDF R type=0x05 value=100000[0m
+[0;32mI (8796) kdbx: KDF S type=0x42 len=32 first=c616cf4b0bb25cbaff14a5d1dac0c188...[0m
+[0;32mI (8796) kdbx: KDF parameters end[0m
+[0;32mI (8796) kdbx: KDBX header field id=7 (EncryptionIV) size=16[0m
+[0;32mI (8796) kdbx: EncryptionIV len=16 first=5a4904ed928558a8dd8466c76aedc5f2[0m
+[0;32mI (8806) kdbx: KDBX header field id=0 (EndOfHeader) size=4[0m
+[0;32mI (8806) kdbx: KDBX timing: header fields count=6[0m
+[0;32mI (8806) kdbx: KDBX timing: read/parse KDBX header fields took 5910 us (5 ms)[0m
+[0;32mI (8806) kdbx: KDBX timing: read KDBX header bytes for hash took 695 us (0 ms)[0m
+[0;32mI (8806) kdbx: KDBX timing: AES-KDF password/composite hash took 1193 us (1 ms)[0m
+[0;32mI (17476) touch: touch count=1 id=0 event=0 x=1 y=425[0m
+[0;32mI (17516) touch: touch count=1 id=0 event=2 x=11 y=425[0m
+[0;32mI (17546) touch: touch count=1 id=0 event=2 x=46 y=425[0m
+[0;32mI (17576) touch: release[0m
+[0;32mI (18196) touch: touch count=1 id=0 event=0 x=34 y=394[0m
+[0;32mI (18226) touch: touch count=1 id=0 event=2 x=45 y=391[0m
+[0;32mI (18266) touch: touch count=1 id=0 event=2 x=77 y=383[0m
+[0;32mI (18296) touch: touch count=1 id=0 event=2 x=158 y=371[0m
+[0;32mI (18376) touch: release[0m
+[0;32mI (18956) touch: touch count=1 id=0 event=2 x=309 y=118[0m
+[0;32mI (19016) touch: release[0m
+[0;32mI (24356) kdbx: KDBX timing: AES-KDF transform rounds=100000[0m
+[0;32mI (24356) kdbx: KDBX timing: AES-KDF transform loop took 15555746 us (15555 ms)[0m
+[0;32mI (24366) kdbx: KDBX timing: AES-KDF final key hashes took 721 us (0 ms)[0m
+[0;32mI (24366) kdbx: AES-KDF transformed key len=32 first=95b7d8526ba1a8ba78ee4b264c8b972a...[0m
+[0;32mI (24366) kdbx: KDBX master key len=32 first=4fb7aef3787ad27d69389fd3bdf387cf...[0m
+[0;32mI (24366) kdbx: KDBX HMAC base key len=64 first=90932140c7189d83fc70e6b17509ede5...[0m
+[0;32mI (24366) kdbx: KDBX timing: AES-KDF total took 15559810 us (15559 ms)[0m
+[0;32mI (24366) kdbx: KDBX timing: derive KDBX master keys took 15560092 us (15560 ms)[0m
+[0;32mI (24366) kdbx: KDBX timing: read KDBX header hash/HMAC took 288 us (0 ms)[0m
+[0;32mI (24366) kdbx: KDBX timing: calculate KDBX header hash/HMAC took 383 us (0 ms)[0m
+[0;32mI (24366) kdbx: KDBX header SHA256 stored len=32 first=512e8f7d1f49752eb20322cada4dc90e...[0m
+[0;32mI (24366) kdbx: KDBX header SHA256 calculated len=32 first=512e8f7d1f49752eb20322cada4dc90e...[0m
+[0;32mI (24366) kdbx: KDBX header SHA256 match=yes[0m
+[0;32mI (24366) kdbx: KDBX header HMAC stored len=32 first=9dc3cb35793c9a99b61f6b50e0be903f...[0m
+[0;32mI (24366) kdbx: KDBX header HMAC calculated len=32 first=9dc3cb35793c9a99b61f6b50e0be903f...[0m
+[0;32mI (24366) kdbx: KDBX header HMAC match=yes[0m
+[0;32mI (24366) kdbx: KDBX HMAC block 0 size=1984[0m
+[0;32mI (24376) kdbx: KDBX HMAC block 1 size=0[0m
+[0;32mI (24376) kdbx: KDBX timing: HMAC block stream data_blocks=1 bytes=1984[0m
+[0;32mI (24376) kdbx: KDBX timing: read HMAC block stream took 5041 us (5 ms)[0m
+[0;32mI (24376) kdbx: KDBX timing: collect encrypted payload blocks took 5258 us (5 ms)[0m
+[0;32mI (24376) kdbx: KDBX encrypted payload len=1984[0m
+[0;32mI (24376) kdbx: KDBX timing: AES-CBC encrypted=1984 plain=1983 padding=1[0m
+[0;32mI (24376) kdbx: KDBX timing: AES-CBC payload decrypt took 470 us (0 ms)[0m
+[0;32mI (24376) kdbx: KDBX timing: decrypt encrypted payload bytes took 770 us (0 ms)[0m
+[0;32mI (24376) kdbx: KDBX decrypted payload len=1983 first=1f8b0800000000000400ed5b3d6c23c7...[0m
+[0;32mI (24376) kdbx: KDBX timing: gzip compressed=1983 deflate=1965 inflated=14188 capacity=16384[0m
+[0;32mI (24376) kdbx: KDBX timing: inflate gzip payload took 1350 us (1 ms)[0m
+[0;32mI (24376) kdbx: KDBX timing: inflate decrypted gzip payload took 1640 us (1 ms)[0m
+[0;32mI (24376) kdbx: KDBX inflated payload first bytes len=14188 first=01040000000300000002400000007079...[0m
+[0;32mI (24376) kdbx: KDBX inner header field id=1 size=4[0m
+[0;32mI (24376) kdbx: InnerRandomStreamID=3[0m
+[0;32mI (24376) kdbx: KDBX inner header field id=2 size=64[0m
+[0;32mI (24376) kdbx: InnerRandomStreamKey len=64 first=7079199a515d8f7dd60f9afcc2baf5c2...[0m
+[0;32mI (24376) kdbx: KDBX inner header field id=0 size=0[0m
+[0;32mI (24376) kdbx: KDBX timing: parse KDBX inner header took 1066 us (1 ms)[0m
+[0;32mI (24376) kdbx: KDBX payload data after inner header len=14105 compression=1[0m
+[0;32mI (24376) kdbx: KDBX payload data len=14105 first=3c3f786d6c2076657273696f6e3d2231...[0m
+[0;32mI (24376) kdbx: KDBX XML first bytes len=14105 first=3c3f786d6c2076657273696f6e3d2231...[0m
+[0;32mI (24376) kdbx: KDBX XML len=14105 entries=6 preview='<?xml version="1.0" encoding="utf-8" standalone="yes"?>  <KeePassFile>   <Meta>    <Generator>KeePass</Generator>    <SettingsChanged>hDfu4Q4AAAA=</SettingsChan'...[0m
+[0;32mI (24376) kdbx: KDBX protected stream initialized: ChaCha20[0m
+[0;33mW (24376) kdbx: Failed to size protected base64 value: -44[0m
+[0;33mW (24376) kdbx: Failed to decode protected value for key 'Notes': ESP_FAIL[0m
+[0;33mW (24376) kdbx: Failed to size protected base64 value: -44[0m
+[0;33mW (24376) kdbx: Failed to decode protected value for key 'Title': ESP_FAIL[0m
+[0;33mW (24376) kdbx: Failed to size protected base64 value: -44[0m
+[0;33mW (24376) kdbx: Failed to decode protected value for key 'URL': ESP_FAIL[0m
+[0;33mW (24386) kdbx: Failed to size protected base64 value: -44[0m
+[0;33mW (24386) kdbx: Failed to decode protected value for key 'UserName': ESP_FAIL[0m
+[0;32mI (24386) kdbx: KDBX entry 1 title='Sample Entry' username='User Name' url='https://keepass.info/' password_plain_len=8[0m
+[0;33mW (24386) kdbx: Failed to size protected base64 value: -44[0m
+[0;33mW (24386) kdbx: Failed to decode protected value for key 'Title': ESP_FAIL[0m
+[0;33mW (24386) kdbx: Failed to size protected base64 value: -44[0m
+[0;33mW (24386) kdbx: Failed to decode protected value for key 'URL': ESP_FAIL[0m
+[0;33mW (24386) kdbx: Failed to size protected base64 value: -44[0m
+[0;33mW (24386) kdbx: Failed to decode protected value for key 'UserName': ESP_FAIL[0m
+[0;32mI (24386) kdbx: KDBX entry 2 title='Sample Entry #2' username='Michael321' url='https://keepass.info/help/kb/testform.html' password_plain_len=5[0m
+[0;33mW (24386) kdbx: Failed to size protected base64 value: 0[0m
+[0;33mW (24386) kdbx: Failed to decode protected value for key 'Notes': ESP_FAIL[0m
+[0;33mW (24386) kdbx: Failed to size protected base64 value: -44[0m
+[0;33mW (24386) kdbx: Failed to decode protected value for key 'URL': ESP_FAIL[0m
+[0;33mW (24386) kdbx: Failed to size protected base64 value: -44[0m
+[0;33mW (24386) kdbx: Failed to decode protected value for key 'UserName': ESP_FAIL[0m
+[0;33mW (24386) kdbx: Failed to size protected base64 value: -44[0m
+[0;33mW (24386) kdbx: Failed to decode protected value for key 'UserName (2)': ESP_FAIL[0m
+[0;32mI (24386) kdbx: KDBX entry 3 title='' username='accounts.google.com' url='https://accounts.google.com/v3/signin/challenge/pwd' password_plain_len=9[0m
+[0;33mW (24386) kdbx: Failed to size protected base64 value: 0[0m
+[0;33mW (24386) kdbx: Failed to decode protected value for key 'Notes': ESP_FAIL[0m
+[0;33mW (24386) kdbx: Failed to size protected base64 value: -44[0m
+[0;33mW (24386) kdbx: Failed to decode protected value for key 'URL': ESP_FAIL[0m
+[0;33mW (24396) kdbx: Failed to size protected base64 value: -44[0m
+[0;33mW (24396) kdbx: Failed to decode protected value for key 'UserName': ESP_FAIL[0m
+[0;33mW (24396) kdbx: Failed to size protected base64 value: -44[0m
+[0;33mW (24396) kdbx: Failed to decode protected value for key 'UserName (2)': ESP_FAIL[0m
+[0;32mI (24396) kdbx: KDBX entry 4 title='' username='github.com' url='https://github.com/login' password_plain_len=8[0m
+[0;33mW (24406) kdbx: Failed to size protected base64 value: 0[0m
+[0;33mW (24406) kdbx: Failed to decode protected value for key 'Notes': ESP_FAIL[0m
+[0;33mW (24406) kdbx: Failed to size protected base64 value: -44[0m
+[0;33mW (24406) kdbx: Failed to decode protected value for key 'URL': ESP_FAIL[0m
+[0;33mW (24406) kdbx: Failed to size protected base64 value: -44[0m
+[0;33mW (24406) kdbx: Failed to decode protected value for key 'UserName': ESP_FAIL[0m
+[0;33mW (24406) kdbx: Failed to size protected base64 value: -44[0m
+[0;33mW (24406) kdbx: Failed to decode protected value for key 'UserName (2)': ESP_FAIL[0m
+[0;32mI (24406) kdbx: KDBX entry 5 title='' username='js.design' url='https://js.design/login' password_plain_len=9[0m
+[0;33mW (24406) kdbx: Failed to size protected base64 value: 0[0m
+[0;33mW (24406) kdbx: Failed to decode protected value for key 'Notes': ESP_FAIL[0m
+[0;32mI (24406) kdbx: KDBX entry 6 title='' username='mikasa.cloud' url='https://mikasa.cloud/login' password_plain_len=9[0m
+[0;32mI (24406) kdbx: KDBX parsed entries=6[0m
+[0;32mI (24406) kdbx: KDBX timing: parsed_xml_len=14105 stored_entries=6 max_entries=24[0m
+[0;32mI (24406) kdbx: KDBX timing: parse KDBX XML entries took 26473 us (26 ms)[0m
+[0;32mI (24406) kdbx: KDBX timing: parse payload XML body took 26760 us (26 ms)[0m
+[0;32mI (24406) kdbx: KDBX timing: parse inflated payload body took 30080 us (30 ms)[0m
+[0;32mI (24406) kdbx: KDBX timing: decrypt payload total took 42087 us (42 ms)[0m
+[0;32mI (24406) kdbx: KDBX timing: decrypt/parse KDBX payload took 42352 us (42 ms)[0m
+[0;32mI (24406) kdbx: KDBX payload decrypt and entry parse completed[0m
+[0;32mI (24406) kdbx: KDBX timing: parse KDBX file total took 15612447 us (15612 ms)[0m
+[0;32mI (24406) kdbx: KDBX timing: parse/decrypt KDBX file took 15612692 us (15612 ms)[0m
+[0;32mI (24406) kdbx: KDBX timing: load KDBX total took 15620603 us (15620 ms)[0m
+[0;32mI (24406) ui_password: KDBX parsed[0m
+[0;32mI (106216) touch: touch count=1 id=0 event=2 x=328 y=459[0m
+[0;32mI (106256) touch: touch count=1 id=0 event=2 x=328 y=440[0m
+[0;32mI (106296) touch: release[0m
+[0;32mI (106696) touch: touch count=1 id=0 event=0 x=313 y=446[0m
+[0;32mI (106736) touch: touch count=1 id=0 event=2 x=318 y=429[0m
+[0;32mI (106776) touch: touch count=1 id=0 event=2 x=332 y=382[0m
+[0;32mI (106816) touch: release[0m
+[0;32mI (107316) touch: touch count=1 id=0 event=0 x=300 y=442[0m
+[0;32mI (107396) touch: touch count=1 id=0 event=2 x=317 y=390[0m
+[0;32mI (107436) touch: release[0m
+[0;32mI (108056) touch: touch count=1 id=0 event=0 x=26 y=425[0m
+[0;32mI (108096) touch: touch count=1 id=0 event=2 x=47 y=425[0m
+[0;32mI (108136) touch: touch count=1 id=0 event=2 x=83 y=425[0m
+[0;32mI (108206) touch: release[0m
+[0;32mI (109096) touch: touch count=1 id=0 event=0 x=361 y=99[0m
+[0;32mI (109126) touch: release[0m
+[0;32mI (109676) touch: touch count=1 id=0 event=2 x=362 y=532[0m
+[0;32mI (109706) touch: touch count=1 id=0 event=2 x=365 y=493[0m
+[0;32mI (109756) touch: touch count=1 id=0 event=2 x=377 y=415[0m
+[0;32mI (109796) touch: touch count=1 id=0 event=2 x=395 y=303[0m
+[0;32mI (109836) touch: release[0m
+ESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0x7 (HP_SYS_HP_WDT_RESET),boot:0x20c (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x40001c98
+Core1 Saved PC:0x29462946
+SPI mode:DIO, clock div:2
+load:0x4ff33ce0,len:0x16f0
+load:0x4ff2abd0,len:0xe3c
+load:0x4ff2cbd0,len:0x3358
+entry 0x4ff2abda
+[0;32mI (11) boot: ESP-IDF v5.4.4 2nd stage bootloader[0m
+[0;32mI (11) boot: compile time Jul 18 2026 23:23:46[0m
+[0;32mI (11) boot: Multicore bootloader[0m
+[0;32mI (12) boot: chip revision: v1.3[0m
+[0;32mI (12) boot: efuse block revision: v0.3[0m
+[0;32mI (13) boot.esp32p4: SPI Speed      : 40MHz[0m
+[0;32mI (13) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (13) boot.esp32p4: SPI Flash Size : 32MB[0m
+[0;33mW (14) boot.esp32p4: CPU has been reset by WDT.[0m
+[0;32mI (14) boot: Enabling RNG early entropy source...[0m
+[0;32mI (15) boot: Partition Table:[0m
+[0;32mI (15) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (15) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (16) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (16) boot:  2 factory          factory app      00 00 00010000 00ef0000[0m
+[0;32mI (17) boot:  3 canokey_lfs      Unknown data     01 40 00f00000 00100000[0m
+[0;32mI (18) boot:  4 usbstore         Unknown data     01 81 01000000 01000000[0m
+[0;32mI (19) boot: End of partition table[0m
+[0;32mI (19) esp_image: segment 0: paddr=00010020 vaddr=400b0020 size=33968h (211304) map[0m
+[0;32mI (61) esp_image: segment 1: paddr=00043990 vaddr=30100000 size=00068h (   104) load[0m
+[0;32mI (63) esp_image: segment 2: paddr=00043a00 vaddr=4ff00000 size=0c618h ( 50712) load[0m
+[0;32mI (75) esp_image: segment 3: paddr=00050020 vaddr=40000020 size=a0138h (655672) map[0m
+[0;32mI (202) esp_image: segment 4: paddr=000f0160 vaddr=4ff0c618 size=08300h ( 33536) load[0m
+[0;32mI (211) esp_image: segment 5: paddr=000f8468 vaddr=4ff14980 size=05678h ( 22136) load[0m
+[0;32mI (217) esp_image: segment 6: paddr=000fdae8 vaddr=50108080 size=0001ch (    28) load[0m
+[0;32mI (223) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (223) boot: Disabling RNG early entropy source...[0m
+[0;32mI (228) hex_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (229) hex_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (229) hex_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (229) hex_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (230) hex_psram: density      : 0x07 (256 Mbit)[0m
+[0;32mI (230) hex_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (230) hex_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (231) hex_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (231) hex_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (231) hex_psram: BitMode      : 0x01 (X16 Mode)[0m
+[0;32mI (232) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (232) hex_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (233) MSPI DQS: tuning success, best phase id is 0[0m
+[0;32mI (406) MSPI DQS: tuning success, best delayline id is 16[0m
+[0;32mI (406) esp_psram: Found 32MB PSRAM device[0m
+[0;32mI (406) esp_psram: Speed: 200MHz[0m
+[0;32mI (407) hex_psram: psram CS IO is dedicated[0m
+[0;32mI (407) cpu_start: Multicore app[0m
+[0;32mI (1357) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1367) cpu_start: Pro cpu start user code[0m
+[0;32mI (1367) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (1367) app_init: Application information:[0m
+[0;32mI (1367) app_init: Project name:     hello_world[0m
+[0;32mI (1368) app_init: App version:      1[0m
+[0;32mI (1368) app_init: Compile time:     Jul 18 2026 23:25:33[0m
+[0;32mI (1368) app_init: ELF file SHA256:  4a2c5193a...[0m
+[0;32mI (1368) app_init: ESP-IDF:          v5.4.4[0m
+[0;32mI (1369) efuse_init: Min chip rev:     v0.1[0m
+[0;32mI (1369) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (1369) efuse_init: Chip rev:         v1.3[0m
+[0;32mI (1369) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1370) heap_init: At 4FF21590 len 00019A30 (102 KiB): RETENT_RAM[0m
+[0;32mI (1370) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (1370) heap_init: At 4FF50980 len 0004F680 (317 KiB): RAM[0m
+[0;32mI (1371) heap_init: At 5010809C len 00007F64 (31 KiB): RTCRAM[0m
+[0;32mI (1371) heap_init: At 30100068 len 00001F98 (7 KiB): TCM[0m
+[0;32mI (1372) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator[0m
+[0;32mI (1373) spi_flash: detected chip: gd[0m
+[0;32mI (1373) spi_flash: flash io: dio[0m
+[0;33mW (1374) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1374) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1375) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1376) main_task: Started on CPU0[0m
+[0;32mI (1386) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1386) main_task: Calling app_main()[0m
+[0;32mI (1386) canokey_crypto: crypto port ready[0m
+[0;32mI (1386) usb_hid: USB MSC descriptor enabled; storage init is handled separately[0m
+[0;32mI (1386) tusb_desc: [0m
+┌─────────────────────────────────┐
+│  USB Device Descriptor Summary  │
+├───────────────────┬─────────────┤
+│bDeviceClass       │ 0           │
+├───────────────────┼─────────────┤
+│bDeviceSubClass    │ 0           │
+├───────────────────┼─────────────┤
+│bDeviceProtocol    │ 0           │
+├───────────────────┼─────────────┤
+│bMaxPacketSize0    │ 64          │
+├───────────────────┼─────────────┤
+│idVendor           │ 0x303a      │
+├───────────────────┼─────────────┤
+│idProduct          │ 0x4006      │
+├───────────────────┼─────────────┤
+│bcdDevice          │ 0x100       │
+├───────────────────┼─────────────┤
+│iManufacturer      │ 0x1         │
+├───────────────────┼─────────────┤
+│iProduct           │ 0x2         │
+├───────────────────┼─────────────┤
+│iSerialNumber      │ 0x3         │
+├───────────────────┼─────────────┤
+│bNumConfigurations │ 0x1         │
+└───────────────────┴─────────────┘
+[0;32mI (1396) TinyUSB: TinyUSB Driver installed on port 1[0m
+[0;32mI (1396) usb_hid: TinyUSB driver installed: mounted=0 hid0_ready=0 ctaphid_ready=0[0m
+[0;32mI (1396) canokey_usb: CTAPHID init start: itf=1 report_size=64 queue_depth=32[0m
+[0;32mI (1396) canokey_usb: CTAPHID event queue created[0m
+[0;32mI (1396) canokey_usb: CTAPHID init done: state=IDLE mounted=0 ready=0[0m
+[0;32mI (1396) usb_hid: USB HID keyboard initialized on TinyUSB default USB[0m
+[0;32mI (1396) usb_hid: MSC flash partition 'usbstore': offset=0x1000000 size=16777216 bytes[0m
+[0;33mW (1476) tinyusb_msc_storage: Default MSC event callback called, event ID: 0, mount point: 0[0m
+[0;33mW (1476) tinyusb_msc_storage: Default MSC event callback called, event ID: 1, mount point: 1[0m
+[0;32mI (1486) usb_hid: usbstore first-boot format already done: fmt_v2_done=1[0m
+[0;32mI (1486) usb_hid: MSC flash storage mounted to APP; use switch_usbstore to expose USB disk[0m
+[0;32mI (1486) usb_hid: usbstore FAT boot OK: bps=4096 spc=1 reserved=1 fats=2 root_entries=512 total16=4060 total32=0 fatsz16=2 type='FAT12   '[0m
+[0;32mI (1486) usb_hid: usbstore config OK: partition=usbstore offset=0x1000000 size=16777216 mount=/data wl_size=16629760 wl_sector=4096 msc_sectors=4060 msc_sector=4096[0m
+[0;32mI (1486) usb_hid: usbstore already mounted to APP: /data[0m
+[0;32mI (1486) st7701sn_lcd: Initialize ST7701SN 480x640 MIPI display with ESP-IDF DSI flow[0m
+[0;32mI (1486) st7701sn_lcd: MIPI DSI PHY LDO enabled[0m
+[0;32mI (1486) st7701sn_lcd: Create MIPI DSI bus[0m
+[0;32mI (1486) st7701sn_lcd: Create MIPI DBI command IO[0m
+[0;32mI (1486) st7701sn_lcd: MIPI DSI command ACK disabled[0m
+[0;32mI (1486) st7701sn_lcd: Create MIPI DPI panel[0m
+[0;32mI (1496) st7701sn_lcd: MIPI DPI panel created[0m
+[0;32mI (1496) gpio: GPIO[37]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1496) st7701sn_lcd: LCD reset GPIO37 configured, readback=0[0m
+[0;32mI (1496) st7701sn_lcd: Precharge LCD reset on GPIO37 high[0m
+[0;32mI (1496) st7701sn_lcd: LCD reset GPIO37 precharge high, readback=0[0m
+[0;32mI (1496) st7701sn_lcd: Assert LCD reset on GPIO37[0m
+[0;32mI (1496) st7701sn_lcd: LCD reset GPIO37 after assert, readback=0[0m
+[0;32mI (1496) st7701sn_lcd: Release LCD reset on GPIO37[0m
+[0;32mI (1496) st7701sn_lcd: LCD reset GPIO37 after release, readback=0[0m
+[0;32mI (1546) st7701sn_lcd: Send ST7701SN init commands[0m
+[0;32mI (1546) st7701sn_lcd: LCD init cmd[0]: 0x01, len=0[0m
+[0;32mI (1676) st7701sn_lcd: LCD init cmd[1]: 0xFF, len=5[0m
+[0;32mI (1696) st7701sn_lcd: LCD init cmd[2]: 0xEF, len=1[0m
+[0;32mI (1706) st7701sn_lcd: LCD init cmd[3]: 0xFF, len=5[0m
+[0;32mI (1726) st7701sn_lcd: LCD init cmd[4]: 0xC0, len=2[0m
+[0;32mI (1736) st7701sn_lcd: LCD init cmd[5]: 0xC1, len=2[0m
+[0;32mI (1746) st7701sn_lcd: LCD init cmd[6]: 0xC2, len=2[0m
+[0;32mI (1756) st7701sn_lcd: LCD init cmd[7]: 0xC3, len=3[0m
+[0;32mI (1766) st7701sn_lcd: LCD init cmd[8]: 0xCC, len=1[0m
+[0;32mI (1776) st7701sn_lcd: LCD init cmd[9]: 0xB0, len=16[0m
+[0;32mI (1796) st7701sn_lcd: LCD init cmd[10]: 0xB1, len=16[0m
+[0;32mI (1816) st7701sn_lcd: LCD init cmd[11]: 0xFF, len=5[0m
+[0;32mI (1836) st7701sn_lcd: LCD init cmd[12]: 0xB0, len=1[0m
+[0;32mI (1846) st7701sn_lcd: LCD init cmd[13]: 0xB1, len=1[0m
+[0;32mI (1856) st7701sn_lcd: LCD init cmd[14]: 0xB2, len=1[0m
+[0;32mI (1866) st7701sn_lcd: LCD init cmd[15]: 0xB3, len=1[0m
+[0;32mI (1876) st7701sn_lcd: LCD init cmd[16]: 0xB5, len=1[0m
+[0;32mI (1886) st7701sn_lcd: LCD init cmd[17]: 0xB7, len=1[0m
+[0;32mI (1896) st7701sn_lcd: LCD init cmd[18]: 0xB8, len=1[0m
+[0;32mI (1906) st7701sn_lcd: LCD init cmd[19]: 0xC0, len=1[0m
+[0;32mI (1916) st7701sn_lcd: LCD init cmd[20]: 0xC1, len=1[0m
+[0;32mI (1926) st7701sn_lcd: LCD init cmd[21]: 0xC2, len=1[0m
+[0;32mI (1936) st7701sn_lcd: LCD init cmd[22]: 0xD0, len=1[0m
+[0;32mI (1946) st7701sn_lcd: LCD init cmd[23]: 0xE0, len=3[0m
+[0;32mI (1956) st7701sn_lcd: LCD init cmd[24]: 0xE1, len=11[0m
+[0;32mI (1976) st7701sn_lcd: LCD init cmd[25]: 0xE2, len=13[0m
+[0;32mI (1996) st7701sn_lcd: LCD init cmd[26]: 0xE3, len=4[0m
+[0;32mI (2006) st7701sn_lcd: LCD init cmd[27]: 0xE4, len=2[0m
+[0;32mI (2016) st7701sn_lcd: LCD init cmd[28]: 0xE5, len=16[0m
+[0;32mI (2036) st7701sn_lcd: LCD init cmd[29]: 0xE6, len=4[0m
+[0;32mI (2046) st7701sn_lcd: LCD init cmd[30]: 0xE7, len=2[0m
+[0;32mI (2056) st7701sn_lcd: LCD init cmd[31]: 0xE8, len=16[0m
+[0;32mI (2076) st7701sn_lcd: LCD init cmd[32]: 0xEB, len=7[0m
+[0;32mI (2096) st7701sn_lcd: LCD init cmd[33]: 0xEC, len=2[0m
+[0;32mI (2106) st7701sn_lcd: LCD init cmd[34]: 0xED, len=16[0m
+[0;32mI (2126) st7701sn_lcd: LCD init cmd[35]: 0xEF, len=6[0m
+[0;32mI (2146) st7701sn_lcd: LCD init cmd[36]: 0xFF, len=5[0m
+[0;32mI (2166) st7701sn_lcd: LCD init cmd[37]: 0xE8, len=2[0m
+[0;32mI (2176) st7701sn_lcd: LCD init cmd[38]: 0xE8, len=2[0m
+[0;32mI (2206) st7701sn_lcd: LCD init cmd[39]: 0xE8, len=2[0m
+[0;32mI (2216) st7701sn_lcd: LCD init cmd[40]: 0xFF, len=5[0m
+[0;32mI (2236) st7701sn_lcd: LCD init cmd[41]: 0x11, len=0[0m
+[0;32mI (2366) st7701sn_lcd: LCD init cmd[42]: 0x3A, len=1[0m
+[0;32mI (2376) st7701sn_lcd: LCD init cmd[43]: 0x29, len=0[0m
+[0;32mI (2406) st7701sn_lcd: Start MIPI DPI panel init[0m
+[0;32mI (2406) st7701sn_lcd: MIPI DPI panel init done, video stream should be enabled[0m
+[0;32mI (2406) st7701sn_lcd: LCD backlight enabled[0m
+[0;32mI (2406) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2516) gpio: GPIO[7]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2516) ft6336: FT6336 detected, chip_id=0x00 vendor_id=0x00[0m
+[0;32mI (2516) app: Start LVGL[0m
+[0;32mI (2596) port_ui: user presence callback registered[0m
+[0;32mI (2596) ui_fido: FIDO confirm callback registered[0m
+[0;32mI (2596) canokey_port: CanoKey task starting[0m
+[0;32mI (2596) canokey_port: CanoKey LittleFS mount begin[0m
+[0;32mI (2606) canokey_flash: CanoKey LittleFS mounted: label=canokey_lfs offset=0xf00000 size=1048576 blocks=255[0m
+[0;32mI (2606) canokey_port: CanoKey LittleFS mount done[0m
+[0;32mI (2606) canokey_port: CanoKey crypto port init begin[0m
+[0;32mI (2606) canokey_crypto: crypto port ready[0m
+[0;32mI (2606) canokey_crypto: SHA256/HMAC-SHA256/AES-256-ECB selftest passed[0m
+[0;32mI (2606) canokey_port: CanoKey crypto port init done[0m
+[0;32mI (2606) canokey_port: CanoKey APDU buffer init begin[0m
+[0;32mI (2606) canokey_port: CanoKey APDU buffer init done[0m
+[0;32mI (2606) canokey_port: CanoKey device_init begin[0m
+[0;32mI (2606) canokey_port: CanoKey device_init done[0m
+[0;32mI (2606) canokey_port: CanoKey applets_install begin[0m
+[0;32mI (2616) canokey_flash: Platform config loaded from flash offset=0xfff000 len=512[0m
+[0;33mW (2716) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x02(PIN_ATTR) request_len=32 ret=16[0m
+[0;33mW (2716) canokey_fs: CTAP flash attr read data preview len=16/16[0m
+[0;33mW (2716) canokey_fs: 0x4ff39da0   03 ac 67 42 16 f3 e1 5c  76 1e e1 a5 e2 55 f0 67  |..gB...\v....U.g|[0m
+[0;33mW (2726) canokey_fs: CTAP flash attr read path=ctap_dc attr=0x00(DC_GENERAL_ATTR) request_len=9 ret=9[0m
+[0;33mW (2726) canokey_fs: CTAP flash attr read data preview len=9/9[0m
+[0;33mW (2726) canokey_fs: 0x4ff39d94   02 00 00 00 01 00 00 00  00                       |.........|[0m
+[0;33mW (2736) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x01(SIGN_CTR_ATTR) request_len=4 ret=4[0m
+[0;33mW (2736) canokey_fs: CTAP flash attr read data preview len=4/4[0m
+[0;33mW (2736) canokey_fs: 0x4ff39da0   23 00 00 00                                       |#...|[0m
+[0;33mW (2736) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x03(PIN_CTR_ATTR) request_len=1 ret=1[0m
+[0;33mW (2736) canokey_fs: CTAP flash attr read data preview len=1/1[0m
+[0;33mW (2736) canokey_fs: 0x4ff39d9f   08                                                |.|[0m
+[0;33mW (2736) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x04(KH_KEY_ATTR) request_len=32 ret=32[0m
+[0;33mW (2736) canokey_fs: CTAP flash attr read data preview len=32/32[0m
+[0;33mW (2736) canokey_fs: 0x4ff39da0   d9 1d 04 cd 2b 6d 74 5a  f2 c6 59 c5 df d9 7a 09  |....+mtZ..Y...z.|[0m
+[0;33mW (2736) canokey_fs: 0x4ff39db0   03 e1 8d be c6 c4 3b 1a  fc 48 37 95 72 15 82 89  |......;..H7.r...|[0m
+[0;33mW (2746) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x05(HE_KEY_ATTR) request_len=32 ret=32[0m
+[0;33mW (2746) canokey_fs: CTAP flash attr read data preview len=32/32[0m
+[0;33mW (2746) canokey_fs: 0x4ff39da0   81 ab 44 7b 92 e8 03 2d  30 bb aa c2 63 9f 57 33  |..D{...-0...c.W3|[0m
+[0;33mW (2746) canokey_fs: 0x4ff39db0   6d 5a 71 f5 d9 cc 2e c3  f1 41 85 4c 83 d5 04 88  |mZq......A.L....|[0m
+[0;32mI (2766) canokey_port: CanoKey applets_install done[0m
+[0;33mW (2766) canokey_fs: CTAP flash attr read path=ctap_cert attr=0x00(KEY_ATTR) request_len=32 ret=32[0m
+[0;33mW (2766) canokey_fs: CTAP flash attr read data preview len=32/32[0m
+[0;33mW (2766) canokey_fs: 0x4ff39e10   01 01 01 01 01 01 01 01  01 01 01 01 01 01 01 01  |................|[0m
+[0;33mW (2766) canokey_fs: 0x4ff39e20   01 01 01 01 01 01 01 01  01 01 01 01 01 01 01 01  |................|[0m
+[0;32mI (2766) canokey_port: CTAP attestation already installed: key_len=32 cert_len=5[0m
+[0;32mI (257936) touch: touch count=1 id=0 event=2 x=134 y=315[0m
+[0;32mI (258056) touch: release[0m
+[0;32mI (258276) touch: touch count=1 id=0 event=2 x=247 y=320[0m
+[0;32mI (258366) touch: release[0m
+[0;32mI (258586) touch: touch count=1 id=0 event=2 x=423 y=317[0m
+[0;32mI (258636) touch: release[0m
+[0;32mI (259206) touch: touch count=1 id=0 event=0 x=124 y=425[0m
+[0;32mI (259286) touch: release[0m
+[0;32mI (259786) touch: touch count=1 id=0 event=0 x=395 y=607[0m
+[0;32mI (259786) PIN_PAGE: PIN input: 1234[0m
+[0;32mI (259896) touch: release[0m
+[0;32mI (261086) touch: touch count=1 id=0 event=2 x=343 y=511[0m
+[0;32mI (261186) touch: release[0m
+[0;32mI (261196) ui_fido_mgmt: load FIDO rp metadata size=140 count=2[0m
+[0;32mI (261196) ui_fido_mgmt: FIDO rp[0] id=github.com live=1[0m
+[0;32mI (261206) ui_fido_mgmt: FIDO rp[1] id=aliyun.com live=1[0m
+[0;32mI (262096) touch: touch count=1 id=0 event=2 x=348 y=101[0m
+[0;32mI (262196) touch: release[0m
+[0;32mI (262646) touch: touch count=1 id=0 event=0 x=313 y=98[0m
+[0;32mI (262746) touch: release[0m
+[0;32mI (268866) touch: touch count=1 id=0 event=0 x=283 y=98[0m
+[0;32mI (268966) touch: release[0m
+[0;32mI (270326) touch: touch count=1 id=0 event=0 x=310 y=79[0m
+[0;32mI (270396) touch: release[0m
+[0;32mI (270736) touch: touch count=1 id=0 event=0 x=296 y=87[0m
+[0;32mI (270796) touch: release[0m
+[0;32mI (279236) touch: touch count=1 id=0 event=2 x=330 y=93[0m
+[0;32mI (279296) touch: release[0m
+[0;32mI (279746) touch: touch count=1 id=0 event=2 x=320 y=99[0m
+[0;32mI (279806) touch: release[0m
+[0;32mI (280186) touch: touch count=1 id=0 event=2 x=317 y=106[0m
+[0;32mI (280216) touch: release[0m
+[0;32mI (280496) touch: touch count=1 id=0 event=2 x=312 y=106[0m
+[0;32mI (280526) touch: release[0m

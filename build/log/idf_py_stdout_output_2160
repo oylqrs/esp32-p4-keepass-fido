@@ -1,0 +1,325 @@
+[0;32mI (184) esp_image: segment 4: paddr=000d9534 vaddr=4ff0eb48 sizeESP-ROM:esp32p4-eco2-20240710[0m
+Build:Jul 10 2024
+rst:0x17 (CHIP_USB_UART_RESET),boot:0x30c (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4000a39e
+Core1 Saved PC:0x4fc012c6
+SPI mode:DIO, clock div:2
+load:0x4ff33ce0,len:0x16f0
+load:0x4ff2abd0,len:0xe3c
+load:0x4ff2cbd0,len:0x3358
+entry 0x4ff2abda
+[0;32mI (14) boot: ESP-IDF v5.4.4 2nd stage bootloader[0m
+[0;32mI (14) boot: compile time Jul 18 2026 23:23:46[0m
+[0;32mI (14) boot: Multicore bootloader[0m
+[0;32mI (15) boot: chip revision: v1.3[0m
+[0;32mI (15) boot: efuse block revision: v0.3[0m
+[0;32mI (16) boot.esp32p4: SPI Speed      : 40MHz[0m
+[0;32mI (16) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (16) boot.esp32p4: SPI Flash Size : 32MB[0m
+[0;32mI (17) boot: Enabling RNG early entropy source...[0m
+[0;32mI (17) boot: Partition Table:[0m
+[0;32mI (17) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (18) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (18) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (19) boot:  2 factory          factory app      00 00 00010000 00ef0000[0m
+[0;32mI (20) boot:  3 canokey_lfs      Unknown data     01 40 00f00000 00100000[0m
+[0;32mI (20) boot:  4 usbstore         Unknown data     01 81 01000000 01000000[0m
+[0;32mI (21) boot: End of partition table[0m
+[0;32mI (22) esp_image: segment 0: paddr=00010020 vaddr=40090020 size=31438h (201784) map[0m
+[0;32mI (62) esp_image: segment 1: paddr=00041460 vaddr=30100000 size=00068h (   104) load[0m
+[0;32mI (63) esp_image: segment 2: paddr=000414d0 vaddr=4ff00000 size=0eb48h ( 60232) load[0m
+[0;32mI (78) esp_image: segment 3: paddr=00050020 vaddr=40000020 size=8950ch (562444) map[0m
+[0;32mI (187) esp_image: segment 4: paddr=000d9534 vaddr=4ff0eb48 size=05dd0h ( 24016) load[0m
+[0;32mI (194) esp_image: segment 5: paddr=000df30c vaddr=4ff14980 size=05638h ( 22072) load[0m
+[0;32mI (200) esp_image: segment 6: paddr=000e494c vaddr=50108080 size=0001ch (    28) load[0m
+[0;32mI (206) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (206) boot: Disabling RNG early entropy source...[0m
+[0;32mI (211) hex_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (212) hex_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (212) hex_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (212) hex_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (213) hex_psram: density      : 0x07 (256 Mbit)[0m
+[0;32mI (213) hex_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (213) hex_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (214) hex_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (214) hex_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (214) hex_psram: BitMode      : 0x01 (X16 Mode)[0m
+[0;32mI (215) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (215) hex_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (216) MSPI DQS: tuning success, best phase id is 0[0m
+[0;32mI (389) MSPI DQS: tuning success, best delayline id is 16[0m
+[0;32mI (389) esp_psram: Found 32MB PSRAM device[0m
+[0;32mI (389) esp_psram: Speed: 200MHz[0m
+[0;32mI (390) hex_psram: psram CS IO is dedicated[0m
+[0;32mI (390) cpu_start: Multicore app[0m
+[0;32mI (1340) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1350) cpu_start: Pro cpu start user code[0m
+[0;32mI (1350) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (1350) app_init: Application information:[0m
+[0;32mI (1351) app_init: Project name:     hello_world[0m
+[0;32mI (1351) app_init: App version:      1[0m
+[0;32mI (1351) app_init: Compile time:     Jul 18 2026 23:25:33[0m
+[0;32mI (1351) app_init: ELF file SHA256:  a15f9d3d8...[0m
+[0;32mI (1351) app_init: ESP-IDF:          v5.4.4[0m
+[0;32mI (1352) efuse_init: Min chip rev:     v0.1[0m
+[0;32mI (1352) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (1352) efuse_init: Chip rev:         v1.3[0m
+[0;32mI (1352) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1353) heap_init: At 4FF22FF0 len 00017FD0 (95 KiB): RETENT_RAM[0m
+[0;32mI (1353) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (1353) heap_init: At 4FF508F0 len 0004F710 (317 KiB): RAM[0m
+[0;32mI (1354) heap_init: At 5010809C len 00007F64 (31 KiB): RTCRAM[0m
+[0;32mI (1354) heap_init: At 30100068 len 00001F98 (7 KiB): TCM[0m
+[0;32mI (1355) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator[0m
+[0;32mI (1356) spi_flash: detected chip: gd[0m
+[0;32mI (1356) spi_flash: flash io: dio[0m
+[0;33mW (1357) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1357) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1358) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1359) main_task: Started on CPU0[0m
+[0;32mI (1369) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1369) main_task: Calling app_main()[0m
+[0;32mI (1369) canokey_crypto: crypto port ready[0m
+[0;32mI (1369) usb_hid: USB MSC descriptor enabled; storage init is handled separately[0m
+[0;32mI (1369) tusb_desc: [0m
+┌─────────────────────────────────┐
+│  USB Device Descriptor Summary  │
+├───────────────────┬─────────────┤
+│bDeviceClass       │ 0           │
+├───────────────────┼─────────────┤
+│bDeviceSubClass    │ 0           │
+├───────────────────┼─────────────┤
+│bDeviceProtocol    │ 0           │
+├───────────────────┼─────────────┤
+│bMaxPacketSize0    │ 64          │
+├───────────────────┼─────────────┤
+│idVendor           │ 0x303a      │
+├───────────────────┼─────────────┤
+│idProduct          │ 0x4006      │
+├───────────────────┼─────────────┤
+│bcdDevice          │ 0x100       │
+├───────────────────┼─────────────┤
+│iManufacturer      │ 0x1         │
+├───────────────────┼─────────────┤
+│iProduct           │ 0x2         │
+├───────────────────┼─────────────┤
+│iSerialNumber      │ 0x3         │
+├───────────────────┼─────────────┤
+│bNumConfigurations │ 0x1         │
+└───────────────────┴─────────────┘
+[0;32mI (1379) TinyUSB: TinyUSB Driver installed on port 1[0m
+[0;32mI (1379) usb_hid: TinyUSB driver installed: mounted=0 hid0_ready=0 ctaphid_ready=0[0m
+[0;32mI (1379) canokey_usb: CTAPHID init start: itf=1 report_size=64 queue_depth=32[0m
+[0;32mI (1379) canokey_usb: CTAPHID event queue created[0m
+[0;32mI (1379) canokey_usb: CTAPHID init done: state=IDLE mounted=0 ready=0[0m
+[0;32mI (1379) usb_hid: USB HID keyboard initialized on TinyUSB default USB[0m
+[0;32mI (1379) usb_hid: MSC flash partition 'usbstore': offset=0x1000000 size=16777216 bytes[0m
+[0;33mW (1459) tinyusb_msc_storage: Default MSC event callback called, event ID: 0, mount point: 0[0m
+[0;33mW (1459) tinyusb_msc_storage: Default MSC event callback called, event ID: 1, mount point: 1[0m
+[0;32mI (1469) usb_hid: usbstore first-boot format already done: fmt_v2_done=1[0m
+[0;32mI (1469) usb_hid: MSC flash storage mounted to APP; use switch_usbstore to expose USB disk[0m
+[0;32mI (1469) usb_hid: usbstore FAT boot OK: bps=4096 spc=1 reserved=1 fats=2 root_entries=512 total16=4060 total32=0 fatsz16=2 type='FAT12   '[0m
+[0;32mI (1469) usb_hid: usbstore config OK: partition=usbstore offset=0x1000000 size=16777216 mount=/data wl_size=16629760 wl_sector=4096 msc_sectors=4060 msc_sector=4096[0m
+[0;32mI (1469) usb_hid: usbstore already mounted to APP: /data[0m
+[0;32mI (1469) st7701sn_lcd: Initialize ST7701SN 480x640 MIPI display with ESP-IDF DSI flow[0m
+[0;32mI (1469) st7701sn_lcd: MIPI DSI PHY LDO enabled[0m
+[0;32mI (1469) st7701sn_lcd: Create MIPI DSI bus[0m
+[0;32mI (1469) st7701sn_lcd: Create MIPI DBI command IO[0m
+[0;32mI (1469) st7701sn_lcd: MIPI DSI command ACK disabled[0m
+[0;32mI (1469) st7701sn_lcd: Create MIPI DPI panel[0m
+[0;32mI (1479) st7701sn_lcd: MIPI DPI panel created[0m
+[0;32mI (1479) gpio: GPIO[37]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1479) st7701sn_lcd: LCD reset GPIO37 configured, readback=0[0m
+[0;32mI (1479) st7701sn_lcd: Precharge LCD reset on GPIO37 high[0m
+[0;32mI (1479) st7701sn_lcd: LCD reset GPIO37 precharge high, readback=0[0m
+[0;32mI (1479) st7701sn_lcd: Assert LCD reset on GPIO37[0m
+[0;32mI (1479) st7701sn_lcd: LCD reset GPIO37 after assert, readback=0[0m
+[0;32mI (1479) st7701sn_lcd: Release LCD reset on GPIO37[0m
+[0;32mI (1479) st7701sn_lcd: LCD reset GPIO37 after release, readback=0[0m
+[0;32mI (1529) st7701sn_lcd: Send ST7701SN init commands[0m
+[0;32mI (1529) st7701sn_lcd: LCD init cmd[0]: 0x01, len=0[0m
+[0;32mI (1659) st7701sn_lcd: LCD init cmd[1]: 0xFF, len=5[0m
+[0;32mI (1679) st7701sn_lcd: LCD init cmd[2]: 0xEF, len=1[0m
+[0;32mI (1689) st7701sn_lcd: LCD init cmd[3]: 0xFF, len=5[0m
+[0;32mI (1709) st7701sn_lcd: LCD init cmd[4]: 0xC0, len=2[0m
+[0;32mI (1719) st7701sn_lcd: LCD init cmd[5]: 0xC1, len=2[0m
+[0;32mI (1729) st7701sn_lcd: LCD init cmd[6]: 0xC2, len=2[0m
+[0;32mI (1739) st7701sn_lcd: LCD init cmd[7]: 0xC3, len=3[0m
+[0;32mI (1749) st7701sn_lcd: LCD init cmd[8]: 0xCC, len=1[0m
+[0;32mI (1759) st7701sn_lcd: LCD init cmd[9]: 0xB0, len=16[0m
+[0;32mI (1779) st7701sn_lcd: LCD init cmd[10]: 0xB1, len=16[0m
+[0;32mI (1799) st7701sn_lcd: LCD init cmd[11]: 0xFF, len=5[0m
+[0;32mI (1819) st7701sn_lcd: LCD init cmd[12]: 0xB0, len=1[0m
+[0;32mI (1829) st7701sn_lcd: LCD init cmd[13]: 0xB1, len=1[0m
+[0;32mI (1839) st7701sn_lcd: LCD init cmd[14]: 0xB2, len=1[0m
+[0;32mI (1849) st7701sn_lcd: LCD init cmd[15]: 0xB3, len=1[0m
+[0;32mI (1859) st7701sn_lcd: LCD init cmd[16]: 0xB5, len=1[0m
+[0;32mI (1869) st7701sn_lcd: LCD init cmd[17]: 0xB7, len=1[0m
+[0;32mI (1879) st7701sn_lcd: LCD init cmd[18]: 0xB8, len=1[0m
+[0;32mI (1889) st7701sn_lcd: LCD init cmd[19]: 0xC0, len=1[0m
+[0;32mI (1899) st7701sn_lcd: LCD init cmd[20]: 0xC1, len=1[0m
+[0;32mI (1909) st7701sn_lcd: LCD init cmd[21]: 0xC2, len=1[0m
+[0;32mI (1919) st7701sn_lcd: LCD init cmd[22]: 0xD0, len=1[0m
+[0;32mI (1929) st7701sn_lcd: LCD init cmd[23]: 0xE0, len=3[0m
+[0;32mI (1939) st7701sn_lcd: LCD init cmd[24]: 0xE1, len=11[0m
+[0;32mI (1959) st7701sn_lcd: LCD init cmd[25]: 0xE2, len=13[0m
+[0;32mI (1979) st7701sn_lcd: LCD init cmd[26]: 0xE3, len=4[0m
+[0;32mI (1989) st7701sn_lcd: LCD init cmd[27]: 0xE4, len=2[0m
+[0;32mI (1999) st7701sn_lcd: LCD init cmd[28]: 0xE5, len=16[0m
+[0;32mI (2019) st7701sn_lcd: LCD init cmd[29]: 0xE6, len=4[0m
+[0;32mI (2029) st7701sn_lcd: LCD init cmd[30]: 0xE7, len=2[0m
+[0;32mI (2039) st7701sn_lcd: LCD init cmd[31]: 0xE8, len=16[0m
+[0;32mI (2059) st7701sn_lcd: LCD init cmd[32]: 0xEB, len=7[0m
+[0;32mI (2079) st7701sn_lcd: LCD init cmd[33]: 0xEC, len=2[0m
+[0;32mI (2089) st7701sn_lcd: LCD init cmd[34]: 0xED, len=16[0m
+[0;32mI (2109) st7701sn_lcd: LCD init cmd[35]: 0xEF, len=6[0m
+[0;32mI (2129) st7701sn_lcd: LCD init cmd[36]: 0xFF, len=5[0m
+[0;32mI (2149) st7701sn_lcd: LCD init cmd[37]: 0xE8, len=2[0m
+[0;32mI (2159) st7701sn_lcd: LCD init cmd[38]: 0xE8, len=2[0m
+[0;32mI (2189) st7701sn_lcd: LCD init cmd[39]: 0xE8, len=2[0m
+[0;32mI (2199) st7701sn_lcd: LCD init cmd[40]: 0xFF, len=5[0m
+[0;32mI (2219) st7701sn_lcd: LCD init cmd[41]: 0x11, len=0[0m
+[0;32mI (2349) st7701sn_lcd: LCD init cmd[42]: 0x3A, len=1[0m
+[0;32mI (2359) st7701sn_lcd: LCD init cmd[43]: 0x29, len=0[0m
+[0;32mI (2389) st7701sn_lcd: Start MIPI DPI panel init[0m
+[0;32mI (2389) st7701sn_lcd: MIPI DPI panel init done, video stream should be enabled[0m
+[0;32mI (2389) st7701sn_lcd: LCD backlight enabled[0m
+[0;32mI (2389) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2499) gpio: GPIO[7]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2499) ft6336: FT6336 detected, chip_id=0x00 vendor_id=0x00[0m
+[0;32mI (2499) app: Start LVGL[0m
+[0;32mI (2579) port_ui: user presence callback registered[0m
+[0;32mI (2579) ui_fido: FIDO confirm callback registered[0m
+[0;32mI (4579) touch: touch count=1 id=0 event=2 x=405 y=527[0m
+[0;32mI (4639) touch: touch count=1 id=0 event=2 x=405 y=509[0m
+[0;32mI (4679) touch: touch count=1 id=0 event=2 x=413 y=471[0m
+[0;32mI (4709) touch: touch count=1 id=0 event=2 x=421 y=431[0m
+[0;32mI (4739) touch: touch count=1 id=0 event=2 x=428 y=407[0m
+[0;32mI (4779) touch: touch count=1 id=0 event=2 x=432 y=384[0m
+[0;32mI (4809) touch: touch count=1 id=0 event=2 x=433 y=369[0m
+[0;32mI (4849) touch: touch count=1 id=0 event=2 x=434 y=354[0m
+[0;32mI (4879) touch: touch count=1 id=0 event=2 x=436 y=339[0m
+[0;32mI (4909) touch: touch count=1 id=0 event=2 x=438 y=331[0m
+[0;32mI (4949) touch: touch count=1 id=0 event=2 x=439 y=323[0m
+[0;32mI (4979) touch: touch count=1 id=0 event=2 x=441 y=319[0m
+[0;32mI (5019) touch: touch count=1 id=0 event=2 x=441 y=317[0m
+[0;32mI (5049) touch: touch count=1 id=0 event=2 x=441 y=318[0m
+[0;32mI (5079) touch: touch count=1 id=0 event=2 x=441 y=331[0m
+[0;32mI (5119) touch: touch count=1 id=0 event=2 x=441 y=361[0m
+[0;32mI (5149) touch: touch count=1 id=0 event=2 x=450 y=397[0m
+[0;32mI (5189) touch: release[0m
+[0;32mI (6319) touch: touch count=1 id=0 event=0 x=123 y=632[0m
+[0;32mI (6379) touch: release[0m
+[0;32mI (7009) touch: touch count=1 id=0 event=0 x=151 y=321[0m
+[0;32mI (7059) touch: release[0m
+[0;32mI (7249) touch: touch count=1 id=0 event=2 x=240 y=310[0m
+[0;32mI (7299) touch: release[0m
+[0;32mI (7489) touch: touch count=1 id=0 event=2 x=355 y=303[0m
+[0;32mI (7539) touch: release[0m
+[0;32mI (8369) touch: touch count=1 id=0 event=2 x=127 y=487[0m
+[0;32mI (8429) touch: release[0m
+[0;32mI (9429) touch: touch count=1 id=0 event=2 x=125 y=639[0m
+[0;32mI (9459) touch: release[0m
+[0;32mI (10109) touch: touch count=1 id=0 event=2 x=117 y=575[0m
+[0;32mI (10159) touch: release[0m
+[0;32mI (10519) touch: touch count=1 id=0 event=2 x=161 y=387[0m
+[0;32mI (10569) touch: release[0m
+[0;32mI (11129) touch: touch count=1 id=0 event=2 x=389 y=561[0m
+[0;32mI (11139) PIN_PAGE: PIN input: 1234[0m
+[0;32mI (11209) touch: release[0m
+[0;32mI (12229) touch: touch count=1 id=0 event=2 x=338 y=568[0m
+[0;32mI (12299) touch: touch count=1 id=0 event=2 x=338 y=551[0m
+[0;32mI (12349) touch: touch count=1 id=0 event=2 x=342 y=483[0m
+[0;32mI (12399) touch: touch count=1 id=0 event=2 x=343 y=459[0m
+[0;32mI (12449) touch: touch count=1 id=0 event=2 x=345 y=434[0m
+[0;32mI (12499) touch: touch count=1 id=0 event=2 x=349 y=410[0m
+[0;32mI (12549) touch: touch count=1 id=0 event=2 x=352 y=387[0m
+[0;32mI (12589) touch: touch count=1 id=0 event=2 x=356 y=369[0m
+[0;32mI (12639) touch: touch count=1 id=0 event=2 x=360 y=356[0m
+[0;32mI (12689) touch: touch count=1 id=0 event=2 x=363 y=344[0m
+[0;32mI (12739) touch: touch count=1 id=0 event=2 x=365 y=337[0m
+[0;32mI (12789) touch: touch count=1 id=0 event=2 x=365 y=332[0m
+[0;32mI (12839) touch: touch count=1 id=0 event=2 x=367 y=329[0m
+[0;32mI (12889) touch: touch count=1 id=0 event=2 x=367 y=328[0m
+[0;32mI (12969) touch: touch count=1 id=0 event=2 x=367 y=337[0m
+[0;32mI (13019) touch: touch count=1 id=0 event=2 x=367 y=360[0m
+[0;32mI (13069) touch: touch count=1 id=0 event=2 x=367 y=377[0m
+[0;32mI (13119) touch: touch count=1 id=0 event=2 x=367 y=390[0m
+[0;32mI (13169) touch: touch count=1 id=0 event=2 x=365 y=404[0m
+[0;32mI (13219) touch: touch count=1 id=0 event=2 x=362 y=416[0m
+[0;32mI (13269) touch: touch count=1 id=0 event=2 x=361 y=424[0m
+[0;32mI (13319) touch: touch count=1 id=0 event=2 x=360 y=427[0m
+[0;32mI (13399) touch: touch count=1 id=0 event=2 x=360 y=426[0m
+[0;32mI (13449) touch: touch count=1 id=0 event=2 x=360 y=404[0m
+[0;32mI (13499) touch: touch count=1 id=0 event=2 x=360 y=380[0m
+[0;32mI (13549) touch: touch count=1 id=0 event=2 x=360 y=368[0m
+[0;32mI (13599) touch: touch count=1 id=0 event=2 x=360 y=362[0m
+[0;32mI (13639) touch: touch count=1 id=0 event=2 x=360 y=357[0m
+[0;32mI (13689) touch: touch count=1 id=0 event=2 x=360 y=351[0m
+[0;32mI (13739) touch: touch count=1 id=0 event=2 x=360 y=345[0m
+[0;32mI (13789) touch: touch count=1 id=0 event=2 x=360 y=339[0m
+[0;32mI (13839) touch: touch count=1 id=0 event=2 x=360 y=332[0m
+[0;32mI (13889) touch: touch count=1 id=0 event=2 x=362 y=325[0m
+[0;32mI (13939) touch: touch count=1 id=0 event=2 x=364 y=318[0m
+[0;32mI (13979) touch: touch count=1 id=0 event=2 x=366 y=311[0m
+[0;32mI (14029) touch: touch count=1 id=0 event=2 x=366 y=305[0m
+[0;32mI (14079) touch: touch count=1 id=0 event=2 x=366 y=300[0m
+[0;32mI (14129) touch: touch count=1 id=0 event=2 x=367 y=296[0m
+[0;32mI (14179) touch: touch count=1 id=0 event=2 x=367 y=293[0m
+[0;32mI (14229) touch: touch count=1 id=0 event=2 x=368 y=291[0m
+[0;32mI (14279) touch: touch count=1 id=0 event=2 x=368 y=289[0m
+[0;32mI (14329) touch: touch count=1 id=0 event=2 x=368 y=287[0m
+[0;32mI (14379) touch: touch count=1 id=0 event=2 x=368 y=285[0m
+[0;32mI (14429) touch: touch count=1 id=0 event=2 x=368 y=284[0m
+[0;32mI (14479) touch: touch count=1 id=0 event=2 x=368 y=283[0m
+[0;32mI (14629) touch: touch count=1 id=0 event=2 x=368 y=285[0m
+[0;32mI (14679) touch: touch count=1 id=0 event=2 x=368 y=319[0m
+[0;32mI (14729) touch: touch count=1 id=0 event=2 x=368 y=384[0m
+[0;32mI (14779) touch: touch count=1 id=0 event=2 x=364 y=476[0m
+[0;32mI (14819) touch: touch count=1 id=0 event=2 x=363 y=608[0m
+[0;32mI (14869) touch: release[0m
+[0;32mI (15969) touch: touch count=1 id=0 event=2 x=295 y=534[0m
+[0;32mI (15999) touch: touch count=1 id=0 event=2 x=297 y=519[0m
+[0;32mI (16049) touch: touch count=1 id=0 event=2 x=309 y=447[0m
+[0;32mI (16099) touch: touch count=1 id=0 event=2 x=334 y=353[0m
+[0;32mI (16149) touch: touch count=1 id=0 event=2 x=358 y=284[0m
+[0;32mI (16199) touch: release[0m
+[0;32mI (16639) touch: touch count=1 id=0 event=2 x=309 y=535[0m
+[0;32mI (16689) touch: touch count=1 id=0 event=2 x=316 y=485[0m
+[0;32mI (16749) touch: touch count=1 id=0 event=2 x=373 y=305[0m
+[0;32mI (16799) touch: touch count=1 id=0 event=2 x=415 y=202[0m
+[0;32mI (16849) touch: release[0m
+[0;32mI (17159) touch: touch count=1 id=0 event=2 x=386 y=271[0m
+[0;32mI (17209) touch: touch count=1 id=0 event=2 x=358 y=389[0m
+[0;32mI (17259) touch: release[0m
+[0;32mI (17779) touch: touch count=1 id=0 event=0 x=313 y=427[0m
+[0;32mI (17809) touch: touch count=1 id=0 event=2 x=313 y=431[0m
+[0;32mI (17849) touch: touch count=1 id=0 event=2 x=300 y=554[0m
+[0;32mI (17899) touch: release[0m
+[0;32mI (39659) touch: touch count=1 id=0 event=2 x=192 y=326[0m
+[0;32mI (39899) touch: touch count=1 id=0 event=2 x=192 y=318[0m
+[0;32mI (39929) touch: touch count=1 id=0 event=2 x=192 y=305[0m
+[0;32mI (39979) touch: touch count=1 id=0 event=2 x=192 y=277[0m
+[0;32mI (40029) touch: touch count=1 id=0 event=2 x=191 y=246[0m
+[0;32mI (40079) touch: touch count=1 id=0 event=2 x=190 y=225[0m
+[0;32mI (40129) touch: touch count=1 id=0 event=2 x=187 y=202[0m
+[0;32mI (40179) touch: touch count=1 id=0 event=2 x=186 y=174[0m
+[0;32mI (40229) touch: touch count=1 id=0 event=2 x=186 y=159[0m
+[0;32mI (40279) touch: touch count=1 id=0 event=2 x=186 y=152[0m
+[0;32mI (40329) touch: touch count=1 id=0 event=2 x=186 y=142[0m
+[0;32mI (40379) touch: touch count=1 id=0 event=2 x=186 y=129[0m
+[0;32mI (40429) touch: touch count=1 id=0 event=2 x=186 y=111[0m
+[0;32mI (40479) touch: touch count=1 id=0 event=2 x=182 y=90[0m
+[0;32mI (40529) touch: touch count=1 id=0 event=2 x=177 y=35[0m
+[0;32mI (40579) touch: touch count=1 id=0 event=2 x=172 y=14[0m
+[0;32mI (40629) touch: release[0m
+[0;32mI (43239) touch: touch count=1 id=0 event=2 x=90 y=151[0m
+[0;32mI (43309) touch: touch count=1 id=0 event=2 x=90 y=185[0m
+[0;32mI (43359) touch: touch count=1 id=0 event=2 x=87 y=264[0m
+[0;32mI (43409) touch: release[0m
+[0;32mI (44239) touch: touch count=1 id=0 event=2 x=136 y=216[0m
+[0;32mI (44289) touch: touch count=1 id=0 event=2 x=127 y=318[0m
+[0;32mI (44339) touch: touch count=1 id=0 event=2 x=115 y=384[0m
+[0;32mI (44389) touch: touch count=1 id=0 event=2 x=89 y=417[0m
+[0;32mI (44439) touch: touch count=1 id=0 event=2 x=52 y=474[0m
+[0;32mI (44479) touch: release[0m

@@ -1,0 +1,16 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM6 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM6 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x4ff0011a: [0;33m_panic_handler[0m[0m at [0;32mE:/Espressif/.espressif/v5.4.4/esp-idf/components/riscv/vectors.S[0m[0m:[1;31m141[0m
+[0m--- 0x4ff00e82: [0;33mrv_utils_get_core_id[0m[0m at [0;32mE:/Espressif/.espressif/v5.4.4/esp-idf/components/riscv/include/riscv/rv_utils.h[0m[0m:[1;31m75[0m
+[0m--- (inlined by) [0;33mesp_cpu_get_core_id[0m[0m at [0;32mE:/Espressif/.espressif/v5.4.4/esp-idf/components/esp_hw_support/include/esp_cpu.h[0m[0m:[1;31m129[0m
+[0m--- (inlined by) [0;33mpanic_enable_cache[0m[0m at [0;32mE:/Espressif/.espressif/v5.4.4/esp-idf/components/esp_system/port/panic_handler.c[0m[0m:[1;31m277[0m
+[0m--- 0x4ff0efbc: [0;33ms_get_cache_state[0m[0m at [0;32mE:/Espressif/.espressif/v5.4.4/esp-idf/components/hal/cache_hal.c[0m[0m:[1;31m183[0m
+[0m--- 0x4ff0011a: [0;33m_panic_handler[0m[0m at [0;32mE:/Espressif/.espressif/v5.4.4/esp-idf/components/riscv/vectors.S[0m[0m:[1;31m141[0m
+[0m--- 0x4ff00144: [0;33m_panic_handler[0m[0m at [0;32mE:/Espressif/.espressif/v5.4.4/esp-idf/components/riscv/vectors.S[0m[0m:[1;31m151[0m
+[0m--- 0x4ff0011a: [0;33m_panic_handler[0m[0m at [0;32mE:/Espressif/.espressif/v5.4.4/esp-idf/components/riscv/vectors.S[0m[0m:[1;31m141[0m
+[0m--- 0x4ff00e82: [0;33mrv_utils_get_core_id[0m[0m at [0;32mE:/Espressif/.espressif/v5.4.4/esp-idf/components/riscv/include/riscv/rv_utils.h[0m[0m:[1;31m75[0m
+[0m--- (inlined by) [0;33mesp_cpu_get_core_id[0m[0m at [0;32mE:/Espressif/.espressif/v5.4.4/esp-idf/components/esp_hw_support/include/esp_cpu.h[0m[0m:[1;31m129[0m
+[0m--- (inlined by) [0;33mpanic_enable_cache[0m[0m at [0;32mE:/Espressif/.espressif/v5.4.4/esp-idf/components/esp_system/port/panic_handler.c[0m[0m:[1;31m277[0m
+[0m

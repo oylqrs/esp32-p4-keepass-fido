@@ -1,0 +1,70 @@
+[1/5] C:\Windows\system32\cmd.exe /C "cd /D E:\oyl\2026\202606\esp32-p4-passkey\build\esp-idf\esptool_py && C:\Espressif\tools\python\v5.4.4\venv\Scripts\python.exe E:/Espressif/.espressif/v5.4.4/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app E:/oyl/2026/202606/esp32-p4-passkey/build/partition_table/partition-table.bin E:/oyl/2026/202606/esp32-p4-passkey/build/hello_world.bin"
+hello_world.bin binary size 0xd4990 bytes. Smallest app partition is 0xef0000 bytes. 0xe1b670 bytes (94%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D E:\oyl\2026\202606\esp32-p4-passkey\build\bootloader\esp-idf\esptool_py && C:\Espressif\tools\python\v5.4.4\venv\Scripts\python.exe E:/Espressif/.espressif/v5.4.4/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 E:/oyl/2026/202606/esp32-p4-passkey/build/bootloader/bootloader.bin"
+Bootloader binary size 0x58e0 bytes. 0x720 bytes (7%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] C:\Windows\system32\cmd.exe /C "cd /D E:\Espressif\.espressif\v5.4.4\esp-idf\components\esptool_py && C:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=E:/Espressif/.espressif/v5.4.4/esp-idf -D SERIAL_TOOL=C:/Espressif/tools/python/v5.4.4/venv/Scripts/python.exe;;E:/Espressif/.espressif/v5.4.4/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32p4 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=E:/oyl/2026/202606/esp32-p4-passkey/build -P E:/Espressif/.espressif/v5.4.4/esp-idf/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32p4 -p COM6 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size detect 0x2000 bootloader/bootloader.bin 0x10000 hello_world.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.11.0
+Serial port COM6
+Connecting...
+Chip is ESP32-P4 (revision v1.3)
+Features: High-Performance MCU
+Crystal is 40MHz
+USB mode: USB-Serial/JTAG
+MAC: 80:f1:b2:d4:96:cb
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Auto-detected Flash size: 32MB
+Flash will be erased from 0x00002000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000e4fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 22752 bytes to 13985...
+Writing at 0x00002000... (100 %)
+Wrote 22752 bytes (13985 compressed) at 0x00002000 in 0.3 seconds (effective 689.2 kbit/s)...
+Hash of data verified.
+Compressed 870800 bytes to 452374...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001d644... (7 %)
+Writing at 0x00028111... (10 %)
+Writing at 0x00030443... (14 %)
+Writing at 0x0003ac87... (17 %)
+Writing at 0x00043ccc... (21 %)
+Writing at 0x0004a798... (25 %)
+Writing at 0x00051c60... (28 %)
+Writing at 0x00058f6a... (32 %)
+Writing at 0x0006033e... (35 %)
+Writing at 0x000678d2... (39 %)
+Writing at 0x0006df5f... (42 %)
+Writing at 0x00074b17... (46 %)
+Writing at 0x0007c582... (50 %)
+Writing at 0x000833cf... (53 %)
+Writing at 0x00089652... (57 %)
+Writing at 0x0008fd1c... (60 %)
+Writing at 0x000974e0... (64 %)
+Writing at 0x0009d229... (67 %)
+Writing at 0x000a34a1... (71 %)
+Writing at 0x000a9491... (75 %)
+Writing at 0x000b047f... (78 %)
+Writing at 0x000b9673... (82 %)
+Writing at 0x000c0bb5... (85 %)
+Writing at 0x000c76f5... (89 %)
+Writing at 0x000cd6dc... (92 %)
+Writing at 0x000d5532... (96 %)
+Writing at 0x000dc981... (100 %)
+Wrote 870800 bytes (452374 compressed) at 0x00010000 in 4.6 seconds (effective 1508.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 135...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (135 compressed) at 0x00008000 in 0.0 seconds (effective 633.7 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

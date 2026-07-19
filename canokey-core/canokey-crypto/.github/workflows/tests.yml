@@ -1,0 +1,50 @@
+name: tests
+on: [push, pull_request]
+
+jobs:
+  build_test:
+    name: Build and Test
+    runs-on: ubuntu-latest
+    steps:
+    - name: Package Install
+      run: |
+        sudo apt update
+        sudo apt install gcc g++ cmake swig psmisc procps pcscd pcsc-tools yubico-piv-tool libassuan-dev libgcrypt20-dev libksba-dev libnpth0-dev opensc openssl openssh-server libpcsclite-dev libcmocka-dev python3-pip python3-setuptools python3-wheel lcov
+        sudo pip install cpp-coveralls
+
+    - name: Check out code
+      uses: actions/checkout@v6
+      with:
+        submodules: recursive
+
+    - name: Check - Code formatting
+      continue-on-error: true
+      run: |
+        find src include -name '*.c' -o -name '*.h' | xargs clang-format --dry-run --Werror
+
+    - name: Build for Test
+      run: |
+        cmake -S . -B build -G Ninja -DENABLE_CRYPTO_TESTS=ON -DCMAKE_BUILD_TYPE=Debug
+        cmake --build build -j$(nproc)
+
+    - name: Smoking Tests
+      run: |
+        cd build && ctest
+
+    - name: Generate coverage
+      run: |
+        mkdir coverage
+        find build/ -name '*.gcda' | grep -P '/(ed25519-donna|mbed-crypto|test|build)/' | xargs rm
+        lcov --base-directory . --directory . -c -o ./coverage/lcov.info
+
+    - name: Coveralls
+      uses: coverallsapp/github-action@v2
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Build without MbedTLS
+      run: |
+        rm -rf build
+        cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug -DUSE_MBEDCRYPTO=OFF
+        cmake --build build -j$(nproc)
+

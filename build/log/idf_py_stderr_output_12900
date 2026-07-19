@@ -1,0 +1,9 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM6 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM6 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x4000a39e: [0;33ms_test_psram[0m[0m at [0;32mE:/Espressif/.espressif/v5.4.4/esp-idf/components/esp_psram/esp_psram.c[0m[0m:[1;31m571[0m
+[0m--- 0x4ff0efc0: [0;33ms_get_cache_state[0m[0m at [0;32mE:/Espressif/.espressif/v5.4.4/esp-idf/components/hal/cache_hal.c[0m[0m:[1;31m184[0m
+[0m--- 0x4ff0010e: [0;33m_panic_handler[0m[0m at [0;32mE:/Espressif/.espressif/v5.4.4/esp-idf/components/riscv/vectors.S[0m[0m:[1;31m141[0m
+[0m--- 0x40001c98: [0;33mpanic_handler[0m[0m at [0;32mE:/Espressif/.espressif/v5.4.4/esp-idf/components/esp_system/port/panic_handler.c[0m[0m:[1;31m176[0m
+[0m

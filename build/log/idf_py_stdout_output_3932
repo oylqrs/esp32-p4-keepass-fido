@@ -1,0 +1,678 @@
+[0;32mI (184) esp_image: segment 4: paddr=000d9530 vaddr=4ff0eb48 sizeESP-ROM:esp32p4-eco2-20240710[0m
+Build:Jul 10 2024
+rst:0x17 (CHIP_USB_UART_RESET),boot:0x30c (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4000a39e
+Core1 Saved PC:0x4fc012ca
+SPI mode:DIO, clock div:2
+load:0x4ff33ce0,len:0x16f0
+load:0x4ff2abd0,len:0xe3c
+load:0x4ff2cbd0,len:0x3358
+entry 0x4ff2abda
+[0;32mI (14) boot: ESP-IDF v5.4.4 2nd stage bootloader[0m
+[0;32mI (14) boot: compile time Jul 18 2026 23:23:46[0m
+[0;32mI (14) boot: Multicore bootloader[0m
+[0;32mI (15) boot: chip revision: v1.3[0m
+[0;32mI (15) boot: efuse block revision: v0.3[0m
+[0;32mI (16) boot.esp32p4: SPI Speed      : 40MHz[0m
+[0;32mI (16) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (16) boot.esp32p4: SPI Flash Size : 32MB[0m
+[0;32mI (17) boot: Enabling RNG early entropy source...[0m
+[0;32mI (17) boot: Partition Table:[0m
+[0;32mI (17) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (18) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (18) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (19) boot:  2 factory          factory app      00 00 00010000 00ef0000[0m
+[0;32mI (19) boot:  3 canokey_lfs      Unknown data     01 40 00f00000 00100000[0m
+[0;32mI (20) boot:  4 usbstore         Unknown data     01 81 01000000 01000000[0m
+[0;32mI (21) boot: End of partition table[0m
+[0;32mI (22) esp_image: segment 0: paddr=00010020 vaddr=40090020 size=31438h (201784) map[0m
+[0;32mI (62) esp_image: segment 1: paddr=00041460 vaddr=30100000 size=00068h (   104) load[0m
+[0;32mI (63) esp_image: segment 2: paddr=000414d0 vaddr=4ff00000 size=0eb48h ( 60232) load[0m
+[0;32mI (78) esp_image: segment 3: paddr=00050020 vaddr=40000020 size=89508h (562440) map[0m
+[0;32mI (187) esp_image: segment 4: paddr=000d9530 vaddr=4ff0eb48 size=05dd0h ( 24016) load[0m
+[0;32mI (194) esp_image: segment 5: paddr=000df308 vaddr=4ff14980 size=05638h ( 22072) load[0m
+[0;32mI (200) esp_image: segment 6: paddr=000e4948 vaddr=50108080 size=0001ch (    28) load[0m
+[0;32mI (205) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (206) boot: Disabling RNG early entropy source...[0m
+[0;32mI (211) hex_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (211) hex_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (212) hex_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (212) hex_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (212) hex_psram: density      : 0x07 (256 Mbit)[0m
+[0;32mI (213) hex_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (213) hex_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (213) hex_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (214) hex_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (214) hex_psram: BitMode      : 0x01 (X16 Mode)[0m
+[0;32mI (214) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (215) hex_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (215) MSPI DQS: tuning success, best phase id is 0[0m
+[0;32mI (388) MSPI DQS: tuning success, best delayline id is 16[0m
+[0;32mI (388) esp_psram: Found 32MB PSRAM device[0m
+[0;32mI (389) esp_psram: Speed: 200MHz[0m
+[0;32mI (390) hex_psram: psram CS IO is dedicated[0m
+[0;32mI (390) cpu_start: Multicore app[0m
+[0;32mI (1340) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1350) cpu_start: Pro cpu start user code[0m
+[0;32mI (1350) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (1350) app_init: Application information:[0m
+[0;32mI (1350) app_init: Project name:     hello_world[0m
+[0;32mI (1350) app_init: App version:      1[0m
+[0;32mI (1351) app_init: Compile time:     Jul 18 2026 23:25:33[0m
+[0;32mI (1351) app_init: ELF file SHA256:  12919f6ff...[0m
+[0;32mI (1351) app_init: ESP-IDF:          v5.4.4[0m
+[0;32mI (1351) efuse_init: Min chip rev:     v0.1[0m
+[0;32mI (1351) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (1352) efuse_init: Chip rev:         v1.3[0m
+[0;32mI (1352) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1353) heap_init: At 4FF22FF0 len 00017FD0 (95 KiB): RETENT_RAM[0m
+[0;32mI (1353) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (1353) heap_init: At 4FF508F0 len 0004F710 (317 KiB): RAM[0m
+[0;32mI (1353) heap_init: At 5010809C len 00007F64 (31 KiB): RTCRAM[0m
+[0;32mI (1354) heap_init: At 30100068 len 00001F98 (7 KiB): TCM[0m
+[0;32mI (1354) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator[0m
+[0;32mI (1356) spi_flash: detected chip: gd[0m
+[0;32mI (1356) spi_flash: flash io: dio[0m
+[0;33mW (1356) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1357) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1357) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1358) main_task: Started on CPU0[0m
+[0;32mI (1368) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1368) main_task: Calling app_main()[0m
+[0;32mI (1368) canokey_crypto: crypto port ready[0m
+[0;32mI (1368) usb_hid: USB MSC descriptor enabled; storage init is handled separately[0m
+[0;32mI (1368) tusb_desc: [0m
+┌─────────────────────────────────┐
+│  USB Device Descriptor Summary  │
+├───────────────────┬─────────────┤
+│bDeviceClass       │ 0           │
+├───────────────────┼─────────────┤
+│bDeviceSubClass    │ 0           │
+├───────────────────┼─────────────┤
+│bDeviceProtocol    │ 0           │
+├───────────────────┼─────────────┤
+│bMaxPacketSize0    │ 64          │
+├───────────────────┼─────────────┤
+│idVendor           │ 0x303a      │
+├───────────────────┼─────────────┤
+│idProduct          │ 0x4006      │
+├───────────────────┼─────────────┤
+│bcdDevice          │ 0x100       │
+├───────────────────┼─────────────┤
+│iManufacturer      │ 0x1         │
+├───────────────────┼─────────────┤
+│iProduct           │ 0x2         │
+├───────────────────┼─────────────┤
+│iSerialNumber      │ 0x3         │
+├───────────────────┼─────────────┤
+│bNumConfigurations │ 0x1         │
+└───────────────────┴─────────────┘
+[0;32mI (1378) TinyUSB: TinyUSB Driver installed on port 1[0m
+[0;32mI (1378) usb_hid: TinyUSB driver installed: mounted=0 hid0_ready=0 ctaphid_ready=0[0m
+[0;32mI (1378) canokey_usb: CTAPHID init start: itf=1 report_size=64 queue_depth=32[0m
+[0;32mI (1378) canokey_usb: CTAPHID event queue created[0m
+[0;32mI (1378) canokey_usb: CTAPHID init done: state=IDLE mounted=0 ready=0[0m
+[0;32mI (1378) usb_hid: USB HID keyboard initialized on TinyUSB default USB[0m
+[0;32mI (1378) usb_hid: MSC flash partition 'usbstore': offset=0x1000000 size=16777216 bytes[0m
+[0;33mW (1458) tinyusb_msc_storage: Default MSC event callback called, event ID: 0, mount point: 0[0m
+[0;33mW (1458) tinyusb_msc_storage: Default MSC event callback called, event ID: 1, mount point: 1[0m
+[0;32mI (1468) usb_hid: usbstore first-boot format already done: fmt_v2_done=1[0m
+[0;32mI (1468) usb_hid: MSC flash storage mounted to APP; use switch_usbstore to expose USB disk[0m
+[0;32mI (1468) usb_hid: usbstore FAT boot OK: bps=4096 spc=1 reserved=1 fats=2 root_entries=512 total16=4060 total32=0 fatsz16=2 type='FAT12   '[0m
+[0;32mI (1468) usb_hid: usbstore config OK: partition=usbstore offset=0x1000000 size=16777216 mount=/data wl_size=16629760 wl_sector=4096 msc_sectors=4060 msc_sector=4096[0m
+[0;32mI (1468) usb_hid: usbstore already mounted to APP: /data[0m
+[0;32mI (1468) st7701sn_lcd: Initialize ST7701SN 480x640 MIPI display with ESP-IDF DSI flow[0m
+[0;32mI (1468) st7701sn_lcd: MIPI DSI PHY LDO enabled[0m
+[0;32mI (1468) st7701sn_lcd: Create MIPI DSI bus[0m
+[0;32mI (1468) st7701sn_lcd: Create MIPI DBI command IO[0m
+[0;32mI (1468) st7701sn_lcd: MIPI DSI command ACK disabled[0m
+[0;32mI (1468) st7701sn_lcd: Create MIPI DPI panel[0m
+[0;32mI (1478) st7701sn_lcd: MIPI DPI panel created[0m
+[0;32mI (1478) gpio: GPIO[37]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1478) st7701sn_lcd: LCD reset GPIO37 configured, readback=0[0m
+[0;32mI (1478) st7701sn_lcd: Precharge LCD reset on GPIO37 high[0m
+[0;32mI (1478) st7701sn_lcd: LCD reset GPIO37 precharge high, readback=0[0m
+[0;32mI (1478) st7701sn_lcd: Assert LCD reset on GPIO37[0m
+[0;32mI (1478) st7701sn_lcd: LCD reset GPIO37 after assert, readback=0[0m
+[0;32mI (1478) st7701sn_lcd: Release LCD reset on GPIO37[0m
+[0;32mI (1478) st7701sn_lcd: LCD reset GPIO37 after release, readback=0[0m
+[0;32mI (1528) st7701sn_lcd: Send ST7701SN init commands[0m
+[0;32mI (1528) st7701sn_lcd: LCD init cmd[0]: 0x01, len=0[0m
+[0;32mI (1658) st7701sn_lcd: LCD init cmd[1]: 0xFF, len=5[0m
+[0;32mI (1678) st7701sn_lcd: LCD init cmd[2]: 0xEF, len=1[0m
+[0;32mI (1688) st7701sn_lcd: LCD init cmd[3]: 0xFF, len=5[0m
+[0;32mI (1708) st7701sn_lcd: LCD init cmd[4]: 0xC0, len=2[0m
+[0;32mI (1718) st7701sn_lcd: LCD init cmd[5]: 0xC1, len=2[0m
+[0;32mI (1728) st7701sn_lcd: LCD init cmd[6]: 0xC2, len=2[0m
+[0;32mI (1738) st7701sn_lcd: LCD init cmd[7]: 0xC3, len=3[0m
+[0;32mI (1748) st7701sn_lcd: LCD init cmd[8]: 0xCC, len=1[0m
+[0;32mI (1758) st7701sn_lcd: LCD init cmd[9]: 0xB0, len=16[0m
+[0;32mI (1778) st7701sn_lcd: LCD init cmd[10]: 0xB1, len=16[0m
+[0;32mI (1798) st7701sn_lcd: LCD init cmd[11]: 0xFF, len=5[0m
+[0;32mI (1818) st7701sn_lcd: LCD init cmd[12]: 0xB0, len=1[0m
+[0;32mI (1828) st7701sn_lcd: LCD init cmd[13]: 0xB1, len=1[0m
+[0;32mI (1838) st7701sn_lcd: LCD init cmd[14]: 0xB2, len=1[0m
+[0;32mI (1848) st7701sn_lcd: LCD init cmd[15]: 0xB3, len=1[0m
+[0;32mI (1858) st7701sn_lcd: LCD init cmd[16]: 0xB5, len=1[0m
+[0;32mI (1868) st7701sn_lcd: LCD init cmd[17]: 0xB7, len=1[0m
+[0;32mI (1878) st7701sn_lcd: LCD init cmd[18]: 0xB8, len=1[0m
+[0;32mI (1888) st7701sn_lcd: LCD init cmd[19]: 0xC0, len=1[0m
+[0;32mI (1898) st7701sn_lcd: LCD init cmd[20]: 0xC1, len=1[0m
+[0;32mI (1908) st7701sn_lcd: LCD init cmd[21]: 0xC2, len=1[0m
+[0;32mI (1918) st7701sn_lcd: LCD init cmd[22]: 0xD0, len=1[0m
+[0;32mI (1928) st7701sn_lcd: LCD init cmd[23]: 0xE0, len=3[0m
+[0;32mI (1938) st7701sn_lcd: LCD init cmd[24]: 0xE1, len=11[0m
+[0;32mI (1958) st7701sn_lcd: LCD init cmd[25]: 0xE2, len=13[0m
+[0;32mI (1978) st7701sn_lcd: LCD init cmd[26]: 0xE3, len=4[0m
+[0;32mI (1988) st7701sn_lcd: LCD init cmd[27]: 0xE4, len=2[0m
+[0;32mI (1998) st7701sn_lcd: LCD init cmd[28]: 0xE5, len=16[0m
+[0;32mI (2018) st7701sn_lcd: LCD init cmd[29]: 0xE6, len=4[0m
+[0;32mI (2028) st7701sn_lcd: LCD init cmd[30]: 0xE7, len=2[0m
+[0;32mI (2038) st7701sn_lcd: LCD init cmd[31]: 0xE8, len=16[0m
+[0;32mI (2058) st7701sn_lcd: LCD init cmd[32]: 0xEB, len=7[0m
+[0;32mI (2078) st7701sn_lcd: LCD init cmd[33]: 0xEC, len=2[0m
+[0;32mI (2088) st7701sn_lcd: LCD init cmd[34]: 0xED, len=16[0m
+[0;32mI (2108) st7701sn_lcd: LCD init cmd[35]: 0xEF, len=6[0m
+[0;32mI (2128) st7701sn_lcd: LCD init cmd[36]: 0xFF, len=5[0m
+[0;32mI (2148) st7701sn_lcd: LCD init cmd[37]: 0xE8, len=2[0m
+[0;32mI (2158) st7701sn_lcd: LCD init cmd[38]: 0xE8, len=2[0m
+[0;32mI (2188) st7701sn_lcd: LCD init cmd[39]: 0xE8, len=2[0m
+[0;32mI (2198) st7701sn_lcd: LCD init cmd[40]: 0xFF, len=5[0m
+[0;32mI (2218) st7701sn_lcd: LCD init cmd[41]: 0x11, len=0[0m
+[0;32mI (2348) st7701sn_lcd: LCD init cmd[42]: 0x3A, len=1[0m
+[0;32mI (2358) st7701sn_lcd: LCD init cmd[43]: 0x29, len=0[0m
+[0;32mI (2388) st7701sn_lcd: Start MIPI DPI panel init[0m
+[0;32mI (2388) st7701sn_lcd: MIPI DPI panel init done, video stream should be enabled[0m
+[0;32mI (2388) st7701sn_lcd: LCD backlight enabled[0m
+[0;32mI (2388) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2498) gpio: GPIO[7]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2498) ft6336: FT6336 detected, chip_id=0x00 vendor_id=0x00[0m
+[0;32mI (2498) app: Start LVGL[0m
+[0;32mI (2578) port_ui: user presence callback registered[0m
+[0;32mI (2578) ui_fido: FIDO confirm callback registered[0m
+[0;32mI (4008) touch: touch count=1 id=0 event=0 x=136 y=319[0m
+[0;32mI (4098) touch: release[0m
+[0;32mI (4278) touch: touch count=1 id=0 event=2 x=279 y=323[0m
+[0;32mI (4338) touch: release[0m
+[0;32mI (4518) touch: touch count=1 id=0 event=2 x=407 y=332[0m
+[0;32mI (4608) touch: release[0m
+[0;32mI (4828) touch: touch count=1 id=0 event=0 x=97 y=437[0m
+[0;32mI (4918) touch: release[0m
+[0;32mI (5408) touch: touch count=1 id=0 event=2 x=388 y=575[0m
+[0;32mI (5408) PIN_PAGE: PIN input: 1234[0m
+Guru Meditation Error: Core  0 panic'ed (Load access fault). Exception was unhandled.
+
+Core  0 register dump:
+MEPC    : 0x4003a3a0  RA      : 0x4004e284  SP      : 0x4ff385d0  GP      : 0x4ff15180  
+TP      : 0x4ff38780  T0      : 0xffff7f7f  T1      : 0x7fff7f7f  T2      : 0xffffffff  
+S0/FP   : 0x00000001  S1      : 0x4ff38624  A0      : 0x00000000  A1      : 0x0000005a  
+A2      : 0x4ff385b8  A3      : 0x00000018  A4      : 0x0000005a  A5      : 0x00000000  
+A6      : 0x00000006  A7      : 0x0000001e  S2      : 0x00000018  S3      : 0x4ff4257c  
+S4      : 0x00000001  S5      : 0x4ff38680  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x10a310a3  T5      : 0x10a310a3  T6      : 0x10a310a3  
+MSTATUS : 0x00011880  MTVEC   : 0x4ff00003  MCAUSE  : 0x00000005  MTVAL   : 0x0000000c  
+MHARTID : 0x00000000  
+
+warning: could not convert 'main' from the host encoding (CP1252) to UTF-32.
+This normally should not happen, please file a bug report.
+lv_font_get_line_height (font=0x0) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/font/lv_font.c:139
+139	    return font->line_height;
+#0  lv_font_get_line_height (font=0x0) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/font/lv_font.c:139
+#1  0x4004e284 in lv_label_event (class_p=<optimized out>, e=0x4ff38624) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/widgets/label/lv_label.c:741
+#2  0x4002f10c in lv_obj_event_base (class_p=class_p@entry=0x0, e=e@entry=0x4ff38624) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/core/lv_obj_event.c:89
+#3  0x4002f178 in event_send_core (e=e@entry=0x4ff38624) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/core/lv_obj_event.c:364
+#4  0x4002f214 in lv_obj_send_event (obj=obj@entry=0x4ff4257c <work_mem_int+9596>, event_code=event_code@entry=LV_EVENT_REFR_EXT_DRAW_SIZE, param=param@entry=0x4ff3865c) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/core/lv_obj_event.c:67
+#5  0x4002f046 in lv_obj_refresh_ext_draw_size (obj=obj@entry=0x4ff4257c <work_mem_int+9596>) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/core/lv_obj_draw.c:295
+#6  0x4003090c in lv_obj_refr_size (obj=obj@entry=0x4ff4257c <work_mem_int+9596>) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c:206
+#7  0x40030bbe in layout_update_core (obj=0x4ff4257c <work_mem_int+9596>) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c:1137
+#8  0x40030b8e in layout_update_core (obj=0x4ff422b4 <work_mem_int+8884>) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c:1132
+#9  0x40030b8e in layout_update_core (obj=0x4ff421d0 <work_mem_int+8656>) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c:1132
+#10 0x40030b8e in layout_update_core (obj=obj@entry=0x4ff41c54 <work_mem_int+7252>) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c:1132
+#11 0x40030c26 in lv_obj_update_layout (obj=<optimized out>) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c:307
+#12 0x400359b2 in lv_display_refr_timer (tmr=<optimized out>) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/core/lv_refr.c:381
+#13 0x400417fa in lv_timer_exec (timer=timer@entry=0x4ff410e4 <work_mem_int+4324>) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/misc/lv_timer.c:326
+#14 0x400418b4 in lv_timer_handler () at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/misc/lv_timer.c:107
+#15 0x4000a908 in lvgl_task (arg=<error reading variable: value has been optimized out>) at E:/oyl/2026/202606/esp32-p4-passkey/main/hello_world_main.c:122
+#16 0x4ff0b2c6 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at E:/Espressif/.espressif/v5.4.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:255
+
+
+
+ELF file SHA256: 12919f6ff
+
+Rebooting...
+ESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0xc (SW_CPU_RESET),boot:0x30c (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4ff04ba0
+Core1 Saved PC:0x4ff04cfc
+SPI mode:DIO, clock div:2
+load:0x4ff33ce0,len:0x16f0
+load:0x4ff2abd0,len:0xe3c
+load:0x4ff2cbd0,len:0x3358
+entry 0x4ff2abda
+[0;32mI (23) boot: ESP-IDF v5.4.4 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Jul 18 2026 23:23:46[0m
+[0;32mI (23) boot: Multicore bootloader[0m
+[0;32mI (24) boot: chip revision: v1.3[0m
+[0;32mI (24) boot: efuse block revision: v0.3[0m
+[0;32mI (25) boot.esp32p4: SPI Speed      : 40MHz[0m
+[0;32mI (25) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (25) boot.esp32p4: SPI Flash Size : 32MB[0m
+[0;32mI (25) boot: Enabling RNG early entropy source...[0m
+[0;32mI (26) boot: Partition Table:[0m
+[0;32mI (26) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (26) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (27) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (27) boot:  2 factory          factory app      00 00 00010000 00ef0000[0m
+[0;32mI (28) boot:  3 canokey_lfs      Unknown data     01 40 00f00000 00100000[0m
+[0;32mI (28) boot:  4 usbstore         Unknown data     01 81 01000000 01000000[0m
+[0;32mI (30) boot: End of partition table[0m
+[0;32mI (30) esp_image: segment 0: paddr=00010020 vaddr=40090020 size=31438h (201784) map[0m
+[0;32mI (70) esp_image: segment 1: paddr=00041460 vaddr=30100000 size=00068h (   104) load[0m
+[0;32mI (71) esp_image: segment 2: paddr=000414d0 vaddr=4ff00000 size=0eb48h ( 60232) load[0m
+[0;32mI (86) esp_image: segment 3: paddr=00050020 vaddr=40000020 size=89508h (562440) map[0m
+[0;32mI (195) esp_image: segment 4: paddr=000d9530 vaddr=4ff0eb48 size=05dd0h ( 24016) load[0m
+[0;32mI (202) esp_image: segment 5: paddr=000df308 vaddr=4ff14980 size=05638h ( 22072) load[0m
+[0;32mI (208) esp_image: segment 6: paddr=000e4948 vaddr=50108080 size=0001ch (    28) load[0m
+[0;32mI (213) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (214) boot: Disabling RNG early entropy source...[0m
+[0;32mI (219) hex_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (219) hex_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (219) hex_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (219) hex_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (220) hex_psram: density      : 0x07 (256 Mbit)[0m
+[0;32mI (220) hex_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (220) hex_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (221) hex_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (221) hex_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (221) hex_psram: BitMode      : 0x01 (X16 Mode)[0m
+[0;32mI (222) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (222) hex_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (222) MSPI DQS: tuning success, best phase id is 0[0m
+[0;32mI (395) MSPI DQS: tuning success, best delayline id is 16[0m
+[0;32mI (396) esp_psram: Found 32MB PSRAM device[0m
+[0;32mI (396) esp_psram: Speed: 200MHz[0m
+[0;32mI (397) hex_psram: psram CS IO is dedicated[0m
+[0;32mI (397) cpu_start: Multicore app[0m
+[0;32mI (1347) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1356) cpu_start: Pro cpu start user code[0m
+[0;32mI (1356) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (1356) app_init: Application information:[0m
+[0;32mI (1357) app_init: Project name:     hello_world[0m
+[0;32mI (1357) app_init: App version:      1[0m
+[0;32mI (1357) app_init: Compile time:     Jul 18 2026 23:25:33[0m
+[0;32mI (1357) app_init: ELF file SHA256:  12919f6ff...[0m
+[0;32mI (1357) app_init: ESP-IDF:          v5.4.4[0m
+[0;32mI (1358) efuse_init: Min chip rev:     v0.1[0m
+[0;32mI (1358) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (1358) efuse_init: Chip rev:         v1.3[0m
+[0;32mI (1359) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1359) heap_init: At 4FF22FF0 len 00017FD0 (95 KiB): RETENT_RAM[0m
+[0;32mI (1359) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (1359) heap_init: At 4FF508F0 len 0004F710 (317 KiB): RAM[0m
+[0;32mI (1360) heap_init: At 5010809C len 00007F64 (31 KiB): RTCRAM[0m
+[0;32mI (1360) heap_init: At 30100068 len 00001F98 (7 KiB): TCM[0m
+[0;32mI (1361) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator[0m
+[0;32mI (1362) spi_flash: detected chip: gd[0m
+[0;32mI (1362) spi_flash: flash io: dio[0m
+[0;33mW (1363) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1363) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1364) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1365) main_task: Started on CPU0[0m
+[0;32mI (1375) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1375) main_task: Calling app_main()[0m
+[0;32mI (1375) canokey_crypto: crypto port ready[0m
+[0;32mI (1375) usb_hid: USB MSC descriptor enabled; storage init is handled separately[0m
+[0;32mI (1375) tusb_desc: [0m
+┌─────────────────────────────────┐
+│  USB Device Descriptor Summary  │
+├───────────────────┬─────────────┤
+│bDeviceClass       │ 0           │
+├───────────────────┼─────────────┤
+│bDeviceSubClass    │ 0           │
+├───────────────────┼─────────────┤
+│bDeviceProtocol    │ 0           │
+├───────────────────┼─────────────┤
+│bMaxPacketSize0    │ 64          │
+├───────────────────┼─────────────┤
+│idVendor           │ 0x303a      │
+├───────────────────┼─────────────┤
+│idProduct          │ 0x4006      │
+├───────────────────┼─────────────┤
+│bcdDevice          │ 0x100       │
+├───────────────────┼─────────────┤
+│iManufacturer      │ 0x1         │
+├───────────────────┼─────────────┤
+│iProduct           │ 0x2         │
+├───────────────────┼─────────────┤
+│iSerialNumber      │ 0x3         │
+├───────────────────┼─────────────┤
+│bNumConfigurations │ 0x1         │
+└───────────────────┴─────────────┘
+[0;32mI (1385) TinyUSB: TinyUSB Driver installed on port 1[0m
+[0;32mI (1385) usb_hid: TinyUSB driver installed: mounted=0 hid0_ready=0 ctaphid_ready=0[0m
+[0;32mI (1385) canokey_usb: CTAPHID init start: itf=1 report_size=64 queue_depth=32[0m
+[0;32mI (1385) canokey_usb: CTAPHID event queue created[0m
+[0;32mI (1385) canokey_usb: CTAPHID init done: state=IDLE mounted=0 ready=0[0m
+[0;32mI (1385) usb_hid: USB HID keyboard initialized on TinyUSB default USB[0m
+[0;32mI (1385) usb_hid: MSC flash partition 'usbstore': offset=0x1000000 size=16777216 bytes[0m
+[0;33mW (1465) tinyusb_msc_storage: Default MSC event callback called, event ID: 0, mount point: 0[0m
+[0;33mW (1465) tinyusb_msc_storage: Default MSC event callback called, event ID: 1, mount point: 1[0m
+[0;32mI (1475) usb_hid: usbstore first-boot format already done: fmt_v2_done=1[0m
+[0;32mI (1475) usb_hid: MSC flash storage mounted to APP; use switch_usbstore to expose USB disk[0m
+[0;32mI (1475) usb_hid: usbstore FAT boot OK: bps=4096 spc=1 reserved=1 fats=2 root_entries=512 total16=4060 total32=0 fatsz16=2 type='FAT12   '[0m
+[0;32mI (1475) usb_hid: usbstore config OK: partition=usbstore offset=0x1000000 size=16777216 mount=/data wl_size=16629760 wl_sector=4096 msc_sectors=4060 msc_sector=4096[0m
+[0;32mI (1475) usb_hid: usbstore already mounted to APP: /data[0m
+[0;32mI (1475) st7701sn_lcd: Initialize ST7701SN 480x640 MIPI display with ESP-IDF DSI flow[0m
+[0;32mI (1475) st7701sn_lcd: MIPI DSI PHY LDO enabled[0m
+[0;32mI (1475) st7701sn_lcd: Create MIPI DSI bus[0m
+[0;32mI (1475) st7701sn_lcd: Create MIPI DBI command IO[0m
+[0;32mI (1475) st7701sn_lcd: MIPI DSI command ACK disabled[0m
+[0;32mI (1475) st7701sn_lcd: Create MIPI DPI panel[0m
+[0;32mI (1485) st7701sn_lcd: MIPI DPI panel created[0m
+[0;32mI (1485) gpio: GPIO[37]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1485) st7701sn_lcd: LCD reset GPIO37 configured, readback=0[0m
+[0;32mI (1485) st7701sn_lcd: Precharge LCD reset on GPIO37 high[0m
+[0;32mI (1485) st7701sn_lcd: LCD reset GPIO37 precharge high, readback=0[0m
+[0;32mI (1485) st7701sn_lcd: Assert LCD reset on GPIO37[0m
+[0;32mI (1485) st7701sn_lcd: LCD reset GPIO37 after assert, readback=0[0m
+[0;32mI (1485) st7701sn_lcd: Release LCD reset on GPIO37[0m
+[0;32mI (1485) st7701sn_lcd: LCD reset GPIO37 after release, readback=0[0m
+[0;32mI (1535) st7701sn_lcd: Send ST7701SN init commands[0m
+[0;32mI (1535) st7701sn_lcd: LCD init cmd[0]: 0x01, len=0[0m
+[0;32mI (1665) st7701sn_lcd: LCD init cmd[1]: 0xFF, len=5[0m
+[0;32mI (1685) st7701sn_lcd: LCD init cmd[2]: 0xEF, len=1[0m
+[0;32mI (1695) st7701sn_lcd: LCD init cmd[3]: 0xFF, len=5[0m
+[0;32mI (1715) st7701sn_lcd: LCD init cmd[4]: 0xC0, len=2[0m
+[0;32mI (1725) st7701sn_lcd: LCD init cmd[5]: 0xC1, len=2[0m
+[0;32mI (1735) st7701sn_lcd: LCD init cmd[6]: 0xC2, len=2[0m
+[0;32mI (1745) st7701sn_lcd: LCD init cmd[7]: 0xC3, len=3[0m
+[0;32mI (1755) st7701sn_lcd: LCD init cmd[8]: 0xCC, len=1[0m
+[0;32mI (1765) st7701sn_lcd: LCD init cmd[9]: 0xB0, len=16[0m
+[0;32mI (1785) st7701sn_lcd: LCD init cmd[10]: 0xB1, len=16[0m
+[0;32mI (1805) st7701sn_lcd: LCD init cmd[11]: 0xFF, len=5[0m
+[0;32mI (1825) st7701sn_lcd: LCD init cmd[12]: 0xB0, len=1[0m
+[0;32mI (1835) st7701sn_lcd: LCD init cmd[13]: 0xB1, len=1[0m
+[0;32mI (1845) st7701sn_lcd: LCD init cmd[14]: 0xB2, len=1[0m
+[0;32mI (1855) st7701sn_lcd: LCD init cmd[15]: 0xB3, len=1[0m
+[0;32mI (1865) st7701sn_lcd: LCD init cmd[16]: 0xB5, len=1[0m
+[0;32mI (1875) st7701sn_lcd: LCD init cmd[17]: 0xB7, len=1[0m
+[0;32mI (1885) st7701sn_lcd: LCD init cmd[18]: 0xB8, len=1[0m
+[0;32mI (1895) st7701sn_lcd: LCD init cmd[19]: 0xC0, len=1[0m
+[0;32mI (1905) st7701sn_lcd: LCD init cmd[20]: 0xC1, len=1[0m
+[0;32mI (1915) st7701sn_lcd: LCD init cmd[21]: 0xC2, len=1[0m
+[0;32mI (1925) st7701sn_lcd: LCD init cmd[22]: 0xD0, len=1[0m
+[0;32mI (1935) st7701sn_lcd: LCD init cmd[23]: 0xE0, len=3[0m
+[0;32mI (1945) st7701sn_lcd: LCD init cmd[24]: 0xE1, len=11[0m
+[0;32mI (1965) st7701sn_lcd: LCD init cmd[25]: 0xE2, len=13[0m
+[0;32mI (1985) st7701sn_lcd: LCD init cmd[26]: 0xE3, len=4[0m
+[0;32mI (1995) st7701sn_lcd: LCD init cmd[27]: 0xE4, len=2[0m
+[0;32mI (2005) st7701sn_lcd: LCD init cmd[28]: 0xE5, len=16[0m
+[0;32mI (2025) st7701sn_lcd: LCD init cmd[29]: 0xE6, len=4[0m
+[0;32mI (2035) st7701sn_lcd: LCD init cmd[30]: 0xE7, len=2[0m
+[0;32mI (2045) st7701sn_lcd: LCD init cmd[31]: 0xE8, len=16[0m
+[0;32mI (2065) st7701sn_lcd: LCD init cmd[32]: 0xEB, len=7[0m
+[0;32mI (2085) st7701sn_lcd: LCD init cmd[33]: 0xEC, len=2[0m
+[0;32mI (2095) st7701sn_lcd: LCD init cmd[34]: 0xED, len=16[0m
+[0;32mI (2115) st7701sn_lcd: LCD init cmd[35]: 0xEF, len=6[0m
+[0;32mI (2135) st7701sn_lcd: LCD init cmd[36]: 0xFF, len=5[0m
+[0;32mI (2155) st7701sn_lcd: LCD init cmd[37]: 0xE8, len=2[0m
+[0;32mI (2165) st7701sn_lcd: LCD init cmd[38]: 0xE8, len=2[0m
+[0;32mI (2195) st7701sn_lcd: LCD init cmd[39]: 0xE8, len=2[0m
+[0;32mI (2205) st7701sn_lcd: LCD init cmd[40]: 0xFF, len=5[0m
+[0;32mI (2225) st7701sn_lcd: LCD init cmd[41]: 0x11, len=0[0m
+[0;32mI (2355) st7701sn_lcd: LCD init cmd[42]: 0x3A, len=1[0m
+[0;32mI (2365) st7701sn_lcd: LCD init cmd[43]: 0x29, len=0[0m
+[0;32mI (2395) st7701sn_lcd: Start MIPI DPI panel init[0m
+[0;32mI (2395) st7701sn_lcd: MIPI DPI panel init done, video stream should be enabled[0m
+[0;32mI (2395) st7701sn_lcd: LCD backlight enabled[0m
+[0;32mI (2395) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2505) gpio: GPIO[7]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2505) ft6336: FT6336 detected, chip_id=0x00 vendor_id=0x00[0m
+[0;32mI (2505) app: Start LVGL[0m
+[0;32mI (2585) port_ui: user presence callback registered[0m
+[0;32mI (2585) ui_fido: FIDO confirm callback registered[0m
+[0;32mI (9515) touch: touch count=1 id=0 event=0 x=141 y=315[0m
+[0;32mI (9615) touch: release[0m
+[0;32mI (9795) touch: touch count=1 id=0 event=2 x=256 y=332[0m
+[0;32mI (9855) touch: release[0m
+[0;32mI (10005) touch: touch count=1 id=0 event=0 x=408 y=323[0m
+[0;32mI (10055) touch: release[0m
+[0;32mI (10315) touch: touch count=1 id=0 event=2 x=151 y=416[0m
+[0;32mI (10365) touch: release[0m
+[0;32mI (10795) touch: touch count=1 id=0 event=2 x=399 y=559[0m
+[0;32mI (10795) PIN_PAGE: PIN input: 1234[0m
+Guru Meditation Error: Core  0 panic'ed (Load access fault). Exception was unhandled.
+
+Core  0 register dump:
+MEPC    : 0x4003a3a0  RA      : 0x4004e284  SP      : 0x4ff385d0  GP      : 0x4ff15180  
+TP      : 0x4ff38780  T0      : 0xffff7f7f  T1      : 0x7fff7f7f  T2      : 0xffffffff  
+S0/FP   : 0x00000001  S1      : 0x4ff38624  A0      : 0x00000000  A1      : 0x0000005a  
+A2      : 0x4ff385b8  A3      : 0x00000018  A4      : 0x0000005a  A5      : 0x00000000  
+A6      : 0x00000006  A7      : 0x0000001e  S2      : 0x00000018  S3      : 0x4ff4257c  
+S4      : 0x00000001  S5      : 0x4ff38680  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x10a310a3  T5      : 0x10a310a3  T6      : 0x10a310a3  
+MSTATUS : 0x00011880  MTVEC   : 0x4ff00003  MCAUSE  : 0x00000005  MTVAL   : 0x0000000c  
+MHARTID : 0x00000000  
+
+warning: could not convert 'main' from the host encoding (CP1252) to UTF-32.
+This normally should not happen, please file a bug report.
+lv_font_get_line_height (font=0x0) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/font/lv_font.c:139
+139	    return font->line_height;
+#0  lv_font_get_line_height (font=0x0) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/font/lv_font.c:139
+#1  0x4004e284 in lv_label_event (class_p=<optimized out>, e=0x4ff38624) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/widgets/label/lv_label.c:741
+#2  0x4002f10c in lv_obj_event_base (class_p=class_p@entry=0x0, e=e@entry=0x4ff38624) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/core/lv_obj_event.c:89
+#3  0x4002f178 in event_send_core (e=e@entry=0x4ff38624) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/core/lv_obj_event.c:364
+#4  0x4002f214 in lv_obj_send_event (obj=obj@entry=0x4ff4257c <work_mem_int+9596>, event_code=event_code@entry=LV_EVENT_REFR_EXT_DRAW_SIZE, param=param@entry=0x4ff3865c) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/core/lv_obj_event.c:67
+#5  0x4002f046 in lv_obj_refresh_ext_draw_size (obj=obj@entry=0x4ff4257c <work_mem_int+9596>) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/core/lv_obj_draw.c:295
+#6  0x4003090c in lv_obj_refr_size (obj=obj@entry=0x4ff4257c <work_mem_int+9596>) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c:206
+#7  0x40030bbe in layout_update_core (obj=0x4ff4257c <work_mem_int+9596>) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c:1137
+#8  0x40030b8e in layout_update_core (obj=0x4ff422b4 <work_mem_int+8884>) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c:1132
+#9  0x40030b8e in layout_update_core (obj=0x4ff421d0 <work_mem_int+8656>) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c:1132
+#10 0x40030b8e in layout_update_core (obj=obj@entry=0x4ff41c54 <work_mem_int+7252>) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c:1132
+#11 0x40030c26 in lv_obj_update_layout (obj=<optimized out>) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c:307
+#12 0x400359b2 in lv_display_refr_timer (tmr=<optimized out>) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/core/lv_refr.c:381
+#13 0x400417fa in lv_timer_exec (timer=timer@entry=0x4ff410e4 <work_mem_int+4324>) at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/misc/lv_timer.c:326
+#14 0x400418b4 in lv_timer_handler () at E:/oyl/2026/202606/esp32-p4-passkey/managed_components/lvgl__lvgl/src/misc/lv_timer.c:107
+#15 0x4000a908 in lvgl_task (arg=<error reading variable: value has been optimized out>) at E:/oyl/2026/202606/esp32-p4-passkey/main/hello_world_main.c:122
+#16 0x4ff0b2c6 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at E:/Espressif/.espressif/v5.4.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:255
+
+
+
+ELF file SHA256: 12919f6ff
+
+Rebooting...
+ESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0xc (SW_CPU_RESET),boot:0x30c (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4ff04ba0
+Core1 Saved PC:0x4ff04cfc
+SPI mode:DIO, clock div:2
+load:0x4ff33ce0,len:0x16f0
+load:0x4ff2abd0,len:0xe3c
+load:0x4ff2cbd0,len:0x3358
+entry 0x4ff2abda
+[0;32mI (23) boot: ESP-IDF v5.4.4 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Jul 18 2026 23:23:46[0m
+[0;32mI (23) boot: Multicore bootloader[0m
+[0;32mI (24) boot: chip revision: v1.3[0m
+[0;32mI (24) boot: efuse block revision: v0.3[0m
+[0;32mI (25) boot.esp32p4: SPI Speed      : 40MHz[0m
+[0;32mI (25) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (25) boot.esp32p4: SPI Flash Size : 32MB[0m
+[0;32mI (25) boot: Enabling RNG early entropy source...[0m
+[0;32mI (26) boot: Partition Table:[0m
+[0;32mI (26) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (26) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (27) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (28) boot:  2 factory          factory app      00 00 00010000 00ef0000[0m
+[0;32mI (28) boot:  3 canokey_lfs      Unknown data     01 40 00f00000 00100000[0m
+[0;32mI (29) boot:  4 usbstore         Unknown data     01 81 01000000 01000000[0m
+[0;32mI (30) boot: End of partition table[0m
+[0;32mI (30) esp_image: segment 0: paddr=00010020 vaddr=40090020 size=31438h (201784) map[0m
+[0;32mI (70) esp_image: segment 1: paddr=00041460 vaddr=30100000 size=00068h (   104) load[0m
+[0;32mI (72) esp_image: segment 2: paddr=000414d0 vaddr=4ff00000 size=0eb48h ( 60232) load[0m
+[0;32mI (86) esp_image: segment 3: paddr=00050020 vaddr=40000020 size=89508h (562440) map[0m
+[0;32mI (195) esp_image: segment 4: paddr=000d9530 vaddr=4ff0eb48 size=05dd0h ( 24016) load[0m
+[0;32mI (202) esp_image: segment 5: paddr=000df308 vaddr=4ff14980 size=05638h ( 22072) load[0m
+[0;32mI (208) esp_image: segment 6: paddr=000e4948 vaddr=50108080 size=0001ch (    28) load[0m
+[0;32mI (213) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (214) boot: Disabling RNG early entropy source...[0m
+[0;32mI (219) hex_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (219) hex_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (219) hex_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (220) hex_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (220) hex_psram: density      : 0x07 (256 Mbit)[0m
+[0;32mI (220) hex_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (220) hex_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (221) hex_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (221) hex_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (221) hex_psram: BitMode      : 0x01 (X16 Mode)[0m
+[0;32mI (222) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (222) hex_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (223) MSPI DQS: tuning success, best phase id is 0[0m
+[0;32mI (395) MSPI DQS: tuning success, best delayline id is 16[0m
+[0;32mI (396) esp_psram: Found 32MB PSRAM device[0m
+[0;32mI (396) esp_psram: Speed: 200MHz[0m
+[0;32mI (397) hex_psram: psram CS IO is dedicated[0m
+[0;32mI (397) cpu_start: Multicore app[0m
+[0;32mI (1347) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1357) cpu_start: Pro cpu start user code[0m
+[0;32mI (1357) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (1357) app_init: Application information:[0m
+[0;32mI (1357) app_init: Project name:     hello_world[0m
+[0;32mI (1357) app_init: App version:      1[0m
+[0;32mI (1358) app_init: Compile time:     Jul 18 2026 23:25:33[0m
+[0;32mI (1358) app_init: ELF file SHA256:  12919f6ff...[0m
+[0;32mI (1358) app_init: ESP-IDF:          v5.4.4[0m
+[0;32mI (1358) efuse_init: Min chip rev:     v0.1[0m
+[0;32mI (1359) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (1359) efuse_init: Chip rev:         v1.3[0m
+[0;32mI (1359) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1360) heap_init: At 4FF22FF0 len 00017FD0 (95 KiB): RETENT_RAM[0m
+[0;32mI (1360) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (1360) heap_init: At 4FF508F0 len 0004F710 (317 KiB): RAM[0m
+[0;32mI (1361) heap_init: At 5010809C len 00007F64 (31 KiB): RTCRAM[0m
+[0;32mI (1361) heap_init: At 30100068 len 00001F98 (7 KiB): TCM[0m
+[0;32mI (1361) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator[0m
+[0;32mI (1363) spi_flash: detected chip: gd[0m
+[0;32mI (1363) spi_flash: flash io: dio[0m
+[0;33mW (1363) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1364) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1365) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1366) main_task: Started on CPU0[0m
+[0;32mI (1376) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1376) main_task: Calling app_main()[0m
+[0;32mI (1376) canokey_crypto: crypto port ready[0m
+[0;32mI (1376) usb_hid: USB MSC descriptor enabled; storage init is handled separately[0m
+[0;32mI (1376) tusb_desc: [0m
+┌─────────────────────────────────┐
+│  USB Device Descriptor Summary  │
+├───────────────────┬─────────────┤
+│bDeviceClass       │ 0           │
+├───────────────────┼─────────────┤
+│bDeviceSubClass    │ 0           │
+├───────────────────┼─────────────┤
+│bDeviceProtocol    │ 0           │
+├───────────────────┼─────────────┤
+│bMaxPacketSize0    │ 64          │
+├───────────────────┼─────────────┤
+│idVendor           │ 0x303a      │
+├───────────────────┼─────────────┤
+│idProduct          │ 0x4006      │
+├───────────────────┼─────────────┤
+│bcdDevice          │ 0x100       │
+├───────────────────┼─────────────┤
+│iManufacturer      │ 0x1         │
+├───────────────────┼─────────────┤
+│iProduct           │ 0x2         │
+├───────────────────┼─────────────┤
+│iSerialNumber      │ 0x3         │
+├───────────────────┼─────────────┤
+│bNumConfigurations │ 0x1         │
+└───────────────────┴─────────────┘
+[0;32mI (1386) TinyUSB: TinyUSB Driver installed on port 1[0m
+[0;32mI (1386) usb_hid: TinyUSB driver installed: mounted=0 hid0_ready=0 ctaphid_ready=0[0m
+[0;32mI (1386) canokey_usb: CTAPHID init start: itf=1 report_size=64 queue_depth=32[0m
+[0;32mI (1386) canokey_usb: CTAPHID event queue created[0m
+[0;32mI (1386) canokey_usb: CTAPHID init done: state=IDLE mounted=0 ready=0[0m
+[0;32mI (1386) usb_hid: USB HID keyboard initialized on TinyUSB default USB[0m
+[0;32mI (1386) usb_hid: MSC flash partition 'usbstore': offset=0x1000000 size=16777216 bytes[0m
+[0;33mW (1466) tinyusb_msc_storage: Default MSC event callback called, event ID: 0, mount point: 0[0m
+[0;33mW (1466) tinyusb_msc_storage: Default MSC event callback called, event ID: 1, mount point: 1[0m
+[0;32mI (1476) usb_hid: usbstore first-boot format already done: fmt_v2_done=1[0m
+[0;32mI (1476) usb_hid: MSC flash storage mounted to APP; use switch_usbstore to expose USB disk[0m
+[0;32mI (1476) usb_hid: usbstore FAT boot OK: bps=4096 spc=1 reserved=1 fats=2 root_entries=512 total16=4060 total32=0 fatsz16=2 type='FAT12   '[0m
+[0;32mI (1476) usb_hid: usbstore config OK: partition=usbstore offset=0x1000000 size=16777216 mount=/data wl_size=16629760 wl_sector=4096 msc_sectors=4060 msc_sector=4096[0m
+[0;32mI (1476) usb_hid: usbstore already mounted to APP: /data[0m
+[0;32mI (1476) st7701sn_lcd: Initialize ST7701SN 480x640 MIPI display with ESP-IDF DSI flow[0m
+[0;32mI (1476) st7701sn_lcd: MIPI DSI PHY LDO enabled[0m
+[0;32mI (1476) st7701sn_lcd: Create MIPI DSI bus[0m
+[0;32mI (1476) st7701sn_lcd: Create MIPI DBI command IO[0m
+[0;32mI (1476) st7701sn_lcd: MIPI DSI command ACK disabled[0m
+[0;32mI (1476) st7701sn_lcd: Create MIPI DPI panel[0m
+[0;32mI (1486) st7701sn_lcd: MIPI DPI panel created[0m
+[0;32mI (1486) gpio: GPIO[37]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1486) st7701sn_lcd: LCD reset GPIO37 configured, readback=0[0m
+[0;32mI (1486) st7701sn_lcd: Precharge LCD reset on GPIO37 high[0m
+[0;32mI (1486) st7701sn_lcd: LCD reset GPIO37 precharge high, readback=0[0m
+[0;32mI (1486) st7701sn_lcd: Assert LCD reset on GPIO37[0m
+[0;32mI (1486) st7701sn_lcd: LCD reset GPIO37 after assert, readback=0[0m
+[0;32mI (1486) st7701sn_lcd: Release LCD reset on GPIO37[0m
+[0;32mI (1486) st7701sn_lcd: LCD reset GPIO37 after release, readback=0[0m
+[0;32mI (1536) st7701sn_lcd: Send ST7701SN init commands[0m
+[0;32mI (1536) st7701sn_lcd: LCD init cmd[0]: 0x01, len=0[0m
+[0;32mI (1666) st7701sn_lcd: LCD init cmd[1]: 0xFF, len=5[0m
+[0;32mI (1686) st7701sn_lcd: LCD init cmd[2]: 0xEF, len=1[0m
+[0;32mI (1696) st7701sn_lcd: LCD init cmd[3]: 0xFF, len=5[0m
+[0;32mI (1716) st7701sn_lcd: LCD init cmd[4]: 0xC0, len=2[0m
+[0;32mI (1726) st7701sn_lcd: LCD init cmd[5]: 0xC1, len=2[0m
+[0;32mI (1736) st7701sn_lcd: LCD init cmd[6]: 0xC2, len=2[0m
+[0;32mI (1746) st7701sn_lcd: LCD init cmd[7]: 0xC3, len=3[0m
+[0;32mI (1756) st7701sn_lcd: LCD init cmd[8]: 0xCC, len=1[0m
+[0;32mI (1766) st7701sn_lcd: LCD init cmd[9]: 0xB0, len=16[0m
+[0;32mI (1786) st7701sn_lcd: LCD init cmd[10]: 0xB1, len=16[0m
+[0;32mI (1806) st7701sn_lcd: LCD init cmd[11]: 0xFF, len=5[0m
+[0;32mI (1826) st7701sn_lcd: LCD init cmd[12]: 0xB0, len=1[0m
+[0;32mI (1836) st7701sn_lcd: LCD init cmd[13]: 0xB1, len=1[0m
+[0;32mI (1846) st7701sn_lcd: LCD init cmd[14]: 0xB2, len=1[0m
+[0;32mI (1856) st7701sn_lcd: LCD init cmd[15]: 0xB3, len=1[0m
+[0;32mI (1866) st7701sn_lcd: LCD init cmd[16]: 0xB5, len=1[0m
+[0;32mI (1876) st7701sn_lcd: LCD init cmd[17]: 0xB7, len=1[0m
+[0;32mI (1886) st7701sn_lcd: LCD init cmd[18]: 0xB8, len=1[0m
+[0;32mI (1896) st7701sn_lcd: LCD init cmd[19]: 0xC0, len=1[0m
+[0;32mI (1906) st7701sn_lcd: LCD init cmd[20]: 0xC1, len=1[0m
+[0;32mI (1916) st7701sn_lcd: LCD init cmd[21]: 0xC2, len=1[0m
+[0;32mI (1926) st7701sn_lcd: LCD init cmd[22]: 0xD0, len=1[0m
+[0;32mI (1936) st7701sn_lcd: LCD init cmd[23]: 0xE0, len=3[0m
+[0;32mI (1946) st7701sn_lcd: LCD init cmd[24]: 0xE1, len=11[0m
+[0;32mI (1966) st7701sn_lcd: LCD init cmd[25]: 0xE2, len=13[0m
+[0;32mI (1986) st7701sn_lcd: LCD init cmd[26]: 0xE3, len=4[0m
+[0;32mI (1996) st7701sn_lcd: LCD init cmd[27]: 0xE4, len=2[0m
+[0;32mI (2006) st7701sn_lcd: LCD init cmd[28]: 0xE5, len=16[0m
+[0;32mI (2026) st7701sn_lcd: LCD init cmd[29]: 0xE6, len=4[0m
+[0;32mI (2036) st7701sn_lcd: LCD init cmd[30]: 0xE7, len=2[0m
+[0;32mI (2046) st7701sn_lcd: LCD init cmd[31]: 0xE8, len=16[0m
+[0;32mI (2066) st7701sn_lcd: LCD init cmd[32]: 0xEB, len=7[0m
+[0;32mI (2086) st7701sn_lcd: LCD init cmd[33]: 0xEC, len=2[0m
+[0;32mI (2096) st7701sn_lcd: LCD init cmd[34]: 0xED, len=16[0m
+[0;32mI (2116) st7701sn_lcd: LCD init cmd[35]: 0xEF, len=6[0m
+[0;32mI (2136) st7701sn_lcd: LCD init cmd[36]: 0xFF, len=5[0m
+[0;32mI (2156) st7701sn_lcd: LCD init cmd[37]: 0xE8, len=2[0m
+[0;32mI (2166) st7701sn_lcd: LCD init cmd[38]: 0xE8, len=2[0m
+[0;32mI (2196) st7701sn_lcd: LCD init cmd[39]: 0xE8, len=2[0m
+[0;32mI (2206) st7701sn_lcd: LCD init cmd[40]: 0xFF, len=5[0m
+[0;32mI (2226) st7701sn_lcd: LCD init cmd[41]: 0x11, len=0[0m
+[0;32mI (2356) st7701sn_lcd: LCD init cmd[42]: 0x3A, len=1[0m
+[0;32mI (2366) st7701sn_lcd: LCD init cmd[43]: 0x29, len=0[0m
+[0;32mI (2396) st7701sn_lcd: Start MIPI DPI panel init[0m
+[0;32mI (2396) st7701sn_lcd: MIPI DPI panel init done, video stream should be enabled[0m
+[0;32mI (2396) st7701sn_lcd: LCD backlight enabled[0m
+[0;32mI (2396) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2506) gpio: GPIO[7]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2506) ft6336: FT6336 detected, chip_id=0x00 vendor_id=0x00[0m
+[0;32mI (2506) app: Start LVGL[0m
+[0;32mI (2586) port_ui: user presence callback registered[0m
+[0;32mI (2586) ui_fido: FIDO confirm callback registered[0m
