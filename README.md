@@ -1,3 +1,16 @@
+
+支持 keepass  KDBX4.1 数据库解析
+支持 10 FIDO2
+支持 5solt  OpenPGP
+支持 5solt  PIV
+支持 chameleon 卡片8张
+
+
+
+
+
+
+
 | Supported Targets | ESP32 | ESP32-C2 | ESP32-C3 | ESP32-C5 | ESP32-C6 | ESP32-C61 | ESP32-H2 | ESP32-P4 | ESP32-S2 | ESP32-S3 | Linux |
 | ----------------- | ----- | -------- | -------- | -------- | -------- | --------- | -------- | -------- | -------- | -------- | ----- |
 
