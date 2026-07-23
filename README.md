@@ -82,7 +82,7 @@
 
 ============================================================================== 
 # 关于
-开源声明：chameleon、canokey-core、LVGL、Rubber Ducky 、JADE
+开源声明：chameleon、canokey-core、LVGL、Rubber Ducky 、JADE、freeRTOS、
 
 ============================================================================== 
 
